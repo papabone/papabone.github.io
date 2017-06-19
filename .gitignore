@@ -5,9 +5,12 @@
 /node_modules/*
 /src/*
 server.js
+index_dev.html
 webpack.config.js
 postcss.config.js
 .babelrc
 .eslintrc
 package.json
+npm-debug.log.*
+stats.json
 
