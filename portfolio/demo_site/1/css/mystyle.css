@@ -1,0 +1,648 @@
+@charset "UTF-8";
+body * {
+	font-family: "lato", sans-serif !important;	
+}
+div.icon{
+	background:url(../img/icon.png);
+	position:absolute;
+	width:52px;/*icon1*/
+	height:43px;
+	top:42px; left:calc(50% - 26px);
+			left:-webkit-calc(50% - 26px);
+}
+h1{	
+	margin-top:110px;
+	margin-bottom: 20px;
+	text-align:center;
+	font-size: 18pt;
+	letter-spacing:0.2em;
+	font-weight: bold;
+	color:#353738;
+	text-transform:uppercase;
+}
+p{
+	text-align:justify;
+	color:#848789;
+	font-size:14pt;
+	line-height: 30pt;
+	padding: 0 60px;
+}
+	/*HEADER*/
+	header{
+		background:url(../img/bg_header.png) no-repeat scroll 50% 0;
+		-webkit-background-size: cover;
+		background-size: cover;
+		height:800px;
+	}
+	header *{
+		outline: none;
+	}
+		#main_logo{
+			background:url(../img/Logo_main.png);
+			display:inline-block;
+			position: absolute;
+			width:94px;
+			height:85px;
+			top:35px; left:calc(50% - 41px);	
+					  left:-webkit-calc(50% - 41px);	
+			z-index:1;
+		}
+		#nav_bar *{
+			font-weight: bold;	
+			color: #4d4959;
+			background: none;
+			margin-top:50px;
+			letter-spacing:0.2em;
+			-webkit-font-smoothing:antialised; 
+		}
+			#nav_bar li.dot{
+				margin-top:60px;
+			}
+			#nav_bar li a {
+				margin: 0 22px 0 22px;
+			}
+			#nav_bar li a#work_spaser{
+				margin-right:180px;
+			}
+			#nav_bar li a:hover{
+				color:#64c29e;
+			}
+			#nav_bar li a#last{
+				margin-right:0;
+			}
+		
+		.nav_mnu{/*всплывающее меню для среднх и малых*/			width: 100%;
+			height: 100%;
+			background-color:black;	
+			opacity:0.7;
+			display:none;
+		}
+			.nav_mnu li a{
+				text-align:center;
+				color:#64c29e;
+				font-size: 18pt;
+				letter-spacing:0.2em;
+				font-weight: bold;
+				padding:50px 0 0 15px; /*визуальная подстройка левого отступа*/
+				margin: 0 29%;
+			}
+			.nav_mnu li a:hover{
+				color: #4d4959;
+				background-color: transparent;
+			}
+			.nav_mnu li:first-child{
+				padding-top:210px;
+			}
+			.nav_mnu li a#last{
+				margin-right:0;
+			}
+	
+		.nav_toggle{/*кнопка сэндвич*/
+			position: absolute; 
+			right: 22px; top: 65px;
+			width:50px;
+			height:35px;
+			border:none;
+			background-color:transparent;
+			z-index:1;
+		}	
+			#sandwich {
+				width: 50px;
+				height: 35px;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin: auto;
+				}
+				.sw-topper,
+				.sw-bottom,
+				.sw-footer {
+					position: relative;
+					width: 50px;
+					height: 5px;
+					background: #353738;
+					border: none;
+					border-radius: 2px 2px 2px 2px;
+				}
+				.sw-topper {
+				  top: 0;
+				  transition: transform 0.5s, top 0.2s;
+				/* transition-delay: 0.2s, 0s; */
+				}
+				.sw-bottom {
+				  top: 10px;
+				  transition: transform 0.5s, top 0.2s;
+				  transition-delay: 0.2s, 0s;
+				}
+				.sw-footer {
+				  top: 20px;
+				  transition: all 0.5s;
+				  transition-delay: 0.1s;
+				}
+			#sandwich.active .sw-topper {
+			  top: 8px;
+			  transform: rotate(140deg);
+			  background:#64c29e;
+			}
+			#sandwich.active .sw-bottom {
+			  top: 3px;
+			  transform: rotate(-140deg);
+			  background:#64c29e;
+			}
+			#sandwich.active .sw-footer {
+			  opacity: 0;
+			  top: 0;
+			  transform: rotate(180deg);
+			  background:#64c29e;
+			}
+
+	/*about*/
+	#about{
+		background: #f7f7f7;
+		padding: 120px 0;
+	}
+		#about h1{	
+		margin-bottom:30px;
+		}
+		#about p {
+			font-size:16pt;
+			line-height: 34pt;
+			margin-bottom:20px;
+			letter-spacing:-0.02em;
+			text-align:center;
+			padding:0;
+		}
+	/*work*/
+	.after_line{/*черта после текста*/
+		width:50px;
+		height:30px;
+		border-bottom: 1px solid #d7d7d7;
+		margin: 0 auto;
+	}
+	.small_sec{/*малые картинки*/
+		position:absolute;
+		top:400px;
+		height:200px;
+		right:0;
+		left:0;
+	}
+	div.small_sec::before{/*треугольный указатель на картинках*/
+		content:'';
+		position:relative;
+		display:block;
+		transform: rotate(45deg);
+		width:20px;height:20px;
+		top:-10px; left: calc(50% - 10px);
+				   left:-webkit-calc(50% - 10px);
+		background:white;
+	}
+	#text1, /*текстовые блоки*/
+	#text2,
+	#text3{   
+		padding:10px 0 0 0;
+		height:600px;
+		overflow:hidden;
+	}
+		
+		#work div#big_sec1{   /*картинка1*/
+			background:url(../img/bg_sec1.png) no-repeat scroll 50% 50%, #282f35;
+			-webkit-background-size: cover;
+			background-size: cover;
+			height:600px;
+		}
+			div.icon#icon2{/*лого на картинке1*/
+				width:113px;
+				height:118px;
+				background-position: -52px 0;
+				top:calc(50% - 52px);
+				top:-webkit-calc(50% - 52px);
+				left:calc(50% - 56px);
+				left:-webkit-calc(50% - 56px);
+			}
+		div.icon#icon3{/*иконка в текстовй1*/
+			width:41px;
+			height:27px;
+			background-position: -165px 0;
+			top:70px;
+			left:calc(50% - 20px);
+			left:-webkit-calc(50% - 20px);
+		}
+			div#small_sec1{/*малая картинка1*/
+				background:url(../img/bg_small_sec1.png) no-repeat scroll 50% 50%;
+				-webkit-background-size: cover;
+				background-size: cover;
+			}
+			
+		div.icon#icon4{/*иконка в текстовый2*/
+			width:32px;
+			height:32px;
+			background-position: -206px 0;
+			top:67px;
+		}
+			div#small_sec2{/*малая картинка2*/
+				background:url(../img/bg_small_sec2.png) no-repeat scroll 50% 50%, #282f35;
+				-webkit-background-size: cover;
+				background-size: cover;
+			}
+		
+		#big_sec2{   /*картинка2*/
+			background:url(../img/bg_sec2.png) no-repeat scroll 50% 50%, #282f35;
+			-webkit-background-size: cover;
+			background-size: cover;
+			height:600px;
+		}		
+			div.icon#icon5{/*лого на картинке2*/
+				width:177px;
+				height:152px;
+				background-position: -238px 0;
+				top:calc(50% - 76px); 
+				top:-webkit-calc(50% - 76px);
+				left:calc(50% - 88px);
+				left:-webkit-calc(50% - 88px);
+			}			
+		
+		#big_sec3{   /*картинка3*/
+			background:url(../img/bg_sec3.png) no-repeat scroll 50% 50%, #282f35;
+			-webkit-background-size: cover;
+			background-size: cover;
+			height:600px;
+		}
+			div.icon#icon6{/*лого на картинке1*/
+				width:207px;
+				height:67px;
+				background-position: -415px 0;
+				top:calc(50% - 33px); 
+				top:-webkit-calc(50% - 33px);
+				left:calc(50% - 103px);
+				left:-webkit-calc(50% - 103px);
+			}	
+			
+		div.icon#icon7{/*иконка в текстовый3*/
+			width:23px;
+			height:41px;
+			background-position: -623px 0;
+			top:62px;
+			left:calc(50% - 11px);
+			left:-webkit-calc(50% - 11px);
+		}
+			div#small_sec3{/*малая картинка3*/
+				background:url(../img/bg_small_sec3.png) no-repeat scroll 50% 50%, #282f35;
+				-webkit-background-size: cover;
+				background-size: cover;
+			}	
+			
+		#big_sec4{   /*картинка4*/
+			background:url(../img/bg_sec4.png) no-repeat scroll 50% 50%, #282f35;
+			-webkit-background-size: cover;
+			background-size: cover;
+			height:600px;
+		}
+	/*twitt*/	
+	#twitt img{/*через растягивание пустого файла задаем высоту блока*/
+		height:520px;
+	}	
+		.carousel-caption{/*твиттер карусель*/
+		  position: absolute;
+		  left: 0;
+		  right: 0;
+		  bottom: 20px;
+		  padding-top: 20px;
+		  padding-bottom: 30px;
+		  top:20px;
+		}
+			div.icon.icon_twitt{/*лого Twitt*/
+				background:url(../img/icon_twitt.png);
+				width:32px;
+				height:27px;
+				top:120px; 
+				left:calc(50% - 16px);
+				left:-webkit-calc(50% - 16px);
+			}
+			h2 {
+				margin-top:160px;
+				margin-bottom:20px;
+				color:#353738;
+				letter-spacing:0.1em;
+				font-weight: bold;
+			}
+				h2 span{
+					font-weight:normal;
+					color:#848789;
+					font-family:"latolight", sans-serif !important;
+				}
+			.carousel-caption *{
+				text-align: center;
+				text-shadow:none;
+			}
+			.carousel-caption p{
+				font-size:24pt;
+				font-style:italic;
+			}
+			
+			.carousel-indicators li{/*цвет кружочков индикации*/
+				border: 1px solid #d7d7d7;
+				width: 15px;
+				height: 15px;
+			}
+			.carousel-indicators li.active{
+				background-color:#d7d7d7;
+				width: 15px;
+				height: 15px;
+			}
+			
+	/*shop*/
+	#shop>* *{/*убираем отступы внутри блоков*/
+	padding:0;
+	margin:0;}
+		
+		#shop_pic_1{
+			background:url(../img/bg_shop_pic_1.png) no-repeat scroll 50% 50%;
+			-webkit-background-size: cover;
+			background-size: cover;
+			height:267px;
+		}
+		#shop_pic_2{
+			background:url(../img/bg_shop_pic_2.png) no-repeat scroll 50% 50%, #282f35;
+			-webkit-background-size: cover;
+			background-size: cover;
+			height:267px;
+		}	
+		#shop_pic_3{
+			background:url(../img/bg_shop_pic_3.png) no-repeat scroll 50% 50%;
+			-webkit-background-size: cover;
+			background-size: cover;
+			height:267px;
+		}
+		#shop_pic_4{
+			background:url(../img/bg_shop_pic_4.png) no-repeat scroll 50% 50%;
+			-webkit-background-size: cover;
+			background-size: cover;
+			height:534px;
+		}	
+		#shop_pic_5{
+			background:url(../img/bg_shop_pic_5.png) no-repeat scroll 50% 50%;
+			-webkit-background-size: cover;
+			background-size: cover;
+			height:534px;
+		}	
+		#shop_pic_6{
+			background:url(../img/bg_shop_pic_6.png) no-repeat scroll 50% 50%;
+			-webkit-background-size: cover;
+			background-size: cover;
+			height:267px;
+		}	
+		#shop_pic_7{
+			background:url(../img/bg_shop_pic_7.png) no-repeat scroll 50% 50%;
+			-webkit-background-size: cover;
+			background-size: cover;
+			height:267px;
+		}	
+		#shop_pic_8{
+			background:url(../img/bg_shop_pic_8.png) no-repeat scroll 50% 50%;
+			-webkit-background-size: cover;
+			background-size: cover;
+			height:267px;
+		}
+		
+		#shop_pic_1>a,
+		#shop_pic_2>a,
+		#shop_pic_3>a,
+		#shop_pic_4>a,
+		#shop_pic_5>a,
+		#shop_pic_6>a,
+		#shop_pic_7>a,
+		#shop_pic_8>a{
+			display:block;
+			height:100%;
+			width:100%;
+		}
+			#shop a span{
+					display:none;
+				}
+			#shop_pic_1>a:hover,
+			#shop_pic_2>a:hover,
+			#shop_pic_3>a:hover,
+			#shop_pic_4>a:hover,
+			#shop_pic_5>a:hover,
+			#shop_pic_6>a:hover,
+			#shop_pic_7>a:hover,
+			#shop_pic_8>a:hover{
+				height:100%;
+				width:100%;
+				background: #64c29e;
+				opacity: 0.8;
+			}
+			
+				#shop_pic_1>a:hover span,/*иконка и надпись на октивных блоках магазина*/
+				#shop_pic_2>a:hover span,
+				#shop_pic_3>a:hover span,
+				#shop_pic_4>a:hover span,
+				#shop_pic_5>a:hover span,
+				#shop_pic_6>a:hover span,
+				#shop_pic_7>a:hover span,
+				#shop_pic_8>a:hover span{
+					background:url(../img/icon.png);
+					display:inline-block;
+					position:absolute;
+					background-position: -643px 0;
+					width:160px;
+					height:60px;
+					top:calc(50% - 30px); 
+					top:-webkit-calc(50% - 30px);
+					left:calc(50% - 80px);
+					left:-webkit-calc(50% - 80px);
+					padding-top:50px;
+					color:white;
+					font-size:12pt;
+					text-align:center;
+					letter-spacing:0.1em;
+					font-weight: bold;
+					text-transform:uppercase;
+				}
+	
+	/*discover*/
+	#discover{
+		background:#282f35;
+		padding-top:75px;
+		padding-bottom:75px;
+	}
+		#discover_button{
+			padding: 0 15px;
+			text-align: center;
+		}
+			#discover_button a {
+				border: 1px solid #94979a;
+				color:white;
+				font-size: 14pt;
+				letter-spacing:0.2em;
+				font-weight: bold;
+				padding:15px 50px 15px 50px;
+				text-decoration:none;
+				white-space:nowrap;
+				outline: none;
+			}
+			#discover_button a:hover{
+				color: #64c29e;
+				border-color: #64c29e;
+			}
+	
+	/*mailer*/
+		#mailer *{
+			text-align:center;
+			padding:0;
+		}
+		#lower_logo{
+			background:url(../img/Logo_main.png);
+			display:inline-block;
+			width:94px;
+			height:85px;
+			margin-top:110px;
+		}
+		#mailer p{
+			font-size:24pt;
+			font-style:italic;
+			margin:40px 0 0 0;
+		}
+		#mailer input[name="email"]{
+			border:1px solid #d3d7d9;
+			height:70px;
+			width:75%;
+			margin-top:30px;
+			float:left;
+			font-size:20px;
+			text-align:left;
+			padding-left:30px;
+			font-style:italic;	
+			color:#929292;
+		}
+		#submit{
+			border:none;
+			background:#64c29e;
+			margin-left:2%;
+			margin-top:30px;
+			height:70px;
+			width:calc(23% - 3px);
+			width:-webkit-calc(23% - 3px);
+			font-size:24pt;
+			color:white;
+			font-family:"latolight", sans-serif !important;
+			margin-bottom:90px;
+		}
+		
+	/*footer*/
+		#footer{
+			padding:100px 0;
+			background:#f7f7f7;
+			font-size:14pt;
+			font-style:italic;
+			letter-spacing:-0.03em;
+		}
+		#footer div,#footer div p {
+			padding:0
+		}
+			
+			#addres{
+				text-align:left;	
+			}
+				#addres * {
+					line-height:18pt;
+					margin:0;
+				}
+				#addres span{
+					font-size:16pt;
+					font-style:normal;
+				}
+			#social1 *,
+			#social2 *{
+				text-align:center;
+				outline: none;
+			}
+				.twitter, .facebook, .pinterest{
+					background:url(../img/social.png);
+					width:37px;
+					height:36px;
+					display:inline-block;
+					margin: 15px 5px;
+				}
+				.twitter a,
+				.facebook a, 
+				.pinterest a{
+					display:block;
+					width:100%;
+					height:100%;
+					border-radius:50%;
+				}
+				.facebook{
+					background-position: -37px 0;
+				}
+				.pinterest{
+					background-position: 37px 0;
+				}
+					
+			#copyr *{
+				text-align:right;
+			}	
+				#handcrafted{
+					display:inline-block;
+					color:#848789;
+					position:relative;
+					bottom:10px;
+					right:10px;
+					}
+				#yebo{
+					display:inline-block;
+					background:url(../img/yebo.png);
+					width:55px;
+					height:36px;
+				}
+				#rms{
+					color: #4a4645;
+					font-size:16pt;
+					font-style:normal;
+					margin-left:10px;
+					outline:none;
+					text-decoration:none;
+				}
+/*
+bug-report: 1/при подключении myanimate в fierfox - грязь;
+			2/в chrome пропадает нижння граница кнопки (discover) при наведении на другие ссылки;
+			3/срезает картинки запилиные через background при масштабировании.
+			
+х.подключить кнопку
+х.покрутить софари			
+		
+
+	*/
+
+@font-face {
+  font-family: 'lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Lato-Regular.ttf');
+}
+@font-face {
+  font-family: 'lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Lato-Bold.ttf');
+}
+@font-face {
+  font-family: 'lato';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/Lato-BoldItalic.ttf');
+}
+@font-face {
+  font-family: 'lato';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/Lato-Italic.ttf');
+}
+@font-face {
+  font-family: 'latolight';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Lato-Light.ttf');
+}

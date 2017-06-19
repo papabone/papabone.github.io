@@ -1,0 +1,620 @@
+/*ШАПКА header11111111111*/
+.jumbotron{/*общий для headera*/
+	background: url(../img/sky.png) 100% 100% repeat-x,
+				url(../img/dsky.png) 100% 100% repeat-x,
+				#3498db;
+	height:775px;
+	padding:0;
+	margin-bottom:0;
+	min-width:250px;
+}
+.jumbotron *{
+	color:white;
+}
+.jumbotron>.container{
+	height:775px;
+	position:relative;
+}
+
+	/*навигация*/
+	.navbar {/*общий панель навигации*/
+		margin-top:30px;
+		height:60px;
+		border: none;
+		height:60px;
+		background:none;
+	}		
+	.navbar-brand{/*Name Logo*/
+		font:bold 27pt asap, sans-serif;
+		padding: 0 ;
+		padding-top:10px;
+	}
+	.navbar-brand img{
+		float:left;
+		margin: -10px 10px 0 0;
+	}
+	#nav-pills{/*нав меню*/
+		margin: 10px 0 0 300px;
+		font-family: asap, sans-serif;
+		font-size:14pt;
+	}
+	#nav-pills>li>a{
+		color:#adcde6 ;
+	}
+	#nav-pills>li>a:hover {
+		background: #1f6ca0;
+	}
+	#nav-pills>li>a:focus{
+		background:none;
+		border:none;
+		outline:none;
+	}
+	.navbar-toggle{
+		margin:13px;
+	}	
+	.navbar-right{/*правый блок навигации*/
+		background: url(../img/call.png) no-repeat 0% -5px;
+		padding:0 0 0 38px;
+	}
+	#nav-right {
+		margin: -34px 0 0 -15px;
+		font-size:13pt;
+		color:#adcde6 ;
+	}
+
+	/*прочее из header*/
+	h1{
+		margin: 212px 0 0 0;
+		font-size:27pt!important;
+		line-height:1.5;
+	}
+	.jumbotron>.container>div#try_button{
+		margin-top:64px;
+		padding: 3px;
+		float:left;
+	}
+	.jumbotron>.container>div#try_button>a{
+		background: #1f6ca0;
+		padding: 14px 16px;
+	}
+	.jumbotron>.container>div#watch_video{
+		margin: 81px 0 0 35px;
+		background: url(../img/icon.png) no-repeat 0 -80px;
+		padding: 4px 0 4px 35px;
+		cursor:pointer;
+		display:inline-block;
+		position:relative;
+		z-index:2;}
+	.jumbotron>.container>div#watch_video:hover{
+		text-decoration:underline;
+	}
+	#laptop{
+		position:absolute;
+		bottom:0px;
+		left:310px;
+	z-index:1;}
+	@media (max-width: 440px){/*адаптация jumbo- блока для сверхмалых устройств*/
+		h1{
+			margin-top:15px;
+		}
+		.navbar-brand span{
+		display:none;}
+	}
+/*CONTENT*/
+#main{
+	position:relative;
+	min-width:250px;
+	margin-bottom:167px;
+	}
+	
+	/*Карусель*/
+	#myCarousel{
+		border-bottom:1px solid #8d8d8d;
+		margin-top:175px;
+		padding-bottom:98px;
+		height:398px;
+		
+	}
+	.item>img{
+		width:300px; /*задан для пустого рисунка - автоматически задает и height*/
+	}
+	.item{
+		height:300px;
+	}
+		/*стрелки слайдера - позиционирование, изображение через background*/
+		.prev_next{ 
+			background: url(../img/prev_next.png);
+			width:26px;
+			height:43px;
+			display:inline-block;
+			position:absolute;
+			top: 50%;
+			margin-top: -22px;
+		}
+		#prev{
+			left: 50%;
+			margin-left: -13px;
+		}
+		#next{
+			background-position: 0 43px;
+			right: 50%;
+			margin-right: -13px;
+		}
+		.carousel-control.left {
+			background: none;
+		}
+		.carousel-control.right {
+			background: none;
+		}
+		/*индикаторы карусели Для большого экрана*/
+		.carousel-indicators#carousel-indicators_lg {
+			position:absolute;
+			top: -175px;
+			bottom: 300px;
+			left: 0; 
+			width: 100%;
+			margin:0;
+		}
+		.carousel-indicators#carousel-indicators_lg li {/*разобраться откуда отступы*/
+			position:relative;
+			display:inline-block;
+			width: 180px;
+			height: 171px;
+			border: none;		
+		}
+		.carousel-indicators#carousel-indicators_lg li>span{
+			position:absolute;
+			top:50%;
+			margin-top:-65px;
+			left:50%;
+			margin-left:-65px;
+			width:130px;
+			height:130px;
+			display: inline-block;
+			background: url(../img/logos.jpg);
+		}
+		.carousel-indicators#carousel-indicators_lg  li.active>span{
+			margin-top: -85px;
+			border-bottom:1px solid #3498db;
+		}
+		.carousel-indicators#carousel-indicators_lg .active {
+			margin:0 10px;
+			width: 183px;
+			height: 171px;	
+		}
+		.carousel-indicators#carousel-indicators_lg li[data-slide-to="1"]>span{
+			background-position: -130px 0;
+		}	
+		.carousel-indicators#carousel-indicators_lg li[data-slide-to="2"]>span{
+			background-position: -260px 0;
+		}
+		.carousel-indicators#carousel-indicators_lg li[data-slide-to="3"]>span{
+			background-position: -390px 0;
+		}
+		.carousel-indicators#carousel-indicators_lg li[data-slide-to="4"]>span{
+			background-position: -520px 0;
+		}
+		.carousel-indicators#carousel-indicators_lg li[data-slide-to="5"]>span{
+			background-position: -650px 0;
+		}
+		
+		/*текстовое содержимое слайда*/
+		.carousel-caption {
+			bottom:0;
+			top:0;
+			padding:0;
+		}
+		.carousel-caption *{
+			position:absolute;
+			font-family: asap, sans-serif;
+			right: 1%;
+			left:1%;
+			margin:0;
+			padding-top:15px;
+			text-shadow:none;
+		}
+			/*заголовок слайдера*/
+			.carousel-caption h3{
+				font-size:23pt; 
+				color:#484847;
+				top:0;
+			}
+			/*основной блок слайдера*/
+			.carousel-caption div{
+				position:static;
+				display:table;
+				font-size:18pt; 
+				font-style:italic;
+				color:#8d8d8d;
+				margin-top: 50px;
+				height:200px;
+				width:100%;
+				padding:0;
+				
+			}
+			.carousel-caption div div{
+				display:table-cell;
+				margin:0;
+				padding:0;
+				vertical-align: middle;
+			
+			}
+			/*нижний блок со ссылкой*/
+			.carousel-caption div.slide_link{
+				position:absolute;
+				display:block;
+				font-size:17pt; 
+				font-style:italic;
+				color:#484847;
+				bottom: 0px;
+				height:50px;
+				width:100%;
+				padding:0;
+			}
+			div.slide_link a{
+				position:static;
+				display:inline-block;
+			}
+								/*при увеличении контента нужна допюадоптация для планшетов*/
+			@media (max-width: 550px){/*адаптация шрифта основоного блока для смартфонов*/
+				.item,
+				.carousel-caption{
+					height:300px;
+				}
+				.carousel-caption h3{
+					font-size:20pt; 
+				}
+				.carousel-caption div{
+					font-size:13pt;	
+				}
+				.carousel-caption div div{
+					display:block;
+					height:150px;
+					overflow:scroll;
+				}
+				
+			}
+			@media (max-width: 440px){/*адаптация основоного блока для сверхмалых устройств*/
+				#myCarousel{
+					padding-bottom:12px;
+					margin-top:0;
+					padding-bottom:0;
+					height:300px;
+				}
+				.carousel-caption *, 
+				.carousel-caption * *{
+					font-size:12pt !important;
+				}
+				div.slide_link{
+					font-size:8pt !important;
+				}
+			}
+	/*2ой блок основного content*/
+	#row_content{
+		margin-top:100px;
+	}
+	h2,h4,h5 {
+		text-align:center;
+		font-family: asap, sans-serif;
+	}
+	h2{
+		font-size: 28pt;
+	}
+	h4{
+		font-size:17pt;
+		color:#8d8d8d;
+		line-height:1.5;
+		padding-top:5px;
+	}
+	div#row_content>div#leftpic, 
+	div#row_content>div#centerpic,
+	div#row_content>div#rightpic{
+		padding:0px;
+	}
+	div#row_content>div#leftpic>img{/*выравнивание картинок*/
+		margin: 35px 0 0 30px ;
+	}
+	div#row_content>div#centerpic>img{
+		margin: 60px 0 0 105px ;
+	}
+	div#row_content>div#rightpic>img{
+		margin: 80px 30px 0 100px ;
+	}
+	h5{
+		font-size:20pt;
+	}
+	div#row_content>div#leftpic>h5{ /*выравнивание подписей под картинками*/
+		margin-top:45px;
+		text-align:left;
+		padding-left:20px;
+	}
+	div#row_content>div#centerpic>h5{
+		margin-top:50px;
+	}
+	div#row_content>div#rightpic>h5{
+		margin-top:60px;
+		padding-left:45px;
+	}
+		/*Стрелки*/
+		div#row_content>div#leftpic::after,
+		div#row_content>div#centerpic::after{
+			content:'';
+			position:absolute;
+			display:block;
+			background:url(../img/arrow.png) no-repeat;
+			top:calc(50% - 8px);
+			left:calc(100% - 25px);	
+			width:50px;height:15px;			
+		}
+		@media (min-width: 992px) and (max-width: 1169px) {/*адаптивность для средних устройств*/
+		h5{
+		font-size:18pt;
+		}	
+		div#row_content>div#leftpic>img{
+			width:216px;
+			height:207px;
+			margin: 30px 0 0 25px ;
+		}
+		div#row_content>div#centerpic>img{
+			width:162px;
+			height:180px;
+			margin: 55px 0 0 81px ;
+		}
+		div#row_content>div#rightpic>img{
+			width:234px;
+			height:153px;
+			margin: 70px 25px 0 64px ;
+		}
+		div#row_content>div#leftpic>h5{ 
+			margin-top:47px;
+			text-align:left;
+			padding-left:15px;
+		}
+		div#row_content>div#centerpic>h5{
+			margin-top:49px;
+		}
+		div#row_content>div#rightpic>h5{
+			margin-top:61px;
+		
+			padding-left:15px;
+		}
+	}
+	@media (min-width: 768px) and (max-width: 991px) {/*адаптивность для малых устройств*/
+		h5{
+		font-size:15pt;
+		}	
+		div#row_content>div#leftpic>img{
+			width:192px;
+			height:184px;
+			margin: 20px 0 0 15px ;
+		}
+		div#row_content>div#centerpic>img{
+			width:144px;
+			height:160px;
+			margin: 40px 0 0 52px ;
+		}
+		div#row_content>div#rightpic>img{
+			width:208px;
+			height:136px;
+			margin: 55px 15px 0 27px ;
+		}
+		div#row_content>div#leftpic>h5{ 
+			margin-top:44px;
+			text-align:left;
+			padding-left:12px;
+		}
+		div#row_content>div#centerpic>h5{
+			margin-top:48px;
+		}
+		div#row_content>div#rightpic>h5{
+			margin-top:57px;
+			text-align:left;
+			padding-left:50px;
+		}
+	}
+@media (max-width: 440px){/*адаптация CoONTENT и 2го блока для сверхмалых устройств*/
+	.jumbotron,
+	.jumbotron>.container{
+		height:600px;
+	}
+	#main{
+	margin-bottom:15px;
+	}
+		#row_content{
+			margin-top:0;
+			}	
+		.jumbotron>.container>div#watch_video{
+			display:none;
+		}
+}
+	
+/*ПОДВАЛ*/
+footer {
+	height:350px;
+	background:#3498db;
+	position:relative;
+}	
+footer *{
+	color:#adcde6;
+	font:14pt asap, sans-serif;
+}
+footer a:hover{
+	text-decoration:none;
+}
+	/*Колонки со ссылками*/
+	ul.footer_link{		
+		margin-top: 75px;	
+		list-style-type: none;
+		padding:0;
+		width:160px;
+
+	}
+	ul.footer_link li a{
+		line-height:1.7;
+	}
+	ul.footer_link#left_foot_col{
+		margin-left:10px;
+	}
+	ul.footer_link#center_foot_col{
+		margin-left:50px;
+	}
+	ul.footer_link#right_foot_col{
+		margin-left:90px;
+	}
+	ul.footer_link li.foot_main_link{
+		margin-bottom:25px;
+	}
+	ul.footer_link li.foot_main_link a{
+		color:#fff;
+		font-size:17pt;
+	}
+	/*Колонки с контактами и копирайтом*/
+	div#social_copir{
+		padding:0;
+	}
+	div#social_copir *{
+		font-style:normal;
+	}
+		/*соц сети*/
+		div.social-likes{
+			margin-top: 85px;
+			margin-left:-20px;
+		}
+		/*телефон+mail*/	
+		div#phon{
+			margin: 25px 0 0 -40px;
+			cursor:pointer;
+			width: 150px;
+			position:relative;
+		}
+		div#phon	span,
+		div#mail	span{
+			background: url(../img/icon.png) no-repeat 0 -40px;
+			display:inline-block;
+			position:absolute;
+			top:2px;left:0;
+			width: 20px;
+			height:20px;	
+		}
+		div#phon	a,
+		div#mail	a{
+			position: absolute;
+			top:0;left: 25px;
+			width:150px;
+			font-size:13pt;
+		}
+		/*mail*/
+		div#mail{
+			margin: 60px 0 0 -40px;
+			cursor:pointer;
+			width: 105px;
+			position:relative;
+
+		}
+		div#mail	span{
+			background-position: 0 -60px;	
+		}
+		/*Копрайт*/
+		p#copyright{
+			font-size:11pt;
+			margin:190px 0 0 -40px;
+		}
+			/*Щит*/
+			footer::before{
+				content:'';
+				position:absolute;
+				display:block;
+				background:url(../img/shld.png)  no-repeat 25px 25px, white;
+				background-size:50px 50px;
+				top:-50px;
+				left:calc(50% - 50px);	
+				width:100px;height:100px;
+				border-radius: 50%;
+			}
+		
+@media (max-width: 767px) {/*адаптивность подвала для смартфонов*/
+	ul.footer_link#left_foot_col,
+	ul.footer_link#center_foot_col,
+	ul.footer_link#right_foot_col{
+		margin-left:0;
+	}
+	ul.footer_link{		
+		margin-top: 15px;
+	}	
+	div.social-likes{
+		margin-top: 10px;
+	}	
+	div#phon{
+		margin-top: 15px;
+	}
+	div#mail{
+		margin-top: 45px;
+	}
+	p#copyright{
+		margin-top:90px;
+		}
+		footer::before{
+			display:none;
+		}
+}
+@media (max-width: 495px){/*адаптация подвала для сверхмалых устройств*/
+	footer *{
+		font-size:10pt;
+		line-height:2.5;
+	}
+	ul.footer_link li.foot_main_link a{
+		font-size:12pt;
+	}
+	div.social-likes{
+		display:none;
+	}	
+	div#phon{
+		margin-top: 40px;
+		margin-left:-80px;		
+	}
+	div#mail{
+		margin-top: 70px;
+		margin-left:-80px;
+	}
+	p#copyright {
+		margin-top:120px;
+		margin-left:-80px;
+	}
+	div#social_copir *{
+		line-height:1.5;
+	}
+	div#phon	span{
+		top:4px;	
+	}
+	div#mail span{
+		top:6px;	
+	}		
+}
+	
+@font-face {
+  font-family: 'asap';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Asap.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'asap';
+  font-style: bold;
+  font-weight: 700;
+  src: url('../fonts/Asap-Bold.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'asap';
+  font-style: bold-italic;
+  font-weight: 700;
+  src: url('../fonts/Asap-BoldItalic.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'asap';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/Asap-Italic.ttf') format('ttf');
+}
+		
+		
+	

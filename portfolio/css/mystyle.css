@@ -1,0 +1,808 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic);
+/* line 6, ../sass/_color.scss */
+body *,
+body :visited,
+body :link {
+  color: #fff;
+}
+/* line 11, ../sass/_color.scss */
+body .active,
+body a:active,
+body a:hover,
+body .swiper-pagination-bullet-active {
+  color: #fff;
+}
+/* line 16, ../sass/_color.scss */
+body .active::after,
+body a:active::after,
+body a:hover::after,
+body .swiper-pagination-bullet-active::after {
+  border-color: #f51212;
+}
+/* line 20, ../sass/_color.scss */
+body #contact-form {
+  background-color: rgba(8, 16, 38, 0.7);
+}
+/* line 24, ../sass/_color.scss */
+body #contact-form ul li input, body #contact-form ul li textarea {
+  border-color: rgba(225, 225, 225, 0.7);
+}
+/* line 31, ../sass/_color.scss */
+body figure.effect-apollo:hover {
+  background-color: rgba(3, 12, 45, 0.8);
+}
+/* line 34, ../sass/_color.scss */
+body figure.effect-apollo p {
+  border-color: #f51212;
+}
+/* line 38, ../sass/_color.scss */
+body #dev_skill,
+body #dev_port {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/* line 44, ../sass/_color.scss */
+body #dis_skill .top h4 {
+  border-left-color: rgba(225, 225, 225, 0.15);
+}
+/* line 50, ../sass/_color.scss */
+body .swiper-slide#main h1 > span#first_letter {
+  color: #f51212;
+}
+/* line 56, ../sass/_color.scss */
+body .swiper-container-v .swiper-pagination-bullet,
+body .swiper-container-v1 .swiper-pagination-bullet {
+  background-color: #fff;
+}
+/* line 58, ../sass/_color.scss */
+body .swiper-container-v .swiper-pagination-bullet-active,
+body .swiper-container-v1 .swiper-pagination-bullet-active {
+  background-color: #f51212;
+}
+
+/* line 1, ../sass/_icons.scss */
+.icon_box {
+  position: relative;
+}
+/* line 3, ../sass/_icons.scss */
+.icon_box .icons {
+  display: block;
+  background: url("../img/icons.png");
+  position: relative;
+  width: 100px;
+  /*icon1*/
+  height: 50px;
+  top: 0px;
+  left: 50%;
+  margin-left: -50px;
+  padding: 0;
+  margin-bottom: 8%;
+}
+/* line 14, ../sass/_icons.scss */
+.icon_box .icons.icons_small {
+  /*╨╝╨░╨╗╤Л╨╡ ╨╕╨║╨╛╨╜╨║╨╕*/
+  margin-left: -25px;
+  width: 50px;
+}
+/* line 19, ../sass/_icons.scss */
+.icon_box .icons.icon_2 {
+  background-position: -50px 0;
+}
+/* line 22, ../sass/_icons.scss */
+.icon_box .icons.icon_3 {
+  background-position: -100px 0;
+}
+/* line 25, ../sass/_icons.scss */
+.icon_box .icons.csshtml {
+  background-position: -150px 0;
+}
+/* line 28, ../sass/_icons.scss */
+.icon_box .icons.bootstrap {
+  background-position: -250px 0;
+}
+/* line 31, ../sass/_icons.scss */
+.icon_box .icons.wordpress {
+  background-position: -300px 0;
+}
+/* line 34, ../sass/_icons.scss */
+.icon_box .icons.php {
+  background-position: -350px 0;
+}
+/* line 37, ../sass/_icons.scss */
+.icon_box .icons.gitgithub {
+  background-position: -450px 0;
+}
+/* line 40, ../sass/_icons.scss */
+.icon_box .icons.sass {
+  background-position: -500px 0;
+}
+/* line 43, ../sass/_icons.scss */
+.icon_box .icons.jsc {
+  background-position: -600px 0;
+}
+/* line 46, ../sass/_icons.scss */
+.icon_box .icons.empty {
+  background-position: -650px 0;
+}
+
+/* line 1, ../sass/_myhover.scss */
+.wrap-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+/*Apollo*/
+/* line 7, ../sass/_myhover.scss */
+figure.effect-apollo img {
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale3d(1.03, 1.03, 1);
+  transform: scale3d(1.03, 1.03, 1);
+}
+
+/* line 13, ../sass/_myhover.scss */
+figure.effect-apollo figcaption::before {
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  content: '';
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+}
+
+/* line 27, ../sass/_myhover.scss */
+figure.effect-apollo p {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 3em 1.5em 1.5em 3em;
+  padding: 0 1em;
+  max-width: 300px;
+  border-right: 1px solid #fff;
+  text-align: right;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+
+/* line 40, ../sass/_myhover.scss */
+figure.effect-apollo:hover img {
+  opacity: 0.25;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+
+/* line 45, ../sass/_myhover.scss */
+figure.effect-apollo:hover figcaption::before {
+  visibility: visible;
+  -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 110%, 0);
+  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 110%, 0);
+}
+
+/* line 50, ../sass/_myhover.scss */
+figure.effect-apollo:hover p {
+  opacity: 1;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+/* line 9, ../sass/mystyle.scss */
+html {
+  position: relative;
+  height: 100vh;
+}
+/* line 12, ../sass/mystyle.scss */
+html body {
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 12pt;
+  font-family: 'Open Sans', sans-serif;
+  min-width: 320px;
+}
+/* line 20, ../sass/mystyle.scss */
+html body h1,
+html body h2,
+html body h3 {
+  font-size: 67.2pt;
+  white-space: nowrap;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.4;
+}
+/* line 28, ../sass/mystyle.scss */
+html body h2 {
+  font-size: 18.72pt;
+}
+/* line 31, ../sass/mystyle.scss */
+html body h3 {
+  font-size: 12.72pt;
+}
+/* line 34, ../sass/mystyle.scss */
+html body .empty_box {
+  visibility: hidden;
+}
+/* line 38, ../sass/mystyle.scss */
+html body .swiper-container {
+  width: 100%;
+  height: 100vh;
+}
+/* line 41, ../sass/mystyle.scss */
+html body .swiper-container .swiper-pagination-h {
+  top: 5%;
+  bottom: 90%;
+}
+/* line 44, ../sass/mystyle.scss */
+html body .swiper-container .swiper-pagination-h.disactive {
+  display: none;
+}
+/* line 47, ../sass/mystyle.scss */
+html body .swiper-container .swiper-pagination-h .swiper-pagination-bullet {
+  font-size: 14.52pt;
+  font-weight: normal;
+  width: auto;
+  height: auto;
+  padding: 0 3%;
+  background-color: transparent;
+  border-radius: 0;
+  transition: all 1s ease 0s;
+  opacity: 0.4;
+  position: relative;
+}
+/* line 59, ../sass/mystyle.scss */
+html body .swiper-container .swiper-pagination-h .swiper-pagination-bullet-active {
+  opacity: 1;
+  font-weight: 500;
+}
+/* line 62, ../sass/mystyle.scss */
+html body .swiper-container .swiper-pagination-h .swiper-pagination-bullet-active::after {
+  content: '';
+  display: inherit;
+  position: absolute;
+  bottom: -5%;
+  left: 35%;
+  width: 30%;
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-style: solid;
+}
+/* line 76, ../sass/mystyle.scss */
+html body .swiper-container .swiper-container-vertical .swiper-pagination-bullets {
+  right: 20px;
+}
+/* line 80, ../sass/mystyle.scss */
+html body .swiper-container .swiper-container-vertical.swiper-container-v .swiper-pagination-bullets {
+  margin-top: 6vh;
+}
+/* line 85, ../sass/mystyle.scss */
+html body .swiper-container .swiper-container-vertical.swiper-container-v1 .swiper-pagination-bullets {
+  margin-top: -7vh;
+}
+/* line 90, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* line 95, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#main, html body .swiper-container .swiper-slide#dis_port, html body .swiper-container .swiper-slide#dis_skill, html body .swiper-container .swiper-slide#dev_skill, html body .swiper-container .swiper-slide#dev_port {
+  background-image: url("../img/bg05_1.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+/* line 104, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dis_port {
+  background-image: url("../img/bg01_blue.jpg");
+}
+/* line 107, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dis_skill {
+  background-image: url("../img/bg02_blue.jpg");
+}
+/* line 110, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dev_skill {
+  background-image: url("../img/bg04_1.jpg");
+}
+/* line 113, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#main {
+  background-image: url("../img/bg03_blue.jpg");
+}
+/* line 115, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#main * {
+  letter-spacing: 1.5pt;
+}
+/* line 118, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#main .disactive {
+  display: none;
+}
+/* line 121, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#main h1 {
+  margin-top: 10vh;
+  letter-spacing: 10px;
+}
+/* line 124, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#main h1 span#first_letter {
+  padding-right: 10px;
+}
+/* line 127, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#main h1 span#second_word {
+  position: relative;
+  left: 15px;
+  letter-spacing: 6px;
+}
+/* line 133, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#main h3 {
+  margin-bottom: 9vh;
+  font-weight: normal;
+}
+/* line 137, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#main .button {
+  border-width: 1px;
+  border-style: solid;
+  padding: 1.8vh 2.7vw;
+  font-size: 13.8pt;
+  font-weight: bold;
+  margin-top: 1.5vh;
+  margin-bottom: 18vh;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: transparent;
+  letter-spacing: 1.8pt;
+}
+/* line 150, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#main #contact-form {
+  display: none;
+  text-align: center;
+  padding-top: 2%;
+}
+/* line 154, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#main #contact-form * {
+  letter-spacing: 1.2pt;
+}
+/* line 157, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#main #contact-form #esc {
+  background-image: url("../img/esc.png");
+  background-size: cover;
+  width: 20px;
+  height: 16px;
+  margin-left: 26%;
+}
+/* line 164, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#main #contact-form h2 {
+  text-transform: none;
+  font-size: 13.56pt;
+  margin: 1% 0 2.5% 0;
+  font-weight: 600;
+}
+/* line 170, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#main #contact-form ul {
+  list-style-type: none;
+  padding: 0;
+}
+/* line 173, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#main #contact-form ul li {
+  margin-bottom: 1.3%;
+}
+/* line 175, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#main #contact-form ul li input, html body .swiper-container .swiper-slide#main #contact-form ul li textarea {
+  font-size: 11.04pt;
+  width: 21%;
+  min-width: 21%;
+  background: transparent;
+  border-width: 1px;
+  border-style: solid;
+  padding: 0.3% 1% 0.4% 1%;
+  opacity: 1;
+  outline: none;
+}
+/* line 186, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#main #contact-form ul li textarea {
+  height: 35vh;
+  min-height: 15vh;
+}
+/* line 192, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#main #contact-form .button {
+  margin-top: 1%;
+  padding: 0.5% 2.3%;
+}
+/* line 196, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#main #contact-form.active {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 202, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#main #contact-form.active #esc {
+  display: inline-block;
+}
+/* line 207, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#main .container {
+  width: 100%;
+  left: -10px;
+  right: -10px;
+}
+/* line 211, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#main .container .right {
+  padding-right: 5%;
+  text-align: right;
+}
+/* line 215, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#main .container .left {
+  text-align: left;
+  padding-left: 5%;
+}
+/* line 219, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#main .container p {
+  margin: 0;
+}
+/* line 226, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dis_port .swiper-container-v.disactive {
+  display: none;
+}
+/* line 230, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_03,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_04,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_05,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_08,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_09,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_10,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_11 {
+  display: none;
+  overflow-y: scroll;
+  cursor: default;
+}
+/* line 240, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_03.active,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_04.active,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_05.active,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_08.active,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_09.active,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_10.active,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_11.active {
+  display: block;
+}
+/* line 242, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_03.active .esc_port_dis,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_04.active .esc_port_dis,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_05.active .esc_port_dis,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_08.active .esc_port_dis,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_09.active .esc_port_dis,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_10.active .esc_port_dis,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_11.active .esc_port_dis {
+  display: block;
+  position: absolute;
+  top: 2vh;
+  right: 5vw;
+}
+/* line 249, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_03 .esc_port_dis,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_04 .esc_port_dis,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_05 .esc_port_dis,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_08 .esc_port_dis,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_09 .esc_port_dis,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_10 .esc_port_dis,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_11 .esc_port_dis {
+  background-image: url("../img/esc.png");
+  background-size: cover;
+  width: 20px;
+  height: 16px;
+}
+/* line 255, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_03 img,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_04 img,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_05 img,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_08 img,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_09 img,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_10 img,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_11 img {
+  margin: 0 10vw;
+  width: 80vw;
+}
+/* line 264, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide .first_vert .row,
+html body .swiper-container .swiper-slide .second_vert .row, html body .swiper-container .swiper-slide#dev_port .row {
+  padding-bottom: 3vh;
+}
+/* line 266, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide .first_vert .row.first,
+html body .swiper-container .swiper-slide .second_vert .row.first, html body .swiper-container .swiper-slide#dev_port .row.first {
+  margin-top: 16vh;
+}
+/* line 270, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide .first_vert .row .min_port a,
+html body .swiper-container .swiper-slide .second_vert .row .min_port a, html body .swiper-container .swiper-slide#dev_port .row .min_port a {
+  display: inline-block;
+}
+/* line 278, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dis_skill .top, html body .swiper-container .swiper-slide#dev_skill .top {
+  margin-top: 25vh;
+  left: 1.2%;
+  height: 18vh;
+}
+/* line 284, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dis_skill .top .row div *, html body .swiper-container .swiper-slide#dev_skill .top .row div * {
+  padding: 10px 20px;
+  float: left;
+}
+/* line 288, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dis_skill .top .row div h2, html body .swiper-container .swiper-slide#dev_skill .top .row div h2 {
+  font-size: 27pt;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 3.5pt;
+}
+/* line 294, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dis_skill .top .row div h4, html body .swiper-container .swiper-slide#dev_skill .top .row div h4 {
+  font-size: 12.72pt;
+  letter-spacing: 1pt;
+  font-weight: 600;
+  line-height: 15pt;
+  border-left-width: 1px;
+  border-left-style: solid;
+}
+/* line 305, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dis_skill .foot, html body .swiper-container .swiper-slide#dev_skill .foot {
+  margin-top: 10vh;
+}
+/* line 308, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dis_skill .foot .swiper-slide .row, html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide .row {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+/* line 313, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dis_skill .foot .swiper-slide .row.second, html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide .row.second {
+  top: 20vh;
+}
+/* line 317, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dis_skill .foot .swiper-slide .row *, html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide .row * {
+  text-align: center;
+  padding: 10px;
+}
+/* line 320, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dis_skill .foot .swiper-slide .row * h3, html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide .row * h3 {
+  font-weight: 600;
+}
+/* line 323, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dis_skill .foot .swiper-slide .row * p, html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide .row * p {
+  font-size: 10.32pt;
+  opacity: 0.6;
+  font-style: normal;
+  line-height: 2.0;
+}
+/* line 333, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dis_skill .foot .row .col-md-4, html body .swiper-container .swiper-slide#dev_skill .foot .row .col-md-4 {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+/* line 341, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dev_skill .top {
+  left: 2.7%;
+}
+/* line 346, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide .second {
+  margin-top: 2.5vh;
+}
+/* line 351, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide .row div h3 {
+  padding: 0;
+}
+/* line 354, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide .row div p {
+  text-align: left;
+  padding: 0;
+  margin: -1% -3% 0 -12%;
+}
+/* line 358, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide .row div p.right {
+  margin: -1% 0% 0 -15%;
+}
+/* line 369, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide .swiper-container-v .swiper-slide-active,
+html body .swiper-container .swiper-slide .swiper-container-v1 .swiper-slide-active {
+  width: 100%;
+  height: 100vh !important;
+}
+/* line 376, ../sass/mystyle.scss */
+html body .swiper-container .size_error {
+  width: 100%;
+  height: 100%;
+}
+/* line 379, ../sass/mystyle.scss */
+html body .swiper-container .size_error p {
+  position: absolute;
+  top: 40%;
+  bottom: 40%;
+  left: 20%;
+  right: 20%;
+  text-align: center;
+  font-weight: 600;
+  opacity: 0.5;
+}
+
+@media (max-width: 1280px) {
+  /* line 397, ../sass/mystyle.scss */
+  #dev_skill p {
+    font-size: 7.8pt !important;
+  }
+}
+@media (min-width: 992px) {
+  /* line 403, ../sass/mystyle.scss */
+  .size_error {
+    display: none;
+  }
+}
+@media (min-width: 1450px) {
+  /* line 412, ../sass/mystyle.scss */
+  html body {
+    font-size: 14pt;
+  }
+  /* line 414, ../sass/mystyle.scss */
+  html body h1,
+  html body h2,
+  html body h3 {
+    font-size: 78.4pt;
+  }
+  /* line 419, ../sass/mystyle.scss */
+  html body h2 {
+    font-size: 21.84pt;
+  }
+  /* line 422, ../sass/mystyle.scss */
+  html body h3 {
+    font-size: 14.84pt;
+  }
+  /* line 425, ../sass/mystyle.scss */
+  html body figure.effect-apollo p {
+    font-size: 13.3pt;
+  }
+  /* line 430, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-pagination-h .swiper-pagination-bullet {
+    font-size: 16.94pt;
+  }
+  /* line 436, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#main .button {
+    font-size: 16.1pt;
+  }
+  /* line 440, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#main #contact-form h2 {
+    font-size: 15.82pt;
+  }
+  /* line 445, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#main #contact-form ul li input, html body .swiper-container .swiper-slide#main #contact-form ul li textarea {
+    font-size: 12.88pt;
+  }
+  /* line 457, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#dis_skill .top .row div h2, html body .swiper-container .swiper-slide#dev_skill .top .row div h2 {
+    font-size: 31.5pt;
+  }
+  /* line 460, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#dis_skill .top .row div h4, html body .swiper-container .swiper-slide#dev_skill .top .row div h4 {
+    font-size: 14.84pt;
+  }
+  /* line 469, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#dis_skill .foot .swiper-slide .row p, html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide .row p {
+    font-size: 12.04pt;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 485, ../sass/mystyle.scss */
+  html body {
+    font-size: 16pt;
+  }
+  /* line 487, ../sass/mystyle.scss */
+  html body h1,
+  html body h2,
+  html body h3 {
+    font-size: 89.6pt;
+  }
+  /* line 492, ../sass/mystyle.scss */
+  html body h2 {
+    font-size: 24.96pt;
+  }
+  /* line 495, ../sass/mystyle.scss */
+  html body h3 {
+    font-size: 16.96pt;
+  }
+  /* line 498, ../sass/mystyle.scss */
+  html body figure.effect-apollo p {
+    font-size: 14.56pt;
+  }
+  /* line 503, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-pagination-h .swiper-pagination-bullet {
+    font-size: 19.36pt;
+  }
+  /* line 509, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#main .button {
+    font-size: 18.4pt;
+  }
+  /* line 513, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#main #contact-form h2 {
+    font-size: 18.08pt;
+  }
+  /* line 518, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#main #contact-form ul li input, html body .swiper-container .swiper-slide#main #contact-form ul li textarea {
+    font-size: 14.72pt;
+  }
+  /* line 530, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#dis_skill .top .row div h2, html body .swiper-container .swiper-slide#dev_skill .top .row div h2 {
+    font-size: 36pt;
+  }
+  /* line 533, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#dis_skill .top .row div h4, html body .swiper-container .swiper-slide#dev_skill .top .row div h4 {
+    font-size: 16.96pt;
+  }
+  /* line 542, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#dis_skill .foot .swiper-slide .row p, html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide .row p {
+    font-size: 13.76pt;
+  }
+}
+@media (max-width: 1080px) {
+  /* line 558, ../sass/mystyle.scss */
+  html body {
+    font-size: 10pt;
+  }
+  /* line 560, ../sass/mystyle.scss */
+  html body h1,
+  html body h2,
+  html body h3 {
+    font-size: 56pt;
+  }
+  /* line 565, ../sass/mystyle.scss */
+  html body h2 {
+    font-size: 15.6pt;
+  }
+  /* line 568, ../sass/mystyle.scss */
+  html body h3 {
+    font-size: 10.6pt;
+  }
+  /* line 573, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-pagination-h .swiper-pagination-bullet {
+    font-size: 12.1pt;
+  }
+  /* line 579, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#main .button {
+    font-size: 11.5pt;
+  }
+  /* line 583, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#main #contact-form h2 {
+    font-size: 11.3pt;
+  }
+  /* line 588, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#main #contact-form ul li input, html body .swiper-container .swiper-slide#main #contact-form ul li textarea {
+    font-size: 9.2pt;
+  }
+  /* line 600, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#dis_skill .top .row div h2, html body .swiper-container .swiper-slide#dev_skill .top .row div h2 {
+    font-size: 22.5pt;
+  }
+  /* line 603, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#dis_skill .top .row div h4, html body .swiper-container .swiper-slide#dev_skill .top .row div h4 {
+    font-size: 10.6pt;
+  }
+  /* line 612, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#dis_skill .foot .swiper-slide .row p, html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide .row p {
+    font-size: 8.6pt;
+  }
+}

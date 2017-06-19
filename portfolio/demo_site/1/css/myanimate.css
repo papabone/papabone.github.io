@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+.animated_slow{ /*моя доработка - медленный вариант*/
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated_hover:hover { /*только для ховер элементов*/
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated_slower{ /*супер медленный вариант*/
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated_slower1_5s{ /*чуть более медленный вариант*/
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+/*Утонуть*/
+@-webkit-keyframes Waschbecken { /*не работает ускорение/замедление */
+
+ 0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(0deg);
+    }
+
+100%{
+    visibility: hidden;
+    -webkit-transform: translatey(250%) rotate(90deg);
+    transform: translatey(250%)rotate(90deg) ;
+	}
+}
+
+@keyframes Waschbecken {
+ 0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+    -ms-transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(0deg);
+	}
+	
+100% {
+    visibility: hidden;
+    -webkit-transform: translatey(250%) rotate(90deg) ;
+    -ms-transform: translatey(250%)rotate(90deg) ;
+    transform: translatey(250%)rotate(90deg);
+	}
+}
+.Waschbecken{ /*параметры задержки свойства прозрачности*/
+	
+	transmision: opacity 2s ease-in 0s;
+	-webkit-transition: opacity 2s ease-in 0s;
+	-o-transition: opacity 2s ease-in 0s;
+	-moz-transition: opacity 2s ease-in 0s;}
+
+.Waschbecken:focus{ /*можно activ, 
+*если focus - после повторного 
+нажатия в любой области - появиться на старом месте
+(не красивый эффект при возвате на страницу с другой)*/
+	-webkit-animation-name: Waschbecken;
+	animation-name: Waschbecken;
+	opacity: 0; }
+
+.Waschbecken:hover {
+	cursor:no-drop;}
+	
+	
+	
+	
+	
+	@media (min-width: 768px){/*анимация работает только на средних и больших устройствах и планшетах*/
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2015 Daniel Eden
+*/
+
+		@-webkit-keyframes fadeInDownBig {/*уменьшаем разбежку анимации*/
+		  0% {
+			opacity: 0;
+			-webkit-transform: translate3d(0, -150px, 0);
+			transform: translate3d(0, -150px, 0);
+		  }
+
+		  100% {
+			opacity: 1;
+			-webkit-transform: none;
+			transform: none;
+		  }
+		}
+
+		@keyframes fadeInDownBig {
+		  0% {
+			opacity: 0;
+			-webkit-transform: translate3d(0, -150px, 0);
+			-ms-transform: translate3d(0, -150px, 0);
+			transform: translate3d(0, -150px, 0);
+		  }
+
+		  100% {
+			opacity: 1;
+			-webkit-transform: none;
+			-ms-transform: none;
+			transform: none;
+		  }
+		}
+
+		.fadeInDownBig {
+		  -webkit-animation-name: fadeInDownBig;
+		  animation-name: fadeInDownBig;
+		}
+
+		@-webkit-keyframes fadeInLeftBig {
+		  0% {
+			opacity: 0;
+			-webkit-transform: translate3d(-2000px, 0, 0);
+			transform: translate3d(-2000px, 0, 0);
+		  }
+
+		  100% {
+			opacity: 1;
+			-webkit-transform: none;
+			transform: none;
+		  }
+		}
+
+		@keyframes fadeInLeftBig {
+		  0% {
+			opacity: 0;
+			-webkit-transform: translate3d(-2000px, 0, 0);
+			-ms-transform: translate3d(-2000px, 0, 0);
+			transform: translate3d(-2000px, 0, 0);
+		  }
+
+		  100% {
+			opacity: 1;
+			-webkit-transform: none;
+			-ms-transform: none;
+			transform: none;
+		  }
+		}
+
+		.fadeInLeftBig {
+		  -webkit-animation-name: fadeInLeftBig;
+		  animation-name: fadeInLeftBig;
+		}
+
+
+
+		@-webkit-keyframes fadeInRightBig {
+		  0% {
+			opacity: 0;
+			-webkit-transform: translate3d(2000px, 0, 0);
+			transform: translate3d(2000px, 0, 0);
+		  }
+
+		  100% {
+			opacity: 1;
+			-webkit-transform: none;
+			transform: none;
+		  }
+		}
+
+		@keyframes fadeInRightBig {
+		  0% {
+			opacity: 0;
+			-webkit-transform: translate3d(2000px, 0, 0);
+			-ms-transform: translate3d(2000px, 0, 0);
+			transform: translate3d(2000px, 0, 0);
+		  }
+
+		  100% {
+			opacity: 1;
+			-webkit-transform: none;
+			-ms-transform: none;
+			transform: none;
+		  }
+		}
+
+		.fadeInRightBig {
+		  -webkit-animation-name: fadeInRightBig;
+		  animation-name: fadeInRightBig;
+		}
+
+		@-webkit-keyframes fadeInUp {
+		  0% {
+			opacity: 0;
+			-webkit-transform: translate3d(0, 100%, 0);
+			transform: translate3d(0, 100%, 0);
+		  }
+
+		  100% {
+			opacity: 1;
+			-webkit-transform: none;
+			transform: none;
+		  }
+		}
+
+		@keyframes fadeInUp {
+		  0% {
+			opacity: 0;
+			-webkit-transform: translate3d(0, 100%, 0);
+			-ms-transform: translate3d(0, 100%, 0);
+			transform: translate3d(0, 100%, 0);
+		  }
+
+		  100% {
+			opacity: 1;
+			-webkit-transform: none;
+			-ms-transform: none;
+			transform: none;
+		  }
+		}
+
+		.fadeInUp {
+		  -webkit-animation-name: fadeInUp;
+		  animation-name: fadeInUp;
+		}
+
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	

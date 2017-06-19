@@ -1,0 +1,142 @@
+@charset "UTF-8";
+	html body{
+	min-width:330px;
+	}
+	h1{
+		font-size: 17pt;
+		letter-spacing:0.15em;
+	}
+	p{
+		line-height: 25pt;
+		font-size:13pt;
+	}
+	#about p{
+		font-size:14pt;
+		line-height: 15pt;
+		line-height: 30pt;
+	}
+	#footer{
+			font-size:13pt;
+	}
+	#addres span{
+		font-size:15pt;
+	}
+	#rms{
+		font-size:15pt;
+	}
+
+@media (max-width: 991px){/*планшеты*/
+	#main_logo{
+	left:0;		
+	}
+	#about{
+		padding: 60px 0;
+	}
+	div.icon.icon_twitt{
+		top:60px;
+	}
+	h2 {
+		margin-top:100px;
+	}
+	#lower_logo{
+		margin-top:60px;
+	}
+	#submit{
+		margin-bottom:60px;
+	}
+	#footer{
+			padding:40px 0;
+	}
+}
+
+@media (max-width: 767px){/*малые устройства - смартфоны*/
+	#text1 p, /*текстовые блоки раздела work*/
+	#text2 p,
+	#text3 p{
+	padding: 0 30px;
+	}
+}
+
+@media (max-width: 499px){/*оочень маленькое*/
+
+	h1{
+		font-size: 16pt;
+		letter-spacing:0.1em;
+	}
+	#about p{
+		font-size:14pt;
+		line-height: 26pt;
+		line-height: 26pt;
+	}
+	
+	#text1 p, /*текстовые блоки и картинки раздела work*/
+	#text2 p,
+	#text3 p{
+	padding: 0 20px;
+	line-height: 20pt;
+	font-size:12pt;
+	}	
+	#big_sec1,
+	#text1,
+	#text2,
+	#big_sec2,
+	#text3,
+	#big_sec3{
+		width:100%;
+	}
+	#big_sec4{
+		display:none;
+	}
+	div.small_sec#small_sec1,	
+	div.small_sec#small_sec2,
+	div.small_sec#small_sec3{
+		display:block !important;
+	}
+	.after_line{
+		display:none;
+	}
+	#shop_sec1,/*shop*/
+	#shop_sec4{
+		width:100%;
+	}
+	#shop_pic_4,
+	#shop_pic_5{
+		width:50%;
+	}
+	#submit{ /*mailer*/
+		font-size:20pt;
+	}
+	#mailer input[name="email"]{
+		font-size:15px;
+		padding-left:10px;
+	}
+	#discover_button a {/*кнопка discover и footer*/
+		padding-left:15px;
+		padding-right:15px;
+	}
+	div#social1{ 
+		display:none !important;
+	}
+	div#social2{
+		display:block !important;
+		width:100%;
+	}
+	div#addres,
+	div#copyr,
+	div#discover_button{
+		width:100%;
+		padding:0;
+		margin:0;
+		font-style:normal;
+	}
+	
+	#addres {
+		margin-bottom:15px;
+	}
+	#addres *,
+	#copyr *{
+		text-align:center;
+	}
+	
+	
+}
