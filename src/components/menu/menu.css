@@ -1,0 +1,32 @@
+.menu{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: transparent;
+  padding: 0;
+  background: url(1.svg) right 5px no-repeat;
+}
+.menu {
+  li {
+    text-transform: uppercase;
+    display: inline-block;
+    padding-right: 14px;
+    font-weight: 600;
+    padding: 14px;
+  }
+}
+.menu li:hover{
+  background-color: rgba(0,0,0,.2);
+  border-radius: 7px;
+}
+.menu li *:visited,
+.menu li *:link{
+  color: #285473;
+  text-decoration: none;
+  outline:none;
+}
+.menu li *:hover,
+.menu li *:active,
+.menu li *:focus{
+  text-decoration: none;
+}
