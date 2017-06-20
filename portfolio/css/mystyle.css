@@ -464,10 +464,12 @@ html body .swiper-container .swiper-slide#dis_port .swiper-container-v.disactive
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_03,
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_04,
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_05,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_06,
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_08,
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_09,
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_10,
-html body .swiper-container .swiper-slide#dis_port #img_port_dis_11 {
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_11,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_12 {
   display: none;
   overflow-y: scroll;
   cursor: default;
@@ -476,20 +478,24 @@ html body .swiper-container .swiper-slide#dis_port #img_port_dis_11 {
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_03.active,
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_04.active,
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_05.active,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_06.active,
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_08.active,
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_09.active,
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_10.active,
-html body .swiper-container .swiper-slide#dis_port #img_port_dis_11.active {
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_11.active,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_12.active {
   display: block;
 }
 /* line 242, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_03.active .esc_port_dis,
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_04.active .esc_port_dis,
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_05.active .esc_port_dis,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_06.active .esc_port_dis,
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_08.active .esc_port_dis,
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_09.active .esc_port_dis,
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_10.active .esc_port_dis,
-html body .swiper-container .swiper-slide#dis_port #img_port_dis_11.active .esc_port_dis {
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_11.active .esc_port_dis,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_12.active .esc_port_dis {
   display: block;
   position: absolute;
   top: 2vh;
@@ -499,10 +505,12 @@ html body .swiper-container .swiper-slide#dis_port #img_port_dis_11.active .esc_
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_03 .esc_port_dis,
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_04 .esc_port_dis,
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_05 .esc_port_dis,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_06 .esc_port_dis,
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_08 .esc_port_dis,
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_09 .esc_port_dis,
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_10 .esc_port_dis,
-html body .swiper-container .swiper-slide#dis_port #img_port_dis_11 .esc_port_dis {
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_11 .esc_port_dis,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_12 .esc_port_dis {
   background-image: url("../img/esc.png");
   background-size: cover;
   width: 20px;
@@ -512,10 +520,12 @@ html body .swiper-container .swiper-slide#dis_port #img_port_dis_11 .esc_port_di
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_03 img,
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_04 img,
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_05 img,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_06 img,
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_08 img,
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_09 img,
 html body .swiper-container .swiper-slide#dis_port #img_port_dis_10 img,
-html body .swiper-container .swiper-slide#dis_port #img_port_dis_11 img {
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_11 img,
+html body .swiper-container .swiper-slide#dis_port #img_port_dis_12 img {
   margin: 0 10vw;
   width: 80vw;
 }
