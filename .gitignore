@@ -3,6 +3,11 @@
 /.sass-cache/*
 /PSD/*
 /node_modules/*
-npm-debug.log.*
-stats.json
+/src/*
+server.js
+webpack.config.js
+postcss.config.js
+.babelrc
+.eslintrc
+package.json
 
