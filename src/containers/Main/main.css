@@ -1,0 +1,23 @@
+.main{
+  display: flex;
+  height: 100%;
+}
+.main .list{
+  flex-basis: 50%;
+  display: flex;
+}
+.main ul{
+  position: relative;
+  margin: auto;
+  width: 100px;
+}
+.main ul:before{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 24px;
+  top: 3px;
+  width: 6px; /*для max1340*/
+  height: 30px;
+  background-color: #cfdc3c;
+}

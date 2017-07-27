@@ -1,0 +1,16 @@
+.header > * {
+  display: flex;
+  justify-content: space-between;
+}
+.des .header > div {
+  justify-content: flex-start;
+}
+.dev .header > div {
+  justify-content: flex-end;
+}
+.des .keyword{
+  text-align: right;
+}
+.des .keyword span {
+  transform-origin: 99%;
+}

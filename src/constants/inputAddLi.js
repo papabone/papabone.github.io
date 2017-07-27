@@ -1,1 +1,0 @@
-export const ADD_LI_FROM_INPUT = 'ADD_LI_FROM_INPUT'

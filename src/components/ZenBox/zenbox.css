@@ -1,0 +1,35 @@
+.zen-box{
+  font-family: HelvenicaHeavy, sans-serif;
+  font-weight: 700;
+  overflow: hidden;
+
+}
+.zen,
+.box{
+  display: flex;
+  margin: auto;
+  line-height: 0.8;
+  text-transform: uppercase;
+  font-size: 10rem;
+  font-weight: bold;
+  color: #fff;
+  max-height: 100%;
+}
+.zen span{
+  padding-top: 5%;
+}
+.box{
+  color: #cfdc3c;
+}
+hr{
+  margin-left: 0;
+  margin-bottom: 12px;
+  opacity: 0.4;
+}
+.description{
+  margin: auto;
+  padding-left: 2.5%;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}

@@ -2,6 +2,8 @@ import { createStore, applyMiddleware, compose } from 'redux'
 import rootReducer from '../reducers'
 import { createLogger } from 'redux-logger'
 import thunk from 'redux-thunk'
+import { redirect } from '../middlewares/redirect'
+import { focusOnLoad } from '../middlewares/focus'
 
 
 export default function configureStore(initialState) {
@@ -11,7 +13,7 @@ export default function configureStore(initialState) {
     rootReducer,
     initialState,
     composeEnhancers(
-      applyMiddleware(thunk,logger)
+      applyMiddleware(thunk,logger,redirect,focusOnLoad)
     )
   )
 

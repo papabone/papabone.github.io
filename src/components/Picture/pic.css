@@ -1,0 +1,16 @@
+.picture{
+  display: flex;
+}
+.pic{
+  margin-left: 50%;
+  width: 37.5%;
+  background-image: url('./about-des-pic.jpg');
+  background-size: cover;
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.dev .pic{
+  margin-left: 12.5%;
+  background-image: url('./about-dev-pic.jpg');
+}

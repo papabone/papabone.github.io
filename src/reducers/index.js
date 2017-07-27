@@ -1,15 +1,11 @@
 import { combineReducers } from 'redux'
 import { routerReducer } from 'react-router-redux'
 
-import page from './page'
-import user from './user'
-import inputAddLi from './inputAddLi'
-import filtredLi from './filtredLi'
+import who from './who'
+import menu from './menu'
 
 export default combineReducers({
   routing: routerReducer,
-  page,
-  user,
-  inputAddLi,
-  filtredLi
+  who,
+  menu
 })

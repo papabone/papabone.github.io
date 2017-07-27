@@ -1,0 +1,32 @@
+.footer{
+  display: flex;
+  align-items: flex-end;
+}
+.footer .lang{
+  display: flex;
+  width: 12.5%;
+  margin: 0;
+  padding-bottom: 30px;
+  padding-left: 45px;
+}
+.footer li{
+  list-style-type: none;
+  text-transform: uppercase;
+  padding-right: 7px;
+}
+.footer li.active{
+  color: #cfdc3c;
+  font-weight: 800;
+}
+.footer .more-info{
+  width: 12.5%;
+  padding-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+}
+.dev .footer .more-info{
+  width: 25%;
+  margin-left: 37.5%;
+  padding-left: 60px;
+  text-align: left;
+}

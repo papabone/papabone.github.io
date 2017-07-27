@@ -1,0 +1,81 @@
+.shell{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:	100px 1fr 100px;
+  width: 100vw;
+  height: 100vh;
+}
+.header{
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  z-index: 20;
+}
+.content{
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  z-index: 20;
+}
+.footer{
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  z-index: 20;
+}
+.picture{
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+  z-index: 10;
+}
+.zen-box{
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  z-index: 10;
+}
+.lines{
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+  z-index: 10;
+}
+.background{
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+  z-index: 1;
+}
+
+.lines{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.zen-box{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 100px 1fr;
+}
+.zen{
+  grid-row: 1 / 2;
+}
+.box{
+  grid-row: 3 / 4;
+}
+.the-z{
+  grid-column: 1 / 2;
+}
+.the-e{
+  grid-column: 2 / 3;
+}
+.the-n{
+  grid-column: 3 / 4;
+}
+.the-b{
+  grid-column: 2 / 3;
+}
+.the-o{
+  grid-column: 3 / 4;
+}
+.the-x{
+  grid-column: 4 / 5;
+}
+.description{
+  grid-column: 1 / 5;
+  grid-row: 2 / 3;
+}
