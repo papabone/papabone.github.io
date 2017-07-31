@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import './aboutdes.css'
 import mail from './mail.png'
 //import { bindActionCreators } from 'redux'
 //import { connect } from 'react-redux'
@@ -7,7 +6,7 @@ import mail from './mail.png'
 export default class AboutDes extends Component {
   render() {
     return (
-      <div className='about'>
+      <div className='text-block'>
         <h2 className='title'>About</h2>
         <div className='desc-wrap'>
           <div className='term'>About:</div>

@@ -19,6 +19,7 @@ export default class Header extends Component {
     } else if ( this.props.who == 'dev' ){
       Header = (
         <div>
+          <div className='keyword'><span>Web development. Graphic design.</span></div>
           <Menu />
           <DevName />
         </div>

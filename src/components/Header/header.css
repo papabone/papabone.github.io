@@ -8,9 +8,33 @@
 .dev .header > div {
   justify-content: flex-end;
 }
+
+/*keyword style*/
+.keyword{
+  flex-grow: 1;
+  padding-top: 30px;
+  padding-left: 45px;
+  padding-right: 45px;
+  font-size: .82rem;
+}
+.keyword span{
+  color: #fefdfc;
+  opacity: .6;
+  display: inline-block;
+}
+
+/*keword overlay*/
 .des .keyword{
   text-align: right;
 }
 .des .keyword span {
   transform-origin: 99%;
+  transform: rotate(-90deg);
+}
+.dev .keyword{
+  text-align: left;
+}
+.dev .keyword span {
+  transform-origin: 1%;
+  transform: rotate(-90deg) translateX(-100%);
 }

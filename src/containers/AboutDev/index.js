@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import './aboutdev.css'
 import mail from './mail.png'
 import git from './git.png'
 //import { bindActionCreators } from 'redux'
@@ -8,7 +7,7 @@ import git from './git.png'
 export default class AboutDev extends Component {
   render() {
     return (
-      <div className='about'>
+      <div className='text-block'>
         <h2 className='title'>About</h2>
         <div className='desc-wrap'>
           <div className='term'>About:</div>

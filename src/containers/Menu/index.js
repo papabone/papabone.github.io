@@ -6,6 +6,10 @@ import './menu.css'
 import * as appActions from '../../actions/appActions'
 import * as menuActions from '../../actions/menuActions'
 
+import {
+  ESC
+} from '../../constants/key'
+
 class Menu extends Component {
 
   render(){
@@ -43,13 +47,6 @@ class Menu extends Component {
 
   handleKeydown = (event) => {
     const { closeMenu } = this.props.menuActions
-    const keyCode = {
-      'ESC': 27,
-      'LEFT': 37,
-      'UP': 38,
-      'RIGHT': 39,
-      'DOWN': 40
-    }
 
     if ( event.shiftKey || event.ctrlKey || event.altKey  || event.metaKey ) {
         return
@@ -58,7 +55,7 @@ class Menu extends Component {
     else {
       switch (event.keyCode) {
 
-        case keyCode.ESC:
+        case ESC:
           closeMenu()
           break
 
