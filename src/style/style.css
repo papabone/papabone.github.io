@@ -59,6 +59,9 @@ html *{
   font-size: .87rem;
   line-height: 1.45;
 }
+.active{
+  color: #cfdc3c;
+}
 
 /*text-block overlay*/
 .text-block{
@@ -93,10 +96,14 @@ html *{
   margin-bottom: -3px;
   padding-right: 15px;
 }
-.text-block .project-name{
+.text-block .project-name,
+.text-block .project-filter{
   text-transform: uppercase;
   padding-right: 20px;
   cursor: pointer;
+}
+.des .text-block .project-name{
+  text-transform: none;
 }
 
 @media (max-width: 1370px){

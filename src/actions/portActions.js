@@ -1,40 +1,40 @@
 import {
-  TAB_LANDINGS,
-  TAB_OLD_PORT,
-  TAB_SPA
+  TAB_NUM_DEV,
+  TAB_NUM_DES,
+  FILTER_PROJECT
 } from '../constants/port'
 
-export function tabLandings() {
+export function tabNumDev(numer) {
 
   return (dispatch) => {
 
     dispatch({
-      type: TAB_LANDINGS,
-      payload: 'landings'
+      type: TAB_NUM_DEV,
+      payload: numer
     })
 
   }
 }
 
-export function tabOldPort() {
+export function tabNumDes(numer) {
 
   return (dispatch) => {
 
     dispatch({
-      type: TAB_OLD_PORT,
-      payload: 'oldPort'
+      type: TAB_NUM_DES,
+      payload: numer
     })
 
   }
 }
 
-export function tabSPA() {
+export function filterPtoject(name) {
 
   return (dispatch) => {
 
     dispatch({
-      type: TAB_SPA,
-      payload: 'SPA'
+      type: FILTER_PROJECT,
+      payload: name
     })
 
   }

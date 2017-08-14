@@ -21,7 +21,7 @@ class Menu extends Component {
       onKeyDown={this.handleKeydown}
       onBlur={this.handleBlur}
     >
-      <button>Menu</button>
+      <button></button>
       <ul>
         <li><NavLink to='/portfolio-des'>Portfolio</NavLink></li>
         <li><NavLink to='/about-des'>About</NavLink></li>

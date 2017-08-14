@@ -14,12 +14,12 @@ class Shell extends Component {
 
   render() {
     const { who, ownProps } = this.props
-    const isPort = ownProps.location.pathname.indexOf('portfolio')
+    const isPort = ( ownProps.location.pathname.indexOf('port') > 0 ) ? true : false
 
-    let MidGround = who.who == 'main' ? <ZenBox /> : <Picture />;
+    let MidGround = who.who == 'main' ? <ZenBox /> : <Picture/>
 
     return (
-      <div className={'shell ' + ( who.who == 'main' ? '' : who.who ) + ( isPort ? ' port' : '')}>
+      <div className={'shell ' + ( who.who == 'main' ? '' : who.who ) + ( isPort ? ' port' : '' )}>
         <Header
           who={who.who}/>
         <div className='content'>
@@ -38,6 +38,7 @@ class Shell extends Component {
 function mapStateToProps (state, ownProps) {
   return {
     who: state.who,
+    port: state.port,
     ownProps
   }
 }

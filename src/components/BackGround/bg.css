@@ -1,5 +1,5 @@
 .background{
-  background: url('./bg.png'),
+  background-image: url('./bg.png'),
   -webkit-linear-gradient(left, #889aa0 50%, #5e5972 50%);
   background: url('./bg.png'),
   -o-linear-gradient(left, #889aa0 50%, #5e5972 50%);
@@ -10,17 +10,19 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
 }
-.background.des{
-  background: url('./bg.png'), #889aa0;
-  background-size: auto 100%;
-  background-position: 50% center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
+.des .background{
+  background-image: url('./bg-about-des.png');
+  background-color: #889aa0;
+  background-size: cover;
 }
-.background.dev{
-  background: url('./bg.png'), #5e5972;
-  background-size: auto 100%;
-  background-position: 50% center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
+.des.port .background{
+  background-image: url('./bg-port-des.png');
+}
+.dev .background{
+  background-image: url('./bg-about-dev.png');
+  background-color: #5e5972;
+  background-size: cover;
+}
+.dev.port .background{
+  background-image: url('./bg-port-dev.png');
 }

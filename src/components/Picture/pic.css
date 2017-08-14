@@ -14,3 +14,29 @@
   margin-left: 12.5%;
   background-image: url('./about-dev-pic.jpg');
 }
+
+.dev.port .pic.landings{
+  background-image: url('./landings.jpg');
+}
+.dev.port .pic.oldport{
+  background-image: url('./old-port.jpg');
+}
+.dev.port .pic.spa{
+  background-image: url('./spa.jpg');
+}
+.des.port .pic.kurortguru{
+  background-image: url('./kurortguru.jpg');
+  background-position: 100% 0%;
+}
+.des.port .pic.gem{
+  background-image: url('./gem.jpg');
+}
+.des.port .pic.goodlook{
+  background-image: url('./gem.jpg');
+}
+.des.port .pic.goodlook1{
+  background-image: url('./gem.jpg');
+}
+.des.port .pic.goodlook2{
+  background-image: url('./gem.jpg');
+}
