@@ -20,7 +20,7 @@ class PortfolioDev extends Component {
         className='text-block'
         onClick={this.handleClick}
         >
-        <h2 className='title'>Portfolio</h2>
+        <h2 className='title'><span>Portfolio</span></h2>
         <div className='desc-wrap'>
           {
             port.projects.map((item, index) =>

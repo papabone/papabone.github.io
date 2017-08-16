@@ -1,0 +1,36 @@
+.zen-box div{
+  overflow: hidden;
+}
+@keyframes enter-zen-box{
+  0% { transform: translateX(-240%);  }
+  100% { transform: translateX(0%); }
+}
+.enter .zen-box span{
+  animation: enter-zen-box 0.7s ease-in-out;
+}
+@keyframes leave-zen-box{
+  0% { transform: translateX(0);  }
+  100% { transform: translateX(-240%); }
+}
+.leave .zen-box span{
+  transform: translateX(-240%);
+  animation: leave-zen-box 0.7s ease-in-out;
+}
+
+
+@keyframes enter-zen-box-desc{
+  0% { opacity: 0;  }
+  50% { opacity: .2; }
+  100% { opacity: 1; }
+}
+.enter .zen-box .description{
+  animation: enter-zen-box-desc 0.7s ease-in-out;
+}
+@keyframes leave-zen-box-desc{
+  0% { opacity: 1;  }
+  50% { opacity: .8; }
+  100% { opacity: 0; }
+}
+.leave .zen-box .description{
+  animation: leave-zen-box-desc 0.7s ease-in-out;
+}

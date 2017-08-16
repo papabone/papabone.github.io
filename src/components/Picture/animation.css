@@ -1,0 +1,18 @@
+.pic .cover{
+  overflow: hidden;
+}
+  @keyframes enter-pic{
+  0% { transform: translateX(-240%);  }
+  100% { transform: translateX(0%); }
+}
+.pic.enter-pic .jalousie{
+  animation: enter-pic 0.7s ease-in-out;
+}
+@keyframes leave-pic{
+  0% { transform: translateX(0);  }
+  100% { transform: translateX(-240%); }
+}
+.pic.leave-pic .jalousie{
+  transform: translateX(-240%);
+  animation: leave-pic 0.7s ease-in-out;
+}

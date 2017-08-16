@@ -11,25 +11,27 @@ import { connect } from 'react-redux'
 import * as appActions from '../../actions/appActions'
 
 class Shell extends Component {
-
   render() {
-    const { who, ownProps } = this.props
+    const { ownProps } = this.props
     const isPort = ( ownProps.location.pathname.indexOf('port') > 0 ) ? true : false
+    const isAbout = ( ownProps.location.pathname.indexOf('about') > 0 ) ? true : false
+    const isDes = ( ownProps.location.pathname.indexOf('des') > 0 ) ? true : false
+    const isDev = ( ownProps.location.pathname.indexOf('dev') > 0 ) ? true : false
 
-    let MidGround = who.who == 'main' ? <ZenBox /> : <Picture/>
+    let MidGround = isPort || isAbout  ? <Picture/> : <ZenBox />
 
     return (
-      <div className={'shell ' + ( who.who == 'main' ? '' : who.who ) + ( isPort ? ' port' : '' )}>
+      <div className={'shell enter '+ ( isDes ? 'des' : isDev ? 'dev' : '' ) + ( isPort ? ' port' : '' )}>
         <Header
-          who={who.who}/>
+          isDes={isDes}
+          isDev={isDev}/>
         <div className='content'>
           { this.props.children ? this.props.children : <Main />}
         </div>
         <Footer />
         <Lines />
         {MidGround}
-        <BackGround
-          who={who.who}/>
+        <BackGround />
       </div>
     )
   }

@@ -8,10 +8,13 @@ class PortfolioDes extends Component {
   componentDidMount(){
     this.activateTab()
     this.activateFilterTab()
+    this.enterAnimation()
   }
   componentDidUpdate(){
+    this.leaveAnimation()
     this.activateTab()
     this.activateFilterTab()
+    setTimeout(this.enterAnimation,700)
   }
 
   render() {
@@ -26,7 +29,7 @@ class PortfolioDes extends Component {
         className='text-block'
         onClick={this.handleClick}
         >
-        <h2 className='title'>Portfolio</h2>
+        <h2 className='title'><span>Portfolio</span></h2>
         <div className='desc-wrap'>
           <div
             className='project-filter'
@@ -103,6 +106,16 @@ class PortfolioDes extends Component {
     }
   }
 
+  leaveAnimation(){
+    const desc = document.body.querySelector('.desc')
+    desc.classList.remove('enter-desc')
+    desc.classList.add('leave-desc')
+  }
+  enterAnimation(){
+    const desc = document.body.querySelector('.desc')
+    desc.classList.remove('leave-desc')
+    desc.classList.add('enter-desc')
+  }
 }
 
 function mapStateToProps (state) {

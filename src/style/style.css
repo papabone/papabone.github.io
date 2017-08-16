@@ -39,7 +39,13 @@ html *{
 .shell{
   overflow: hidden;
 }
-
+.shell,
+.shell.des{
+  background-color: #889aa0;
+}
+.shell.dev{
+  background-color: #5e5972;
+}
 /*text style*/
 .title{
   margin: 0;

@@ -7,7 +7,7 @@ export default class AboutDes extends Component {
   render() {
     return (
       <div className='text-block'>
-        <h2 className='title'>About</h2>
+        <h2 className='title'><span>About</span></h2>
         <div className='desc-wrap'>
           <div className='term'>About:</div>
           <div className='desc'>I'm freelance designer with 4+ years experienced in Web UI/UX and graphic Design Area. I have build more 200+  user interface and worked on a few other startups. </div>

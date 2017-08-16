@@ -1,0 +1,88 @@
+@keyframes enter-disappear{
+  0% { opacity: 0;  }
+  100% { opacity: 1; }
+}
+.enter .background,
+.enter .footer,
+.enter .header,
+.enter .main{
+  animation: enter-disappear 0.7s ease-in-out;
+}
+@keyframes leave-disappear{
+  0% { opacity: 1;  }
+  100% { opacity: 0; }
+}
+.leave .background,
+.leave .footer,
+.leave .header,
+.leave .main{
+  opacity: 0;
+  animation: leave-disappear 0.7s ease-in-out;
+}
+
+
+.desc-wrap,
+.title{
+  overflow: hidden;
+}
+.title span{
+  display: inline-block;
+}
+@keyframes enter-title{
+  0% { transform: translateX(-240%);  }
+  100% { transform: translateX(0); }
+}
+.enter .title span{
+  animation: enter-title 0.7s ease-in-out;
+}
+@keyframes leave-title{
+  0% { transform: translateX(0);  }
+  100% { transform: translateX(-240%); }
+}
+.leave .title span{
+  transform: translateX(-240%);
+  animation: leave-title 0.7s ease-in-out;
+}
+
+@keyframes enter-text{
+  0% { transform: translateY(240px);  }
+  100% { transform: translateY(0px); }
+}
+.enter .term,
+.enter .desc,
+.enter .project-name,
+.enter .project-filter{
+  animation: enter-text 0.7s ease-in-out;
+}
+@keyframes leave-text{
+  0% { transform: translateY(0px);  }
+  100% { transform: translateY(240px); }
+}
+.leave .term,
+.leave .desc,
+.leave .project-name,
+.leave .project-filter{
+  transform: translateY(240px);
+  animation: leave-text 0.7s ease-in-out;
+}
+
+.pic .cover{
+  overflow: hidden;
+}
+
+
+@keyframes enter-desc{
+  0% { opacity: 0;  }
+  100% { opacity: 1; }
+}
+.enter-desc.desc{
+  animation: enter-desc 0.7s ease-in-out;
+}
+@keyframes leave-desc{
+  0% { opacity: 1;  }
+  100% { opacity: 0; }
+}
+.leave-desc.desc{
+  transform: translateX(-540%);
+  animation: leave-desc 0.7s ease-in-out;
+}

@@ -2,41 +2,63 @@
   display: flex;
 }
 .pic{
+  display: flex;
   margin-left: 50%;
   width: 37.5%;
-  background-image: url('./about-des-pic.jpg');
-  background-size: cover;
-  background-position: 100% 50%;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
+  overflow: hidden;
 }
 .dev .pic{
   margin-left: 12.5%;
+}
+.pic .cover{
+  width: 25%;
+  height: 100%;
+}
+.pic .jalousie{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-image: url('./about-des-pic.jpg');
+  background-size: 400% 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.pic .jalousie.item2{
+  background-position: 33% 50%;
+}
+.pic .jalousie.item3{
+  background-position: 66% 50%;
+}
+.pic .jalousie.item4{
+  background-position: 99.3% 50%;
+}
+.dev .pic .jalousie{
   background-image: url('./about-dev-pic.jpg');
 }
 
-.dev.port .pic.landings{
+.dev.port .pic.landings .jalousie{
   background-image: url('./landings.jpg');
 }
-.dev.port .pic.oldport{
+.dev.port .pic.oldport .jalousie{
   background-image: url('./old-port.jpg');
 }
-.dev.port .pic.spa{
+.dev.port .pic.spa .jalousie{
   background-image: url('./spa.jpg');
 }
-.des.port .pic.kurortguru{
+.des.port .pic.kurortguru .jalousie{
   background-image: url('./kurortguru.jpg');
-  background-position: 100% 0%;
+  //background-position: 0% 0%;
 }
-.des.port .pic.gem{
+.des.port .pic.gem .jalousie{
   background-image: url('./gem.jpg');
 }
-.des.port .pic.goodlook{
+.des.port .pic.goodlook .jalousie{
   background-image: url('./gem.jpg');
 }
-.des.port .pic.goodlook1{
+.des.port .pic.goodlook1 .jalousie{
   background-image: url('./gem.jpg');
 }
-.des.port .pic.goodlook2{
+.des.port .pic.goodlook2 .jalousie{
   background-image: url('./gem.jpg');
 }

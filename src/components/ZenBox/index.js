@@ -1,10 +1,14 @@
 import React, { Component } from 'react'
+
 import './zenbox.css'
+import './animation.css'
 
 export default class ZenBox extends Component {
+
+
   render() {
     return (
-      <div className='zen-box'>
+      <div   className='zen-box'>
         <div className='zen the-z'><span>z</span></div>
         <div className='zen the-e'><span>e</span></div>
         <div className='zen the-n'><span>n</span></div>

@@ -4,6 +4,7 @@ import { Provider } from 'react-redux'
 import './style/normolise.css'
 import './style/grid.css'
 import './style/style.css'
+import './style/animation.css'
 import configureStore from './store/configureStore'
 import { Router, Route, hashHistory} from 'react-router'
 import { syncHistoryWithStore } from 'react-router-redux'
@@ -20,7 +21,7 @@ const history = syncHistoryWithStore(hashHistory, store)
 render(
   <Provider store={store}>
     <div className='app'>
-      <Router history={history}>
+      <Router history={history} >
         <Route path='/' component={Shell}>
           <Route path='/about-des' component={AboutDes} />
           <Route path='/about-dev' component={AboutDev} />

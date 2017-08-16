@@ -8,7 +8,7 @@ export default class Header extends Component {
   render(){
 
     let Header = null
-    if ( this.props.who == 'des' ){
+    if ( this.props.isDes ){
       Header = (
         <div>
           <DesName />
@@ -16,10 +16,10 @@ export default class Header extends Component {
           <div className='keyword'><span>Web development. Graphic design.</span></div>
         </div>
       )
-    } else if ( this.props.who == 'dev' ){
+    } else if ( this.props.isDev ){
       Header = (
         <div>
-          <div className='keyword'><span>Web development. Graphic design.</span></div>
+          <div className='keyword'><span>Web development.</span></div>
           <Menu />
           <DevName />
         </div>
@@ -43,5 +43,6 @@ export default class Header extends Component {
 }
 
 Header.propTypes = {
-  who: PropTypes.string.isRequired
+  isDes : PropTypes.bool.isRequired,
+  isDev : PropTypes.bool.isRequired
 }
