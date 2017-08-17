@@ -1,5 +1,6 @@
 .menu{
   display: flex;
+  overflow: hidden;
   width: 25%;
   padding-top: 30px;
   padding-left: 70px;
@@ -48,37 +49,18 @@
 }
 .menu ul{
   display: none;
-  transform: translateX(120%);
   opacity: 0;
   width: 100%;
   margin: 0;
   padding: 0;
   justify-content: space-around;
 }
-@keyframes des-open-menu{
-  0% { transform: translateX(120%); opacity: 0; }
-  60% { opacity: 0; display: flex; }
-  100% { opacity: 1; }
-}
-@keyframes dev-open-menu{
-  0% { transform: translateX(-120%); opacity: 0; }
-  60% { opacity: 0; display: flex; }
-  100% { opacity: 1; }
-}
 .menu.isOpend ul{
   display: flex;
   transform: translateX(0%);
   opacity: 1;
-  animation: des-open-menu 0.5s ease-in-out;
 }
-@keyframes dev-open-menu{
-  0% { transform: translateX(-120%); opacity: 0; }
-  60% { opacity: 0; display: flex; }
-  100% { opacity: 1; }
-}
-.dev .menu.isOpend ul{
-  animation: dev-open-menu 0.5s ease-in-out;
-}
+
 .menu li{
   list-style-type: none;
 }

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import './pic.css'
-import './animation.css'
 
 export default class Picture extends Component {
 

@@ -18,12 +18,6 @@
   font-weight: 800;
   src: url('../fonts/OpenSans-ExtraBold.woff');
 }
-@font-face {
-  font-family: HelvenicaHeavy;
-  font-style: bold;
-  font-weight: 700;
-  src: url('../fonts/HelveticaNeueCyr-Heavy.woff');
-}
 
 html{
   font-size: 15pt;
