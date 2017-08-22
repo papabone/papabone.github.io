@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router'
 import './footer.css'
 
 export default class Footer extends Component {
@@ -9,7 +10,8 @@ export default class Footer extends Component {
           <li className='ru'>ru</li>
           <li className='en active'>en</li>
         </ul>
-        <div className='more-info'>More information	&nbsp; &#8595;</div>
+        <Link to='/portfolio-des' className='more-info about-des'>More information	&nbsp; &#8595;</Link>
+        <Link to='/portfolio-dev' className='more-info about-dev'>More information	&nbsp; &#8595;</Link>
       </div>
     )
   }

@@ -5,7 +5,8 @@
 .enter .background,
 .enter .footer,
 .enter .header,
-.enter .main{
+.enter .main,
+.enter .zen-box .description{
   animation: enter-disappear 0.7s ease-in-out;
 }
 @keyframes leave-disappear{
@@ -15,7 +16,8 @@
 .leave .background,
 .leave .footer,
 .leave .header,
-.leave .main{
+.leave .main,
+.leave .zen-box .description{
   opacity: 0;
   animation: leave-disappear 0.7s ease-in-out;
 }
@@ -69,10 +71,9 @@
 .pic .cover{
   overflow: hidden;
 }
-
-
 @keyframes enter-desc{
   0% { opacity: 0;  }
+  80% { opacity: 0;  }
   100% { opacity: 1; }
 }
 .enter-desc.desc{
@@ -80,6 +81,7 @@
 }
 @keyframes leave-desc{
   0% { opacity: 1;  }
+  60% { opacity: 0;  }
   100% { opacity: 0; }
 }
 .leave-desc.desc{
@@ -123,39 +125,26 @@
   animation: leave-zen-box 0.7s ease-in-out;
 }
 
-
-@keyframes enter-zen-box-desc{
-  0% { opacity: 0;  }
-  50% { opacity: .2; }
-  100% { opacity: 1; }
-}
-.enter .zen-box .description{
-  animation: enter-zen-box-desc 0.7s ease-in-out;
-}
-@keyframes leave-zen-box-desc{
-  0% { opacity: 1;  }
-  50% { opacity: .8; }
-  100% { opacity: 0; }
-}
-.leave .zen-box .description{
-  animation: leave-zen-box-desc 0.7s ease-in-out;
-}
-
 .pic .cover{
   overflow: hidden;
 }
-  @keyframes enter-pic{
+.pic .jalousie{
+  animation: enter-pic 0.7s ease-in-out;
+}
+@keyframes enter-pic{
   0% { transform: translateX(-240%);  }
   100% { transform: translateX(0%); }
 }
-.pic.enter-pic .jalousie{
+.pic.enter-pic .jalousie,
+.enter .pic .jalousie{
   animation: enter-pic 0.7s ease-in-out;
 }
 @keyframes leave-pic{
   0% { transform: translateX(0);  }
   100% { transform: translateX(-240%); }
 }
-.pic.leave-pic .jalousie{
+.pic.leave-pic .jalousie,
+.leave .pic .jalousie{
   transform: translateX(-240%);
   animation: leave-pic 0.7s ease-in-out;
 }

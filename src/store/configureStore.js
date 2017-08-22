@@ -3,8 +3,7 @@ import rootReducer from '../reducers'
 import { createLogger } from 'redux-logger'
 import thunk from 'redux-thunk'
 import { redirect } from '../middlewares/redirect'
-import { routingDelay } from '../middlewares/routingDelay'
-import { focusOnLoad } from '../middlewares/focus'
+import { routingAnimation } from '../middlewares/routingAnimation'
 
 
 export default function configureStore(initialState) {
@@ -14,7 +13,7 @@ export default function configureStore(initialState) {
     rootReducer,
     initialState,
     composeEnhancers(
-      applyMiddleware(routingDelay,thunk,logger,redirect,focusOnLoad)
+      applyMiddleware(thunk,logger,redirect,routingAnimation )
     )
   )
 

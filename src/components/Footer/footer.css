@@ -19,14 +19,30 @@
   font-weight: 800;
 }
 .footer .more-info{
+  display: none;
   width: 12.5%;
   padding-bottom: 30px;
   text-align: center;
   font-weight: 700;
+  color:
 }
 .dev .footer .more-info{
   width: 25%;
   margin-left: 37.5%;
   padding-left: 60px;
   text-align: left;
+}
+a.more-info:hover,
+a.more-info:active{
+  color: #cfdc3c;
+}
+.des .footer .more-info.about-des{
+  display: block;
+}
+.dev .footer .more-info.about-dev{
+  display: block;
+}
+.port.dev .footer .more-info.about-dev,
+.port.des .footer .more-info.about-des{
+  display: none;
 }

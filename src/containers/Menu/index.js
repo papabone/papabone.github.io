@@ -19,9 +19,12 @@ class Menu extends Component {
       className={ 'menu ' + (this.props.menu.menuIsOpen ? 'isOpend' : '') }
       onClick={this.handleToggleMenu}
       onKeyDown={this.handleKeydown}
-      onBlur={this.handleBlur}
+      //onBlur={this.handleBlur} 
     >
-      <button></button>
+      <div
+        className='arrow-for-button'>
+        <button></button>
+      </div>
       <ul>
         <li><NavLink to='/portfolio-des'>Portfolio</NavLink></li>
         <li><NavLink to='/about-des'>About</NavLink></li>
@@ -36,8 +39,11 @@ class Menu extends Component {
   handleToggleMenu = (event) => {
     const { menu } = this.props,
           { openMenu, closeMenu } = this.props.menuActions
-    if (event.target.tagName != 'BUTTON') return;
-    menu.menuIsOpen ? closeMenu() : openMenu()
+    if ( event.target.tagName == 'BUTTON'
+    || event.target.classList.contains('arrow-for-button') ) {
+      menu.menuIsOpen ? closeMenu() : openMenu()
+    }
+
   }
 
   handleBlur = (event) => {
@@ -70,7 +76,6 @@ class Menu extends Component {
 
 function mapStateToProps (state) {
   return {
-    //who: state.who,
     menu: state.menu,
   }
 }

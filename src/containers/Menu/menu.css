@@ -9,16 +9,19 @@
 .des .menu{
   flex-direction: row-reverse;
 }
+.arrow-for-button{
+  cursor: pointer;
+  flex-shrink: 0;
+}
 .menu button{
   position: relative;
   background: none;
   outline: none;
   border: none;
   cursor: pointer;
-  flex-shrink: 0;
   width: 33px;
   height: 7px;
-  margin-top: 10px;
+  top: -3px;
 }
 .menu button::before,
 .menu button::after{

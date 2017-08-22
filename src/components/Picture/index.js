@@ -5,7 +5,6 @@ export default class Picture extends Component {
 
   componentDidMount(){
     this.changePicture()
-    this.enterAnimation()
   }
   componentDidUpdate(){
     this.leaveAnimation()

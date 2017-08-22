@@ -19,8 +19,8 @@
   width: 100%;
   height: 100%;
   background-image: url('./about-des-pic.jpg');
-  background-size: 400% 100%;
-  background-position: 0 0;
+  background-size: 400% auto;
+  background-position: 0 50%;
   background-repeat: no-repeat;
   background-attachment: scroll;
 }
@@ -33,6 +33,7 @@
 .pic .jalousie.item4{
   background-position: 99.3% 50%;
 }
+
 .dev .pic .jalousie{
   background-image: url('./about-dev-pic.jpg');
 }
@@ -48,7 +49,9 @@
 }
 .des.port .pic.kurortguru .jalousie{
   background-image: url('./kurortguru.jpg');
-  //background-position: 0% 0%;
+}
+.pic.kurortguru .jalousie{
+  background-position-y: 0%;
 }
 .des.port .pic.gem .jalousie{
   background-image: url('./gem.jpg');
