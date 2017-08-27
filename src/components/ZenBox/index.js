@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import './zenbox.css'
 
 export default class ZenBox extends Component {
-
-
   render() {
+    const UI = this.props.UI
     return (
       <div   className='zen-box'>
         <div className='zen the-z'><span>z</span></div>
@@ -14,11 +14,14 @@ export default class ZenBox extends Component {
         <div className='box the-o'><span>o</span></div>
         <div className='box the-x'><span>x</span></div>
         <h2 className='description'>
-          Front End
-          <br/>Development
-          <hr width='30%'/>Branding
+          {UI.frontEnd}
+          <br/>{UI.development}
+          <hr width='30%'/>{UI.branding}
         </h2>
       </div>
     )
   }
+}
+ZenBox.propTypes = {
+  UI : PropTypes.object.isRequired
 }

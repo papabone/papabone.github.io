@@ -18,10 +18,12 @@ class PortfolioDes extends Component {
   }
 
   render() {
+    const lang = this.props.lang
     const { tabNumDes } = this.props.port
     const port = this.props.port.portfolio.des
-    const terms = port.terms
-    const filtredProjects = port.projects.filter( proj => proj.type == this.props.port.projectFilter)
+    const UI = port.UI[lang]
+    const projects = port.projects[lang]
+    const filtredProjects = projects.filter( proj => proj.type == this.props.port.projectFilter)
     const text = filtredProjects[tabNumDes]
 
     return (
@@ -29,17 +31,17 @@ class PortfolioDes extends Component {
         className='text-block'
         onClick={this.handleClick}
         >
-        <h2 className='title'><span>Portfolio</span></h2>
+        <h2 className='title'><span>{UI.title}</span></h2>
         <div className='desc-wrap'>
           <div
             className='project-filter'
             data-name='web'>
-            Web design
+            {UI.web}
           </div>
           <div
             className='project-filter'
             data-name='branding'>
-            Branding
+            {UI.branding}
           </div>
         </div>
         <div className='desc-wrap'>
@@ -56,7 +58,7 @@ class PortfolioDes extends Component {
           }
         </div>
         <div className='desc-wrap'>
-          <div className='term'>{terms.about}</div>
+          <div className='term'>{UI.about}</div>
           <div className='desc'>{text.desc}</div>
         </div>
       </div>
@@ -121,6 +123,7 @@ class PortfolioDes extends Component {
 function mapStateToProps (state) {
   return {
     port: state.port,
+    lang: state.lang.language,
   }
 }
 

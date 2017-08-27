@@ -1,35 +1,59 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import mail from './mail.png'
-//import { bindActionCreators } from 'redux'
-//import { connect } from 'react-redux'
 
-export default class AboutDes extends Component {
+class AboutDes extends Component {
   render() {
+
+    const lang = this.props.lang
+    const UI = this.props.about.des.UI[lang]
+    const desc = this.props.about.des.description[lang]
+
     return (
       <div className='text-block'>
-        <h2 className='title'><span>About</span></h2>
+        <h2 className='title'><span>{UI.title}</span></h2>
         <div className='desc-wrap'>
-          <div className='term'>About:</div>
-          <div className='desc'>I'm freelance designer with 4+ years experienced in Web UI/UX and graphic Design Area. I have build more 200+  user interface and worked on a few other startups. </div>
+          <div className='term'>{UI.about}</div>
+          <div className='desc'>{desc.about}</div>
         </div>
         <div className='desc-wrap'>
-          <div className='term'>Skills:</div>
-          <div className='desc'>Adobe Photoshop<br/>Adobe Illustrator</div>
-        </div>
-        <div className='desc-wrap'>
-          <div className='term'>Education:</div>
-          <div className='desc'>European Humanities University. Media and visual design. Belarusian Trade and Economics University. Marketing.</div>
-        </div>
-        <div className='desc-wrap'>
-          <div className='term'>Contacts:</div>
+          <div className='term'>{UI.skills}</div>
           <div className='desc'>
-            <a href='mailto:PonomarenkoHelen3@gmai.com'>
+          {
+            desc.skills.map((item, index) =>
+                <span key={index}>{item}</span>
+            )
+          }
+          </div>
+        </div>
+        <div className='desc-wrap'>
+          <div className='term'>{UI.education}</div>
+          <div className='desc'>
+          {
+            desc.education.map((item, index) =>
+                <span key={index}>{item}</span>
+            )
+          }
+          </div>
+        </div>
+        <div className='desc-wrap'>
+          <div className='term'>{UI.contacts}</div>
+          <div className='desc'>
+            <a href={'mailto\:' + desc.contacts}>
               <img src={mail} alt='mail'/>
+              {desc.contacts}
             </a>
-            PonomarenkoHelen3@gmai.com
           </div>
         </div>
       </div>
     )
   }
 }
+
+function mapStateToProps (state) {
+  return {
+    about: state.about,
+    lang: state.lang.language
+  }
+}
+export default connect(mapStateToProps)(AboutDes)

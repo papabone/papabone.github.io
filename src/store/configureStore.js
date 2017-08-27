@@ -4,6 +4,7 @@ import { createLogger } from 'redux-logger'
 import thunk from 'redux-thunk'
 import { redirect } from '../middlewares/redirect'
 import { routingAnimation } from '../middlewares/routingAnimation'
+import { langAnimation } from '../middlewares/langAnimation'
 
 
 export default function configureStore(initialState) {
@@ -13,7 +14,7 @@ export default function configureStore(initialState) {
     rootReducer,
     initialState,
     composeEnhancers(
-      applyMiddleware(thunk,logger,redirect,routingAnimation )
+      applyMiddleware(thunk,logger,redirect,routingAnimation,langAnimation )
     )
   )
 

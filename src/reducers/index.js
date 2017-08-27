@@ -1,13 +1,19 @@
 import { combineReducers } from 'redux'
 import { routerReducer } from 'react-router-redux'
 
-import who from './who'
+import lang from './lang'
 import menu from './menu'
+import shell from './shell'
 import port from './port'
+import about from './about'
+import main from './main'
 
 export default combineReducers({
   routing: routerReducer,
-  who,
+  lang,
   menu,
-  port
+  shell,
+  port,
+  about,
+  main
 })

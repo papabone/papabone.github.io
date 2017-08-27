@@ -10,20 +10,22 @@ class PortfolioDev extends Component {
   }
 
   render() {
+    const lang = this.props.lang
     const { tabNumDev } = this.props.port
     const port = this.props.port.portfolio.dev
-    const terms = port.terms
-    const text = port.projects[tabNumDev]
+    const UI = port.UI[lang]
+    const projects = port.projects[lang]
+    const text = projects[tabNumDev]
 
     return (
       <div
         className='text-block'
         onClick={this.handleClick}
         >
-        <h2 className='title'><span>Portfolio</span></h2>
+        <h2 className='title'><span>{UI.title}</span></h2>
         <div className='desc-wrap'>
           {
-            port.projects.map((item, index) =>
+            projects.map((item, index) =>
               <div
                 key={index}
                 className='project-name'
@@ -40,11 +42,11 @@ class PortfolioDev extends Component {
           </div>
         </div>
         <div className='desc-wrap'>
-          <div className='term'>{terms.customer}</div>
+          <div className='term'>{UI.customer}</div>
           <div className='desc'>{text.customer}</div>
         </div>
         <div className='desc-wrap skill'>
-          <div className='term'>{terms.technologies}</div>
+          <div className='term'>{UI.technologies}</div>
           <div className='desc'>
           {
             text.technologies.map((item, index) =>
@@ -86,6 +88,7 @@ class PortfolioDev extends Component {
 function mapStateToProps (state) {
   return {
     port: state.port,
+    lang: state.lang.language,
   }
 }
 

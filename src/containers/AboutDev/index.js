@@ -1,34 +1,44 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import mail from './mail.png'
 import git from './git.png'
 //import { bindActionCreators } from 'redux'
 //import { connect } from 'react-redux'
 
-export default class AboutDev extends Component {
+class AboutDev extends Component {
   render() {
+
+    const lang = this.props.lang
+    const UI = this.props.about.dev.UI[lang]
+    const desc = this.props.about.dev.description[lang]
+
     return (
       <div className='text-block'>
-        <h2 className='title'><span>About</span></h2>
+        <h2 className='title'><span>{UI.title}</span></h2>
         <div className='desc-wrap'>
-          <div className='term'>About:</div>
-          <div className='desc'>I'm freelance designer with 4+ years experienced in Web UI/UX and graphic Design Area. I have build more 200+  user interface and worked on a few other startups. </div>
+          <div className='term'>{UI.about}</div>
+          <div className='desc'>{desc.about}</div>
         </div>
         <div className='desc-wrap skill'>
-          <div className='term'>Skills:</div>
+          <div className='term'>{UI.skills}</div>
           <div className='desc'>
-            <span>Adobe</span><span>Photoshop</span><span>Adobe</span>
-            <span>Illustrator</span><span>Photoshop</span><span>Adobe</span>
-            <span>Photoshop</span><span>Adobe</span><span>Photoshop</span>
+          {
+            desc.skills.map((item, index) =>
+                <span key={index}>{item}</span>
+            )
+          }
           </div>
         </div>
         <div className='desc-wrap'>
-          <div className='term'>Contacts:</div>
+          <div className='term'>{UI.contacts}</div>
           <div className='desc'>
-            <a href='mailto:PonomarenkoHelen3@gmai.com'>
-              <img src={mail} alt='mail'/>PonomarenkoHelen3@gmai.com
+            <a href={'mailto\:'+desc.contacts.mail}>
+              <img src={mail} alt='mail'/>
+              {desc.contacts.mail}
             </a>
-            <a href='mailto:PonomarenkoHelen3@gmai.com'>
-              <img src={git} alt='gitHub'/>PonomarenkoHelen3@gmai.com
+            <a href={desc.contacts.git}>
+              <img src={git} alt='gitHub'/>
+              {desc.contacts.git}
             </a>
           </div>
         </div>
@@ -36,3 +46,11 @@ export default class AboutDev extends Component {
     )
   }
 }
+
+function mapStateToProps (state) {
+  return {
+    about: state.about,
+    lang: state.lang.language
+  }
+}
+export default connect(mapStateToProps)(AboutDev)

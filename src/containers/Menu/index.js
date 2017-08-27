@@ -3,7 +3,6 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import NavLink from '../../components/NavLink'
 import './menu.css'
-import * as appActions from '../../actions/appActions'
 import * as menuActions from '../../actions/menuActions'
 
 import {
@@ -19,7 +18,7 @@ class Menu extends Component {
       className={ 'menu ' + (this.props.menu.menuIsOpen ? 'isOpend' : '') }
       onClick={this.handleToggleMenu}
       onKeyDown={this.handleKeydown}
-      //onBlur={this.handleBlur} 
+      //onBlur={this.handleBlur}
     >
       <div
         className='arrow-for-button'>
@@ -82,7 +81,6 @@ function mapStateToProps (state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    appActions: bindActionCreators(appActions, dispatch),
     menuActions: bindActionCreators(menuActions, dispatch),
   }
 }

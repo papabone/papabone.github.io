@@ -4,6 +4,9 @@
 .list li{
   padding-bottom: 5px;
 }
+.list a{
+  white-space: nowrap;
+}
 .list a:hover,
 .list a:active{
   font-weight: 800;

@@ -5,30 +5,33 @@ import Menu from '../../containers/Menu'
 import './header.css'
 
 export default class Header extends Component {
+
   render(){
+
+    const UI = this.props.UI
 
     let Header = null
     if ( this.props.isDes ){
       Header = (
         <div>
-          <DesName />
+          <DesName UI={UI.des}/>
           <Menu />
-          <div className='keyword'><span>Web development. Graphic design.</span></div>
+          <div className='keyword'><span>{UI.des.keyword}</span></div>
         </div>
       )
     } else if ( this.props.isDev ){
       Header = (
         <div>
-          <div className='keyword'><span>Web development.</span></div>
+          <div className='keyword'><span>{UI.dev.keyword}</span></div>
           <Menu />
-          <DevName />
+          <DevName UI={UI.dev}/>
         </div>
       )
     } else {
       Header = (
         <div>
-          <DesName />
-          <DevName />
+          <DesName UI={UI.des}/>
+          <DevName UI={UI.dev}/>
         </div>
       )
     }
@@ -44,5 +47,6 @@ export default class Header extends Component {
 
 Header.propTypes = {
   isDes : PropTypes.bool.isRequired,
-  isDev : PropTypes.bool.isRequired
+  isDev : PropTypes.bool.isRequired,
+  UI : PropTypes.object.isRequired
 }
