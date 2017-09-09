@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import * as portActions from '../../actions/portActions'
+import { Link } from 'react-router'
 
 class PortfolioDes extends Component {
 
@@ -25,6 +26,21 @@ class PortfolioDes extends Component {
     const projects = port.projects[lang]
     const filtredProjects = projects.filter( proj => proj.type == this.props.port.projectFilter)
     const text = filtredProjects[tabNumDes]
+
+    const moreInfo = (
+      text.infoTipe == 'scrin' ?
+      <Link
+        to={text.linkURL}
+        className='more-info'>
+        { UI.moreInfo[0] }	&nbsp; &#8594;
+      </Link>
+      :
+      <a
+        href={text.linkURL}
+        className='more-info'>
+        { UI.moreInfo[1] }	&nbsp; &#8594;
+      </a>
+    )
 
     return (
       <div
@@ -60,6 +76,9 @@ class PortfolioDes extends Component {
         <div className='desc-wrap'>
           <div className='term'>{UI.about}</div>
           <div className='desc'>{text.desc}</div>
+        </div>
+        <div className='desc-wrap'>
+          {moreInfo}
         </div>
       </div>
 

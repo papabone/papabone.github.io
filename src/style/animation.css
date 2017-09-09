@@ -6,7 +6,9 @@
 .enter .footer,
 .enter .header,
 .enter .main,
-.enter .zen-box .description{
+.enter .zen-box .description,
+.enter .sibtitle,
+.enter .e404{
   animation: enter-disappear 0.7s ease-in-out;
 }
 @keyframes leave-disappear{
@@ -53,7 +55,8 @@
 .enter .term,
 .enter .desc,
 .enter .project-name,
-.enter .project-filter{
+.enter .project-filter,
+.enter .text-block .more-info{
   animation: enter-text 0.7s ease-in-out;
 }
 @keyframes leave-text{
@@ -63,7 +66,8 @@
 .leave .term,
 .leave .desc,
 .leave .project-name,
-.leave .project-filter{
+.leave .project-filter,
+.leave .text-block .more-info{
   transform: translateY(240px);
   animation: leave-text 0.7s ease-in-out;
 }
@@ -89,38 +93,24 @@
   animation: leave-desc 0.7s ease-in-out;
 }
 
-@keyframes des-open-menu{
-  0% { transform: translateX(120%); opacity: 0; }
-  60% { opacity: 0;  }
-  100% { opacity: 1; transform: translateX(0%);}
-}
-.des .menu.isOpend ul{
-  animation: des-open-menu 0.5s ease-in-out;
-}
-@keyframes dev-open-menu{
-  0% { transform: translateX(-120%); opacity: 0; }
-  60% { opacity: 0;  }
-  100% { opacity: 1; transform: translateX(0%);}
-}
-.dev .menu.isOpend ul{
-  animation: dev-open-menu 0.5s ease-in-out;
-}
-
-.zen-box div{
+.zen-box div,
+.e404 .item{
   overflow: hidden;
 }
 @keyframes enter-zen-box{
   0% { transform: translateX(-240%);  }
   100% { transform: translateX(0%); }
 }
-.enter .zen-box span{
+.enter .zen-box span,
+.enter .e404 span{
   animation: enter-zen-box 0.7s ease-in-out;
 }
 @keyframes leave-zen-box{
   0% { transform: translateX(0);  }
   100% { transform: translateX(-240%); }
 }
-.leave .zen-box span{
+.leave .zen-box span,
+.leave .e404 span{
   transform: translateX(-240%);
   animation: leave-zen-box 0.7s ease-in-out;
 }
@@ -148,3 +138,96 @@
   transform: translateX(-240%);
   animation: leave-pic 0.7s ease-in-out;
 }
+
+/*menu*/
+
+@keyframes open-menu{
+  0% { transform: translateY(820%); opacity: 0; }
+  20% { opacity: 0; }
+  100% { opacity: 1; transform: translateY(0%);}
+}
+.enter.menu ul li:nth-child(1){
+  animation: open-menu 0.1s ease-in-out;
+}
+.enter.menu ul li:nth-child(2){
+  animation: open-menu 0.2s ease-in-out;
+}
+.enter.menu ul li:nth-child(3){
+  animation: open-menu 0.35s ease-in-out;
+}
+.enter.menu ul li:nth-child(4){
+  animation: open-menu 0.5s ease-in-out;
+}
+.enter.menu ul li:nth-child(5){
+  animation: open-menu 0.7s ease-in-out;
+}
+@keyframes close-menu{
+  0% { opacity: 1; transform: translateY(0%);}
+  80% { opacity: 0; }
+  100% { transform: translateY(820%); opacity: 0; }
+}
+.leave.menu ul li:nth-child(1){
+  animation: close-menu 0.3s ease-in-out 0.4s;
+}
+.leave.menu ul li:nth-child(2){
+  animation: close-menu 0.4s ease-in-out 0.3s;
+}
+.leave.menu ul li:nth-child(3){
+  animation: close-menu 0.5s ease-in-out 0.2s;
+}
+.leave.menu ul li:nth-child(4){
+  animation: close-menu 0.6s ease-in-out 0.1s;
+}
+.leave.menu ul li:nth-child(5){
+  animation: close-menu 0.7s ease-in-out 0.0s;
+}
+@keyframes open-menu-desc{
+  0% { opacity: 0;}
+  100% { opacity: 1; }
+}
+.enter.menu ul li a .desc{
+  animation: open-menu-desc 0.05s ease-in-out;
+}
+.leave.menu ul li a .desc{
+  display: none;
+}
+
+@keyframes menu-hover{
+  0% { transform: scaleY(0.1);}
+  100% { transform: scaleY(1); }
+}
+.menu a.active:before,
+.menu a:active:before,
+.menu a:hover:before{
+  transform-origin: top;
+  animation: menu-hover 0.2s ease-in-out;
+}
+/*
+@keyframes leave-menu-btn-close1{
+  0% {
+    transform: rotate(0);
+    left: 0;
+  }
+  80% {
+    transform: rotate(45deg);
+    left: -5px;
+  }
+}
+.leave .menu-btn.isClosed  button::before{
+  animation: leave-menu-btn-close1 0.5s ease-in-out 0.2s ;
+}
+@keyframes leave-menu-btn-close2{
+  0% {
+    transform: rotate(0);
+    left: 0;
+    top: 0;
+  }
+  80% {
+    transform: rotate(-45deg);
+    left: -5px;
+    top: -5px;
+  }
+}
+.leave .menu-btn.isClosed  button::after{
+  animation:  leave-menu-btn-close2 0.5s ease-in-out  0.2s;
+}*/

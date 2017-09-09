@@ -12,6 +12,7 @@ const initialState = {
           name: 'Konstantin Filon',
           keyword : 'Web development.'
         },
+        menu : 'Menu'
       },
       ru : {
         des: {
@@ -24,6 +25,7 @@ const initialState = {
           name: 'Константин Филон',
           keyword : 'Веб разработка.'
         },
+        menu : 'Меню'
       }
     },
     middle: {

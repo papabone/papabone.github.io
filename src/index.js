@@ -9,11 +9,12 @@ import configureStore from './store/configureStore'
 import { Router, Route, hashHistory} from 'react-router'
 import { syncHistoryWithStore } from 'react-router-redux'
 import Shell from './containers/Shell'
-import NotFound from './components/NotFound'
+import E404 from './containers/E404'
 import AboutDes from './containers/AboutDes'
 import AboutDev from './containers/AboutDev'
 import PortfolioDes from './containers/PortfolioDes'
 import PortfolioDev from './containers/PortfolioDev'
+import Menu from './containers/Menu'
 
 const store = configureStore()
 const history = syncHistoryWithStore(hashHistory, store)
@@ -27,8 +28,9 @@ render(
           <Route path='/about-dev' component={AboutDev} />
           <Route path='/portfolio-des' component={PortfolioDes} />
           <Route path='/portfolio-dev' component={PortfolioDev} />
+          <Route path='/menu' component={Menu} />
+          <Route path='*' component={E404} />
         </Route>
-        <Route path='*' component={NotFound} />
       </Router>
     </div>
   </Provider>,

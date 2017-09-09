@@ -78,31 +78,41 @@ const initialState = {
             name: 'kurortguru',
             title: 'Kurort Guru',
             desc: '0I’m a freelance Front End Developer based in London.I specialise in creating interactive experiences and user-friendly interfaces whilst maintaining semantic, clean markup and SEO friendly code.',
-            type: 'web'
+            type: 'web',
+            infoTipe: 'link',
+            linkURL: 'http://google.com'
           },
           {
             name: 'gem',
             title: 'The Gem',
             desc: 'I’m a freelance ning semantic, clean markup and SEO friendly code.',
-            type: 'web'
+            type: 'web',
+            infoTipe: 'scrin',
+            linkURL: '/'
           },
           {
             name: 'goodlook',
             title: 'Goodlook',
             desc: 'SPA - bla-bla-bla',
-            type: 'web'
+            type: 'web',
+            infoTipe: 'link',
+            linkURL: 'http://google.com'
           },
           {
             name: 'goodlook1',
             title: 'Goodlook',
             desc: 'SPA - bla-bla-bla',
-            type: 'branding'
+            type: 'branding',
+            infoTipe: 'scrin',
+            linkURL: '/'
           },
           {
             name: 'goodlook2',
             title: 'Goodlook',
             desc: '111 - bla-bla-bla',
-            type: 'branding'
+            type: 'branding',
+            infoTipe: 'link',
+            linkURL: 'http://google.com'
           },
         ],
         ru : [
@@ -110,31 +120,41 @@ const initialState = {
             name: 'kurortguru',
             title: 'Kurort Guru',
             desc: 'Бла бла',
-            type: 'web'
+            type: 'web',
+            infoTipe: 'link',
+            linkURL: 'http://google.com'
           },
           {
             name: 'gem',
             title: 'The Gem',
             desc: 'По русски I’m a freelance ning semantic, clean markup and SEO friendly code.',
-            type: 'web'
+            type: 'web',
+            infoTipe: 'scrin',
+            linkURL: '/'
           },
           {
             name: 'goodlook',
             title: 'Goodlook',
             desc: 'SPA - bla-bla-bla',
-            type: 'web'
+            type: 'web',
+            infoTipe: 'link',
+            linkURL: 'http://google.com'
           },
           {
             name: 'goodlook1',
             title: 'Goodlook',
             desc: 'SPA - bla-bla-bla',
-            type: 'branding'
+            type: 'branding',
+            infoTipe: 'scrin',
+            linkURL: '/'
           },
           {
             name: 'goodlook2',
             title: 'Goodlook',
             desc: '111 - bla-bla-bla',
-            type: 'branding'
+            type: 'branding',
+            infoTipe: 'link',
+            linkURL: 'http://google.com'
           },
         ],
       },
@@ -144,12 +164,14 @@ const initialState = {
           web: 'WEB DESIGN',
           branding: 'BRANDING',
           about : 'About:',
+          moreInfo : ['View screenshot', 'Visit site' ]
         },
         ru : {
           title: 'Портфолио',
           web: 'ВЭБ ДТЗАЙН',
           branding: 'БРЭНДИНГ',
           about : 'Описание:',
+          moreInfo : ['Смотреть макет', 'Посетить сайт' ]
         }
       }
     },

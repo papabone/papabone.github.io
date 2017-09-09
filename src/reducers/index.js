@@ -7,6 +7,7 @@ import shell from './shell'
 import port from './port'
 import about from './about'
 import main from './main'
+import e404 from './e404'
 
 export default combineReducers({
   routing: routerReducer,
@@ -15,5 +16,6 @@ export default combineReducers({
   shell,
   port,
   about,
-  main
+  main,
+  e404
 })

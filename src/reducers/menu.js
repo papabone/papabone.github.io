@@ -4,7 +4,53 @@ import {
 } from '../constants/menu'
 
 const initialState = {
-  menuIsOpen: false
+  menuIsOpen: false,
+  UI : {
+    en : {
+      main: {
+        title: 'Home',
+        desc: 'Main page'
+      },
+      desAbout: {
+        title: 'About designer ',
+        desc: 'Elena Ponomarenko'
+      },
+      desPort: {
+        title: 'Designer\'s portfolio ',
+        desc: 'Elena Ponomarenko'
+      },
+      devAbout: {
+        title: 'About developer ',
+        desc: 'Konstantin Filon'
+      },
+      devPort: {
+        title: 'Developer’s portfolio ',
+        desc: 'Konstantin Filon'
+      },
+    },
+    ru : {
+      main: {
+        title: 'Главная',
+        desc: 'Главная страница'
+      },
+      desAbout: {
+        title: 'О дизайнере',
+        desc: 'Елена Пономареноко'
+      },
+      desPort: {
+        title: 'Портфолио дизайнера ',
+        desc: 'Елена Пономареноко'
+      },
+      devAbout: {
+        title: 'О разраьотчике ',
+        desc: 'Константин Филон'
+      },
+      devPort: {
+        title: 'портфолио разработчика ',
+        desc: 'Константин Филон'
+      },
+    }
+  }
 }
 
 export default function toggleMenu(state = initialState, action) {

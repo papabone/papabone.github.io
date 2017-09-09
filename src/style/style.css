@@ -66,8 +66,19 @@ a:active{
   font-size: .87rem;
   line-height: 1.45;
 }
+.more-info{
+  font-weight: 700;
+  transition: .3s ease-out;
+}
+a.more-info:hover,
+a.more-info:active{
+  color: #cfdc3c;
+}
 .active{
   color: #cfdc3c;
+}
+.hidden{
+  display: none;
 }
 
 /*text-block overlay*/

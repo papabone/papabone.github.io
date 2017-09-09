@@ -1,86 +1,76 @@
-.menu{
+.menu .content ul{
   display: flex;
-  overflow: hidden;
-  width: 25%;
-  padding-top: 30px;
-  padding-left: 70px;
-  padding-right: 50px;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
 }
-.des .menu{
-  flex-direction: row-reverse;
+.menu .content li{
+  list-style-type: none;
+  border-top: 1px solid rgba(255,255,255,.15);
+  padding-top: 10px;
+  padding-bottom: 8px;
+  padding-left: 45px;
 }
-.arrow-for-button{
-  cursor: pointer;
-  flex-shrink: 0;
+.menu .content  li:last-child{
+  border-bottom: 1px solid rgba(255,255,255,.15);
 }
-.menu button{
+.menu a{
+  display: block;
   position: relative;
-  background: none;
-  outline: none;
-  border: none;
+  padding-bottom: 25px;
+  text-decoration: none;
+  line-height: 1;
+  font-size: 1.33rem;
+  color: #fff;
   cursor: pointer;
-  width: 33px;
-  height: 7px;
-  top: -3px;
 }
-.menu button::before,
-.menu button::after{
+.menu a:after{
+  content: '01';
+  display: inline-block;
+  position: absolute;
+  right: 53px;
+  top: 10px;
+  opacity: .6;
+}
+.menu  li:nth-child(2) a::after{
+  content: '02'
+}
+.menu  li:nth-child(3) a::after{
+  content: '03'
+}
+.menu  li:nth-child(4) a::after{
+  content: '04'
+}
+.menu  li:nth-child(5) a::after{
+  content: '05'
+}
+.menu a.active,
+.menu a:active,
+.menu a:hover{
+  color: #cfdc3c;
+}
+.menu a.active:before,
+.menu a:active:before,
+.menu a:hover:before{
   content: '';
   display: inline-block;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  left: -15px;
+  top: 3px;
+  width: 6px; /*для max1340*/
+  height: 28px;
+  background-color: #cfdc3c;
 }
-.menu button::before{
-  border-top: 1px solid #fff;
-}
-.menu button::after{
-  border-bottom: 1px solid #fff;
-}
-.menu.isOpend button::before{
-  transform: rotate(45deg);
-  left: -5px;
-  transition: ease-in-out 0.3s;
-}
-.menu.isOpend button::after{
-  transform: rotate(-45deg);
-  left: -5px;
-  top: -5px;
-  transition: ease-in-out 0.3s;
-}
-.menu ul{
-  display: none;
-  opacity: 0;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  justify-content: space-around;
-}
-.menu.isOpend ul{
-  display: flex;
-  transform: translateX(0%);
-  opacity: 1;
-}
-
-.menu li{
-  list-style-type: none;
-}
-.menu a{
-  text-decoration: none;
-  font-size: 0.93rem;
+.leave.menu ul li a{
   color: #fff;
 }
-.menu a.active{
-  color: #cfdc3c;
-}
-
-.des .menu li:nth-child(4),
-.des .menu li:nth-child(5){
-  display: none;
-}
-.dev .menu li:nth-child(1),
-.dev .menu li:nth-child(2){
-  display: none;
+.menu .desc{
+  position: absolute;
+  bottom: 0;
+  font-size: .8rem;
+  padding: 0;
+  margin: 0;
+  opacity: .6;
 }

@@ -1,6 +1,6 @@
 import {
   OPEN_MENU,
-  CLOSE_MENU
+  CLOSE_MENU 
 } from '../constants/menu'
 
 export function openMenu() {

@@ -10,6 +10,10 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
 }
+.menu .background{
+  background-image: url('./bg-menu.png'),
+  linear-gradient(to right, #889aa0 50%, #5e5972 50%);
+}
 .des .background{
   background-image: url('./bg-about-des.png');
   background-color: #889aa0;
@@ -25,4 +29,19 @@
 }
 .dev.port .background{
   background-image: url('./bg-port-dev.png');
+}
+.isE404 .background,
+.dev.port.isE404 .background,
+.des.port.isE404 .background,
+.des.isE404  .background{
+  background-image: url('./bg404.png'),
+  -webkit-linear-gradient(left, #889aa0 50%, #5e5972 50%);
+  background: url('./bg404.png'),
+  -o-linear-gradient(left, #889aa0 50%, #5e5972 50%);
+  background: url('./bg404.png'),
+  linear-gradient(to right, #889aa0 50%, #5e5972 50%);
+  background-size: auto 100%;
+  background-position: 50% center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
 }
