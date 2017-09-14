@@ -2,12 +2,15 @@ import {
   TAB_NUM_DEV,
   TAB_NUM_DES,
   FILTER_PROJECT,
+  OPEN_PROJECT,
+  CLOSE_PROJECT
 } from '../constants/port'
 
 const initialState = {
   tabNumDev : 0 ,
   projectFilter : 'web',
   tabNumDes : 0 ,
+  projectIsOpen: false,
   portfolio : {
     dev : {
       projects : {
@@ -78,41 +81,56 @@ const initialState = {
             name: 'kurortguru',
             title: 'Kurort Guru',
             desc: '0I’m a freelance Front End Developer based in London.I specialise in creating interactive experiences and user-friendly interfaces whilst maintaining semantic, clean markup and SEO friendly code.',
+            shortDesc: 'Web application for search resorts',
             type: 'web',
-            infoTipe: 'link',
-            linkURL: 'http://google.com'
+            infoTipe: 'scrin',
+            linkURL: '/',
+            bgColor: '#dbdbdb',
+            quantityOfImg: 20
           },
           {
             name: 'gem',
             title: 'The Gem',
             desc: 'I’m a freelance ning semantic, clean markup and SEO friendly code.',
+            shortDesc: 'Web application for...',
             type: 'web',
             infoTipe: 'scrin',
-            linkURL: '/'
+            linkURL: '/',
+            bgColor: '#000',
+            quantityOfImg: 0
           },
           {
             name: 'goodlook',
             title: 'Goodlook',
             desc: 'SPA - bla-bla-bla',
+            shortDesc: 'Web application for...',
             type: 'web',
             infoTipe: 'link',
-            linkURL: 'http://google.com'
+            linkURL: 'http://google.com',
+            bgColor: '#dbdbdb',
+            quantityOfImg: 0
           },
           {
             name: 'goodlook1',
             title: 'Goodlook',
             desc: 'SPA - bla-bla-bla',
+            shortDesc: 'Web application for...',
             type: 'branding',
             infoTipe: 'scrin',
-            linkURL: '/'
+            linkURL: '/',
+            bgColor: '#dbdbdb',
+            quantityOfImg: 0
           },
           {
             name: 'goodlook2',
             title: 'Goodlook',
             desc: '111 - bla-bla-bla',
+            shortDesc: 'Web application for...',
             type: 'branding',
             infoTipe: 'link',
-            linkURL: 'http://google.com'
+            linkURL: 'http://google.com',
+            bgColor: '#dbdbdb',
+            quantityOfImg: 0
           },
         ],
         ru : [
@@ -120,41 +138,56 @@ const initialState = {
             name: 'kurortguru',
             title: 'Kurort Guru',
             desc: 'Бла бла',
+            shortDesc: 'Web application for...',
             type: 'web',
-            infoTipe: 'link',
-            linkURL: 'http://google.com'
+            infoTipe: 'scrin',
+            linkURL: '/',
+            bgColor: '#dbdbdb',
+            quantityOfImg: 20
           },
           {
             name: 'gem',
             title: 'The Gem',
             desc: 'По русски I’m a freelance ning semantic, clean markup and SEO friendly code.',
+            shortDesc: 'Web application for...',
             type: 'web',
             infoTipe: 'scrin',
-            linkURL: '/'
+            linkURL: '/',
+            bgColor: '#dbdbdb',
+            quantityOfImg: 0
           },
           {
             name: 'goodlook',
             title: 'Goodlook',
             desc: 'SPA - bla-bla-bla',
+            shortDesc: 'Web application for...',
             type: 'web',
             infoTipe: 'link',
-            linkURL: 'http://google.com'
+            linkURL: 'http://google.com',
+            bgColor: '#dbdbdb',
+            quantityOfImg: 0
           },
           {
             name: 'goodlook1',
             title: 'Goodlook',
             desc: 'SPA - bla-bla-bla',
+            shortDesc: 'Web application for...',
             type: 'branding',
             infoTipe: 'scrin',
-            linkURL: '/'
+            linkURL: '/',
+            bgColor: '#dbdbdb',
+            quantityOfImg: 0
           },
           {
             name: 'goodlook2',
             title: 'Goodlook',
             desc: '111 - bla-bla-bla',
+            shortDesc: 'Web application for...',
             type: 'branding',
             infoTipe: 'link',
-            linkURL: 'http://google.com'
+            linkURL: 'http://google.com',
+            bgColor: '#dbdbdb',
+            quantityOfImg: 0
           },
         ],
       },
@@ -164,14 +197,18 @@ const initialState = {
           web: 'WEB DESIGN',
           branding: 'BRANDING',
           about : 'About:',
-          moreInfo : ['View screenshot', 'Visit site' ]
+          moreInfo : ['View screenshot', 'Visit site' ],
+          prev: 'Prev',
+          next: 'Next'
         },
         ru : {
           title: 'Портфолио',
           web: 'ВЭБ ДТЗАЙН',
           branding: 'БРЭНДИНГ',
           about : 'Описание:',
-          moreInfo : ['Смотреть макет', 'Посетить сайт' ]
+          moreInfo : ['Смотреть макет', 'Посетить сайт' ],
+          prev: 'Пред',
+          next: 'След'
         }
       }
     },
@@ -190,6 +227,12 @@ export default function portfolio(state = initialState, action) {
 
     case FILTER_PROJECT:
       return { ...state, projectFilter: action.payload, tabNumDes: 0 }
+
+    case OPEN_PROJECT:
+      return { ...state, projectIsOpen: true }
+
+    case CLOSE_PROJECT:
+      return { ...state, projectIsOpen: false }
 
     default:
       return state;

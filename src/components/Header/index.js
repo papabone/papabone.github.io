@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { DesName, DevName  } from './Names'
 import MenuBtn from '../../containers/MenuBtn'
+import ProjectBtn from '../../components/ProjectBtn'
 import './header.css'
 
 export default class Header extends Component {
@@ -12,7 +13,14 @@ export default class Header extends Component {
     const isHidden = this.props.isHidden
 
     let Header = null
-    if ( this.props.isDes ){
+    if ( this.props.projectIsOpen ){
+      Header = (
+        <div>
+          <DesName UI={UI.des}/>
+          <ProjectBtn />
+        </div>
+      )
+    } else if ( this.props.isDes ){
       Header = (
         <div>
           <DesName UI={UI.des}/>
@@ -58,4 +66,6 @@ Header.propTypes = {
   isDev : PropTypes.bool.isRequired,
   UI : PropTypes.object.isRequired,
   isHidden: PropTypes.string.isRequired,
+  menuIsOpen: PropTypes.bool.isRequired,
+  projectIsOpen: PropTypes.bool.isRequired,
 }

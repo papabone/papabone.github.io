@@ -30,7 +30,7 @@ class PortfolioDes extends Component {
     const moreInfo = (
       text.infoTipe == 'scrin' ?
       <Link
-        to={text.linkURL}
+        to={'\/portfolio-des\/project-' + text.name}
         className='more-info'>
         { UI.moreInfo[0] }	&nbsp; &#8594;
       </Link>

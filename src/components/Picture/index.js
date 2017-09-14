@@ -34,11 +34,13 @@ export default class Picture extends Component {
   }
   leaveAnimation(){
     const picture = document.body.querySelector('.pic')
+    if(!picture) return
     picture.classList.remove('enter-pic')
     picture.classList.add('leave-pic')
   }
   enterAnimation(){
     const picture = document.body.querySelector('.pic')
+    if(!picture) return
     picture.classList.remove('leave-pic')
     picture.classList.add('enter-pic')
   }

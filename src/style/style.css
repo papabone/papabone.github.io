@@ -35,10 +35,12 @@ a:hover,
 a:active{
   text-decoration: none;
   color: #fff;
+  outline: none;
 }
 .content,
 .shell{
   overflow: hidden;
+  max-width: 100%;
 }
 .shell,
 .shell.des{

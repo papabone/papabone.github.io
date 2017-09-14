@@ -1,3 +1,5 @@
 export const TAB_NUM_DEV = 'TAB_NUM_DEV'
 export const TAB_NUM_DES = 'TAB_NUM_DES'
 export const FILTER_PROJECT = 'FILTER_PROJECT'
+export const OPEN_PROJECT = 'OPEN_PROJECT'
+export const CLOSE_PROJECT = 'CLOSE_PROJECT'

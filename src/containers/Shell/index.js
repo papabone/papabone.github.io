@@ -20,13 +20,14 @@ class Shell extends Component {
     const footer = UI.footer[lang]
     const { changeLang } = this.props.langActions
 
-    const { ownProps } = this.props
+    const { ownProps, port } = this.props
     const isPort = ( ownProps.location.pathname.indexOf('port') > 0 ) ? true : false
     const isAbout = ( ownProps.location.pathname.indexOf('about') > 0 ) ? true : false
     const isDes = ( ownProps.location.pathname.indexOf('des') > 0 ) ? true : false
     const isDev = ( ownProps.location.pathname.indexOf('dev') > 0 ) ? true : false
     const { isE404 } = this.props.e404
     const { menuIsOpen } = this.props.menu
+    const isProject = port.projectIsOpen ? true : false
 
     let MidGround = isPort || isAbout  ? <Picture/> : <ZenBox UI={middle}/>
 
@@ -35,12 +36,14 @@ class Shell extends Component {
                       ( isDes ? 'des' : isDev ? 'dev' : '' ) +
                       ( isPort ? ' port' : '' ) +
                       ( isE404 ? ' isE404' : '' ) +
-                      ( menuIsOpen ? ' menu' : '' )}>
+                      ( menuIsOpen ? ' menu' : '' ) +
+                      ( isProject ? ' project' : '' ) }>
         <Header
           isDes={isDes}
           isDev={isDev}
           UI={header}
           menuIsOpen={menuIsOpen}
+          projectIsOpen={isProject}
           isHidden={ isE404 ? 'hidden' : '' }/>
         <div className='content'>
           { this.props.children ? this.props.children : <Main />}
@@ -49,8 +52,8 @@ class Shell extends Component {
           changeLang={changeLang}
           UI={footer}/>
         <Lines
-          isHidden={ isE404 || menuIsOpen? 'hidden' : '' }/>
-        { isE404 || menuIsOpen ? null : MidGround }
+          isHidden={ isE404 || menuIsOpen || isProject ? 'hidden' : '' }/>
+        { isE404 || menuIsOpen || isProject ? null : MidGround }
         <BackGround />
       </div>
     )

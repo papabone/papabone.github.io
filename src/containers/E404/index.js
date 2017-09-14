@@ -16,6 +16,9 @@ class E404 extends Component {
     showError404(false)
   }
   render() {
+    const lang = this.props.lang
+    const UI = this.props.e404.UI[lang]
+
     return (
       <div className='e404'>
         <div className='error-title'>
@@ -24,15 +27,17 @@ class E404 extends Component {
           <div className='item four'><span>4</span></div>
         </div>
         <div className='error-sibtitle'>
-          Страница не найдена
+          {UI}
         </div>
         <Link to='/'>http://www.zen-b.com</Link>
       </div>
     )
   }
 }
-function mapStateToProps () {
+function mapStateToProps (state) {
   return {
+    e404: state.e404,
+    lang: state.lang.language
   }
 }
 function mapDispatchToProps(dispatch) {

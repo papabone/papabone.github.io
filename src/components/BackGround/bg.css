@@ -10,6 +10,9 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
 }
+.background .banner{
+  display: none;
+}
 .menu .background{
   background-image: url('./bg-menu.png'),
   linear-gradient(to right, #889aa0 50%, #5e5972 50%);
@@ -44,4 +47,8 @@
   background-position: 50% center;
   background-repeat: no-repeat;
   background-attachment: scroll;
+}
+.project.des.port .background{
+  background-color: #dbdbdb;
+  background-image: none;
 }

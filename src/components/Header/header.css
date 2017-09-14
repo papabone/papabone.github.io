@@ -2,6 +2,9 @@
   display: flex;
   justify-content: space-between;
 }
+.des.project .header > * { 
+  justify-content: space-between;
+}
 .des .header > div {
   justify-content: flex-start;
 }

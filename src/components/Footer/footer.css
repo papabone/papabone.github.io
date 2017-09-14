@@ -43,3 +43,6 @@
 .port.des .footer .more-info.about-des{
   display: none;
 }
+.project .footer{
+  display: none;
+}

@@ -13,6 +13,7 @@
 }
 .e404 .error-title .item{
   display: flex;
+  line-height: .95;
 }
 .e404 .error-title .item.four{
   color: #cfdc3c;

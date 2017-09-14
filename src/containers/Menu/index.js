@@ -7,12 +7,10 @@ import * as menuActions from '../../actions/menuActions'
 
 class Menu extends Component {
   componentDidMount(){
-    const { openMenu } = this.props.menuActions
-    openMenu()
+    this.props.menuActions.openMenu()
   }
   componentWillUnmount(){
-    const { closeMenu } = this.props.menuActions
-    closeMenu()
+    this.props.menuActions.closeMenu()
   }
   render(){
     const lang = this.props.lang,

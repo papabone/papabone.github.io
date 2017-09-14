@@ -3,7 +3,11 @@ import {
 } from '../constants/e404'
 
 const initialState = {
-  isE404: false
+  isE404: false,
+  UI: {
+    en: 'Page not found',
+    ru: 'Страница не найдена'
+  }
 }
 
 export default function showError404(state = initialState, action) {

@@ -15,6 +15,7 @@ import AboutDev from './containers/AboutDev'
 import PortfolioDes from './containers/PortfolioDes'
 import PortfolioDev from './containers/PortfolioDev'
 import Menu from './containers/Menu'
+import Project from './containers/Project'
 
 const store = configureStore()
 const history = syncHistoryWithStore(hashHistory, store)
@@ -27,6 +28,7 @@ render(
           <Route path='/about-des' component={AboutDes} />
           <Route path='/about-dev' component={AboutDev} />
           <Route path='/portfolio-des' component={PortfolioDes} />
+          <Route path='/portfolio-des/project-:project' component={Project} />
           <Route path='/portfolio-dev' component={PortfolioDev} />
           <Route path='/menu' component={Menu} />
           <Route path='*' component={E404} />
