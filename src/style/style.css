@@ -63,6 +63,10 @@ a:active{
   flex-shrink: 0;
   line-height: 1.45;
   height: 100%;
+  opacity: .6;
+}
+.dev .term{
+  opacity: .5;
 }
 .desc{
   font-size: .87rem;
@@ -80,6 +84,23 @@ a.more-info:active{
   color: #cfdc3c;
 }
 .hidden{
+  display: none;
+}
+.active.project-name{
+  color: #fff;
+  position: relative;
+}
+.active.project-name::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
+  width: 28px; /*для max1340*/
+  height: 6px;
+  background-color: #cfdc3c;
+}
+.dev .active.project-name::before {
   display: none;
 }
 
@@ -125,8 +146,25 @@ a.more-info:active{
   padding-right: 20px;
   cursor: pointer;
 }
+.text-block .project-filter{
+  font-weight: bold;
+}
 .des .text-block .project-name{
   text-transform: none;
+}
+.picture-link{
+  position: absolute;
+  width: calc( 50%);
+  height: 100%;
+  top: 0;
+  left: 50%;
+  padding-right: 12.5%;
+}
+.picture-link a:link{
+  color: transparent;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 1370px){

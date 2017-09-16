@@ -80,8 +80,10 @@ class PortfolioDes extends Component {
         <div className='desc-wrap'>
           {moreInfo}
         </div>
+        <div className='picture-link'>
+          {moreInfo}
+        </div>
       </div>
-
     )
   }
 

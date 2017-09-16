@@ -24,7 +24,7 @@ const initialState = {
           },
           {
             name: 'oldport',
-            title: 'Old Portfolio',
+            title: 'Promo',
             desc: 'I’m a freelance ning semantic, clean markup and SEO friendly code.',
             technologies: [ 'Adobe', 'Photoshop', 'Adobe', 'Adobe', 'Photoshop', 'Adobe', 'Photoshop' ],
             customer: 'Self'
@@ -47,7 +47,7 @@ const initialState = {
           },
           {
             name: 'oldport',
-            title: 'Старая Визика',
+            title: 'Визитки',
             desc: 'По-русски I’m a freelance ning semantic, clean markup and SEO friendly code.',
             technologies: [ 'Adobe', 'Photoshop', 'Adobe', 'Adobe', 'Photoshop', 'Adobe', 'Photoshop' ],
             customer: 'Self'

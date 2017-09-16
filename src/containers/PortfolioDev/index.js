@@ -28,7 +28,7 @@ class PortfolioDev extends Component {
             projects.map((item, index) =>
               <div
                 key={index}
-                className='project-name'
+                className='project-filter'
                 data-numer={'' + index}
                 data-name={'' + item.name}>
                 {item.title}
@@ -63,10 +63,10 @@ class PortfolioDev extends Component {
   }
 
   handleClick = (event) => {
-    if( !event.target.classList.contains('project-name') )return;
+    if( !event.target.classList.contains('project-filter') )return;
     const numer = event.target.dataset.numer
     this.props.portActions.tabNumDev(+numer)
-    const tabs = event.currentTarget.querySelectorAll('.project-name')
+    const tabs = event.currentTarget.querySelectorAll('.project-filter')
     for (var i = 0; i < tabs.length; i++) {
       tabs[i].classList.remove('active')
     }
@@ -74,7 +74,7 @@ class PortfolioDev extends Component {
   }
 
   activateTab = () => {
-    const tabs = document.body.querySelectorAll('.project-name')
+    const tabs = document.body.querySelectorAll('.project-filter')
     const { tabNumDev } = this.props.port
 
     for (var i = 0; i < tabs.length; i++) {

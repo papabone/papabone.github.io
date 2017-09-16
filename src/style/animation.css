@@ -260,6 +260,14 @@
   animation: leave-disappear-image .7s ease-in-out;
 }
 
+@keyframes project-name-active{
+  0% { transform: scaleX(0.1);}
+  100% { transform: scaleX(1); }
+}
+.active.project-name::before{
+  transform-origin: left;
+  animation: project-name-active 0.2s ease-in-out;
+}
 
 /*
 @keyframes leave-menu-btn-close1{

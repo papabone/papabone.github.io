@@ -13,6 +13,6 @@
 .project .prev{
   text-align: right;
 }
-.project .control:hover {
+.project .control:hover { 
   color: #cfdc3c;
 }

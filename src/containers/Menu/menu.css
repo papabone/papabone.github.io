@@ -49,7 +49,7 @@
 .menu a.active,
 .menu a:active,
 .menu a:hover{
-  color: #cfdc3c;
+  /*color: #cfdc3c;*/
 }
 .menu a.active:before,
 .menu a:active:before,
