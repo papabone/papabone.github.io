@@ -21,7 +21,7 @@
 }
 .footer .more-info{
   display: none;
-  width: 12.5%;
+  width: 25%;
   padding-bottom: 30px;
   padding-left: 12px;
   text-align: left;
@@ -45,4 +45,54 @@
 }
 .project .footer{
   display: none;
+}
+@media (max-width: 991px){
+  .footer .lang{
+    width: 16.7%;
+    padding-bottom: 27px;
+    padding-left: 27px;
+  }
+  .footer .more-info{
+    width: 33.3%;
+    padding-bottom: 27px;
+    padding-left: 6px;
+  }
+  .dev .footer .more-info{
+    width: 33.3%;
+    margin-left: calc(33% + 27px);
+    padding-left: 0px;
+  }
+}
+@media (max-width: 768px){
+  .footer .name{
+    flex-basis: 83.3%;
+    padding-right: 27px;
+    padding-bottom: 27px;
+  }
+  .dev .footer .more-info{
+    margin-left: 27px;
+  }
+  .menu .footer .name,
+  .des .footer .name,
+  .dev .footer .name{
+    display: none;
+  }
+}
+@media (max-width: 620px){
+  .footer .name{
+    padding-right: 12px;
+    padding-bottom: 20px;
+  }
+  .footer .lang{
+    width: 25%;
+    padding-bottom: 20px;
+    padding-left: 12px;
+  }
+  .footer .more-info,
+  .dev .footer .more-info{
+    width: 50%;
+    margin-left: 0;
+    padding-bottom: 20px;
+    text-align: center;
+  }
 }

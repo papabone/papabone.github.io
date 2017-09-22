@@ -12,7 +12,7 @@ class Main extends Component {
     const dev = this.props.main.UI.dev[lang]
 
     return (
-      <div className='main'>
+      <div className='main hidden-sm'>
         <ListDes UI={des}/>
         <ListDev UI={dev}/>
       </div>

@@ -9,8 +9,8 @@ export default class Lines extends Component {
       <div className={'lines ' + isHidden}>
       <div className='line'></div><div className='line'></div>
       <div className='line'></div><div className='line'></div>
-      <div className='line'></div><div className='line'></div>
-      <div className='line'></div><div className='line'></div>
+      <div className='line hidden-sm'></div><div className='line hidden-sm'></div>
+      <div className='line hidden-md hidden-sm'></div><div className='line hidden-md hidden-sm'></div>
       </div>
     )
   }

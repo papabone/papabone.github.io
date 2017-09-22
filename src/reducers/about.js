@@ -18,7 +18,7 @@ const initialState = {
     },
     description : {
       en: {
-        about: 'About',
+        about: 'I\'m freelance designer with 4+ years experienced in Web UI/UX and graphic Design Area. I have build more 200+  user interface and worked on a few other startups.',
         skills: ['Adobe Photoshop','Adobe Illustrator'],
         education: [
           'European Humanities University. Media and visual design.',
@@ -27,7 +27,7 @@ const initialState = {
         contacts: 'PonomarenkoHelen3@gmai.com',
       },
       ru: {
-        about: 'Обо мне',
+        about: 'I\'m freelance designer with 4+ years experienced in Web UI/UX and graphic Design Area. I have build more 200+  user interface and worked on a few other startups. ',
         skills: ['Adobe Photoshop','Adobe Illustrator'],
         education: [
           'European Humanities University. Media and visual design.',

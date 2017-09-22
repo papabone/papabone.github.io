@@ -38,3 +38,27 @@ hr{
   text-transform: uppercase;
   font-weight: 800;
 }
+@media (max-width: 768px){
+  .zen,
+  .box{
+    font-size: 12rem;
+  }
+  .zen{
+    padding-top: 40%;
+  }
+  .box{
+    padding-bottom: 40%;
+  }
+}
+@media (max-width: 620px){
+  .zen,
+  .box{
+    font-size: 9rem;
+  }
+}
+@media (max-width: 420px){
+  .zen,
+  .box{
+    font-size: 6.7rem;
+  }
+}

@@ -86,3 +86,74 @@
   grid-column: 1 / 5;
   grid-row: 2 / 3;
 }
+
+@media (max-width: 991px){
+.hidden-md{
+  display: none;
+}
+.lines{
+  grid-template-columns: repeat(6, 1fr);
+}
+.zen-box{
+  grid-template-columns: repeat(6, 1fr);
+}
+.the-z{
+  grid-column: 1 / 2;
+}
+.the-e{
+  grid-column: 3 / 4;
+}
+.the-n{
+  grid-column: 5 / 6;
+}
+.the-b{
+  grid-column: 2 / 3;
+}
+.the-o{
+  grid-column: 4 / 5;
+}
+.the-x{
+  grid-column: 6 / 7;
+}
+.description{
+  grid-column: 1 / 7;
+}
+}
+
+@media (max-width: 768px){
+.hidden-sm{
+  display: none !important;
+}
+.lines{
+  grid-template-columns: repeat(4, 1fr);
+}
+.zen-box{
+  grid-template-columns: repeat(4, 1fr);
+}
+.the-z{
+  grid-column: 1 / 2;
+}
+.the-e{
+  grid-column: 2 / 3;
+}
+.the-n{
+  grid-column: 3 / 4;
+}
+.the-b{
+  grid-column: 2 / 3;
+}
+.the-o{
+  grid-column: 3 / 4;
+}
+.the-x{
+  grid-column: 4 / 5;
+}
+.description{
+  grid-column: 1 / 5;
+}
+}
+@media (max-width: 620px){
+  .shell{
+    grid-template-rows:	80px 1fr 80px; 
+  }
+}

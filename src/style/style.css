@@ -26,6 +26,9 @@ html{
   min-width: 320px;
   box-sizing: border-box;
 }
+.shell{
+  min-width: 320px;
+}
 html *{
   box-sizing: border-box;
 }
@@ -170,5 +173,69 @@ a.more-info:active{
 @media (max-width: 1370px){
   html{
     font-size: 15px;
+  }
+}
+
+@media (max-width: 991px){
+.title{
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.text-block{
+  padding-left: 70px;
+}
+.dev .text-block{
+  padding-right: 27px;
+  padding-left: 27px;
+}
+.text-block .desc-wrap{
+  padding-right: 27px;
+}
+}
+
+@media (max-width: 768px){
+.text-block{
+  width: 75%;
+  padding-left: 33px;
+}
+.term{
+  flex-basis: 20%;
+}
+.text-block .desc-wrap{
+  padding-bottom: 30px;
+}
+.picture-link{
+  position: absolute;
+  width: 100%;
+  height: 35%;
+  top: auto;
+  bottom: 70px;
+  left: 0%;
+  padding-right: 0;
+}
+.dev .text-block{
+  padding-right: 0;
+  margin-left: 0;
+  padding-left: 33px;
+}
+}
+@media (max-width: 620px){
+  .text-block,
+  .dev .text-block{
+    width: 100%;
+    padding-left: 12px;
+  }
+  .title{
+    padding-bottom: 25px;
+    font-size: 2.33rem;
+  }
+  .text-block .desc-wrap{
+    padding-bottom: 25px;
+  }
+  .term{
+    flex-basis: 26%;
+  }
+  .picture-link{
+    display: none;
   }
 }

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
 }
-.des.project .header > * { 
+.des.project .header > * {
   justify-content: space-between;
 }
 .des .header > div {
@@ -43,4 +43,45 @@
 .dev .keyword span {
   transform-origin: 1%;
   transform: rotate(-90deg) translateX(-100%);
+}
+
+@media (max-width: 991px){
+  .menu .title{
+    padding-left: 27px;
+  }
+  .keyword{
+    padding-top: 23px;
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+}
+@media (max-width: 768px){
+  .header{
+    position: relative;
+  }
+  .dev .header > div {
+    flex-direction: row-reverse;
+  }
+  .keyword{
+    padding-top: 120px;
+    z-index: 0;
+  }
+  .dev .keyword{
+    text-align: right;
+  }
+  .dev .keyword span {
+    transform-origin: 99%;
+    transform: rotate(-90deg);
+  }
+}
+
+@media (max-width: 620px){
+  .menu .title{
+    padding-left: 18px;
+    padding-top: 20px;
+    font-size: 2.3rem;
+  }
+  .keyword{
+    display: none;
+  }
 }

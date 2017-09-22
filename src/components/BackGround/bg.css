@@ -52,3 +52,141 @@
   background-color: #dbdbdb;
   background-image: none;
 }
+
+@media (max-width: 991px){
+  .background{
+    background-image: url('./bg-md.png'),
+    -webkit-linear-gradient(left, #889aa0 50%, #5e5972 50%);
+    background: url('./bg-md.png'),
+    -o-linear-gradient(left, #889aa0 50%, #5e5972 50%);
+    background: url('./bg-md.png'),
+    linear-gradient(to right, #889aa0 50%, #5e5972 50%);
+    background-size: auto 100%;
+    background-position: 50% center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+  .menu .background{
+    background-image: url('./bg-menu-md.png'),
+    linear-gradient(to right, #889aa0 50%, #5e5972 50%);
+  }
+  .des .background{
+    background-image: url('./bg-about-des-md.png');
+  }
+  .des.port .background{
+    background-image: url('./bg-port-des-md.png');
+  }
+  .dev .background{
+    background-image: url('./bg-about-dev-md.png');
+  }
+  .dev.port .background{
+    background-image: url('./bg-port-dev-md.png');
+  }
+  .isE404 .background,
+  .dev.port.isE404 .background,
+  .des.port.isE404 .background,
+  .des.isE404  .background{
+    background-image: url('./bg404-md.png'),
+    -webkit-linear-gradient(left, #889aa0 50%, #5e5972 50%);
+    background: url('./bg404-md.png'),
+    -o-linear-gradient(left, #889aa0 50%, #5e5972 50%);
+    background: url('./bg404-md.png'),
+    linear-gradient(to right, #889aa0 50%, #5e5972 50%);
+    background-size: auto 100%;
+    background-position: 50% center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 768px){
+  .background{
+    background-image: url('./bg-sm.png'),
+    -webkit-linear-gradient(132deg, #889aa0 50%, #5e5972 50%);
+    background: url('./bg-sm.png'),
+    -o-linear-gradient(132deg, #889aa0 50%, #5e5972 50%);
+    background: url('./bg-sm.png'),
+    linear-gradient(132deg, #889aa0 50%, #5e5972 50%);
+    background-size: cover;
+    background-position: 50% center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+  .menu .background{
+    background-image: url('./bg-menu-sm.png'),
+    linear-gradient(132deg, #889aa0 50%, #5e5972 50%);
+  }
+  .des .background{
+    background-image: url('./bg-about-des-sm.png');
+  }
+  .des.port .background{
+    background-image: url('./bg-port-des-sm.png');
+  }
+  .dev .background{
+    background-image: url('./bg-about-dev-sm.png');
+  }
+  .dev.port .background{
+    background-image: url('./bg-port-dev-sm.png');
+  }
+  .isE404 .background,
+  .dev.port.isE404 .background,
+  .des.port.isE404 .background,
+  .des.isE404  .background{
+    background-image: url('./bg404-sm.png'),
+    -webkit-linear-gradient(132deg, #889aa0 50%, #5e5972 50%);
+    background: url('./bg404-sm.png'),
+    -o-linear-gradient(132deg, #889aa0 50%, #5e5972 50%);
+    background: url('./bg404-sm.png'),
+    linear-gradient(132deg, #889aa0 50%, #5e5972 50%);
+    background-size: cover;
+    background-position: 50% center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 620px){
+  .background{
+    background-image: url('./bg-xs.png'),
+    -webkit-linear-gradient(132deg, #889aa0 50%, #5e5972 50%);
+    background: url('./bg-xs.png'),
+    -o-linear-gradient(132deg, #889aa0 50%, #5e5972 50%);
+    background: url('./bg-xs.png'),
+    linear-gradient(132deg, #889aa0 50%, #5e5972 50%);
+    background-size: cover;
+    background-position: 50% center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+  .menu .background{
+    background-image: url('./bg-menu-xs.png'),
+    linear-gradient(132deg, #889aa0 50%, #5e5972 50%);
+  }
+  .des .background{
+    background-image: url('./bg-about-des-xs.png');
+  }
+  .des.port .background{
+    background-image: url('./bg-port-des-xs.png');
+  }
+  .dev .background{
+    background-image: url('./bg-about-dev-xs.png');
+  }
+  .dev.port .background{
+    background-image: url('./bg-port-dev-xs.png');
+  }
+  .isE404 .background,
+  .dev.port.isE404 .background,
+  .des.port.isE404 .background,
+  .des.isE404  .background{
+    background-image: url('./bg404-xs.png'),
+    -webkit-linear-gradient(132deg, #889aa0 50%, #5e5972 50%);
+    background: url('./bg404-xs.png'),
+    -o-linear-gradient(132deg, #889aa0 50%, #5e5972 50%);
+    background: url('./bg404-xs.png'),
+    linear-gradient(132deg, #889aa0 50%, #5e5972 50%);
+    background-size: cover;
+    background-position: 50% center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+}
