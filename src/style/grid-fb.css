@@ -1,0 +1,169 @@
+.shell{
+  display: block;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+/*.shell.project{
+  height: auto;
+}*/
+.header{
+  position: absolute;
+  top: 0px;
+  height: 100px;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+.content{
+  position: absolute;
+  top: 100px;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+.shell.project .content{
+  /*grid-row: 1 / 4;*/
+  z-index: 10;
+}
+.footer{
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+.picture{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+.zen-box{
+  position: absolute;
+  top: 100px;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+.lines{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+.background{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.lines{
+  display: flex;
+}
+.line{
+  width: 12.5%;
+}
+.zen-box{
+  display: flex;
+  flex-wrap: wrap;
+}
+.zen-box .zen{
+  width: 25%;
+  max-width: 25%;
+  order: 1;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+.zen-box .box{
+  order: 3;
+  width: 25%;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+.zen>span,
+.box>span{
+  margin: auto;
+}
+.zen-box .the-b{
+  margin-left: 25%;
+}
+.zen-box .description{
+  order: 2;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 991px){
+.hidden-md{
+  display: none;
+}
+.line{
+  width: 16.6%;
+}
+.zen-box .zen{
+  width: 16.6%;
+  margin-right: 16.6%;
+}
+.zen-box .box{
+  width: 16.6%;
+  margin-left: 16.6%;
+}
+.description{
+  padding-top: 10px;
+}
+}
+
+@media (max-width: 768px){
+.hidden-sm{
+  display: none !important;
+}
+.line{
+  width: 25%;
+}
+.zen-box .zen{
+  width: 25%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 14%;
+}
+.zen-box .box{
+  width: 25%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: 14%;
+}
+.zen-box .the-b{
+  margin-left: 25%;
+}
+}
+@media (max-width: 620px){
+  .header{
+    height: 80px;
+  }
+  .content{
+    top: 80px;
+    bottom: 80px;
+  }
+  .footer{
+    height: 80px;
+  }
+  .zen-box{
+    top: 80px;
+    bottom: 80px; 
+  }
+}

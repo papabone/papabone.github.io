@@ -2,7 +2,21 @@ import React from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import './style/normolise.css'
-import './style/grid.css' 
+
+const browser = require('detect-browser')
+switch (browser && browser.name) {
+  case 'ie' :
+  case 'ios':
+  case 'safari':
+    require('./style/grid-fb.css')
+    console.log('grid - unsupported')
+    break
+
+  default:
+    require('./style/grid.css')
+    console.log('grid - supported')
+}
+
 import './style/style.css'
 import './style/animation.css'
 import configureStore from './store/configureStore'
