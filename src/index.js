@@ -6,6 +6,7 @@ import './style/normolise.css'
 const browser = require('detect-browser')
 switch (browser && browser.name) {
   case 'ie' :
+  case 'edge':
   case 'ios':
   case 'safari':
     require('./style/grid-fb.css')

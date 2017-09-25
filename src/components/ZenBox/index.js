@@ -10,9 +10,6 @@ export default class ZenBox extends Component {
         <div className='zen the-z'><span>z</span></div>
         <div className='zen the-e'><span>e</span></div>
         <div className='zen the-n'><span>n</span></div>
-        <div className='box the-b'><span>b</span></div>
-        <div className='box the-o'><span>o</span></div>
-        <div className='box the-x'><span>x</span></div>
         <h2 className='description'>
           <div>
             {UI.frontEnd}
@@ -20,6 +17,9 @@ export default class ZenBox extends Component {
             <hr width='30%'/>{UI.branding}
           </div>
         </h2>
+        <div className='box the-b'><span>b</span></div>
+        <div className='box the-o'><span>o</span></div>
+        <div className='box the-x'><span>x</span></div>    
       </div>
     )
   }

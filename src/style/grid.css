@@ -2,10 +2,16 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows:	100px 1fr 100px;
-  width: 100vw;
-  height: 100vh;
+  //width: 100vw;
+  //height: 100vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .shell.project{
+  position: relative;
   height: auto;
 }
 .header{
@@ -154,6 +160,6 @@
 }
 @media (max-width: 620px){
   .shell{
-    grid-template-rows:	80px 1fr 80px; 
+    grid-template-rows:	80px 1fr 80px;
   }
 }
