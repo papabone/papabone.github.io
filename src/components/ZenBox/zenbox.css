@@ -44,10 +44,10 @@ hr{
     font-size: 12rem;
   }
   .zen{
-    padding-top: 40%;
+    padding-top: 20%;
   }
   .box{
-    padding-bottom: 40%;
+    padding-bottom: 20%;
   }
 }
 @media (max-width: 620px){

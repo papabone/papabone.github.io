@@ -19,7 +19,6 @@ class Shell extends Component {
     const middle = UI.middle[lang]
     const footer = UI.footer[lang]
     const { changeLang } = this.props.langActions
-    const VW = document.documentElement.clientWidth
 
     const { ownProps, port } = this.props
     const isPort = ( ownProps.location.pathname.indexOf('port') > 0 ) ? true : false
@@ -45,16 +44,14 @@ class Shell extends Component {
           UI={header}
           menuIsOpen={menuIsOpen}
           projectIsOpen={isProject}
-          isHidden={ isE404 ? 'hidden' : '' }
-          VW={VW}/>
+          isHidden={ isE404 ? 'hidden' : '' } />
         <div className='content'>
           { this.props.children ? this.props.children : <Main />}
         </div>
         <Footer
           changeLang={changeLang}
           UI={footer}
-          UIHeader={header}
-          VW={VW}/>
+          UIHeader={header}/>
         <Lines
           isHidden={ isE404 || menuIsOpen || isProject ? 'hidden' : '' }/>
         { isE404 || menuIsOpen || isProject ? null : MidGround }

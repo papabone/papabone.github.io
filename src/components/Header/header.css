@@ -44,7 +44,14 @@
   transform-origin: 1%;
   transform: rotate(-90deg) translateX(-100%);
 }
-
+.header  .menu-btn{
+  display: none;
+}
+.des .header  .menu-btn,
+.des .header  .menu-btn,
+.menu .header .menu-btn{
+  display: flex;
+}
 @media (max-width: 991px){
   .menu .title{
     padding-left: 27px;
@@ -55,7 +62,7 @@
     padding-right: 27px;
   }
 }
-@media (max-width: 768px){
+@media (max-width: 768px) and (orientation: portrait){
   .header{
     position: relative;
   }
@@ -73,9 +80,15 @@
     transform-origin: 99%;
     transform: rotate(-90deg);
   }
+  .name-dev{
+    display: none;
+  }
+  .header  .menu-btn{
+    display: flex;
+  }
 }
 
-@media (max-width: 620px){
+@media (max-width: 620px) and (orientation: portrait){
   .menu .title{
     padding-left: 18px;
     padding-top: 20px;

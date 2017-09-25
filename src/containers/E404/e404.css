@@ -29,12 +29,12 @@
 .isE404 .footer {
   visibility: collapse;
 }
-@media (max-width: 768px){
+@media (max-width: 768px) and (orientation: portrait){
   .e404 .error-sibtitle{
     padding-bottom: 12%;
   }
 }
-@media (max-width: 620px){
+@media (max-width: 620px) and (orientation: portrait){
   .e404 .error-title {
     font-size: 12.6rem;
   }
@@ -46,7 +46,7 @@
     padding-bottom: 21%;
   }
 }
-@media (max-width: 420px){
+@media (max-width: 420px) and (orientation: portrait){
   .e404 .error-title {
     font-size: 10rem;
   }

@@ -11,7 +11,6 @@ export default class Header extends Component {
 
     const UI = this.props.UI
     const isHidden = this.props.isHidden
-    const VW = this.props.VW
 
     let Header = null
     if ( this.props.projectIsOpen ){
@@ -48,7 +47,8 @@ export default class Header extends Component {
       Header = (
         <div>
           <DesName UI={UI.des}/>
-          {VW > 768 ? <DevName UI={UI.dev}/> : <MenuBtn />}
+          <DevName UI={UI.dev}/>
+          <MenuBtn />
         </div>
       )
     }
@@ -69,5 +69,4 @@ Header.propTypes = {
   isHidden: PropTypes.string.isRequired,
   menuIsOpen: PropTypes.bool.isRequired,
   projectIsOpen: PropTypes.bool.isRequired,
-  VW : PropTypes.number.isRequired
 }

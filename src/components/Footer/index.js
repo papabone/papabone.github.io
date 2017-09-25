@@ -8,7 +8,6 @@ export default class Footer extends Component {
   render() {
     const UI = this.props.UI
     const UIH = this.props.UIHeader
-    const VW = this.props.VW
     return (
       <div className='footer'>
         <ul className='lang' onClick={::this.clicLangHandler}>
@@ -25,7 +24,7 @@ export default class Footer extends Component {
         </ul>
         <Link to='/portfolio-des' className='more-info about-des'>{UI.moreInf}	&nbsp; &#8595;</Link>
         <Link to='/portfolio-dev' className='more-info about-dev'>{UI.moreInf}	&nbsp; &#8595;</Link>
-        {VW > 768 ? null : <DevName UI={UIH.dev}/>}
+        <DevName UI={UIH.dev}/>
       </div>
     )
   }
@@ -42,6 +41,5 @@ export default class Footer extends Component {
 Footer.propTypes = {
   changeLang: PropTypes.func.isRequired,
   UI : PropTypes.object.isRequired,
-  UIHeader : PropTypes.object.isRequired,
-  VW : PropTypes.number.isRequired
+  UIHeader : PropTypes.object.isRequired
 }

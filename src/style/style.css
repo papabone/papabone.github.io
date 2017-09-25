@@ -87,7 +87,7 @@ a.more-info:active{
   color: #cfdc3c;
 }
 .hidden{
-  display: none;
+  display: none !important;
 }
 .active.project-name{
   color: #fff;
@@ -193,7 +193,7 @@ a.more-info:active{
 }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) and (orientation: portrait){
 .text-block{
   width: 75%;
   padding-left: 33px;
@@ -219,7 +219,7 @@ a.more-info:active{
   padding-left: 33px;
 }
 }
-@media (max-width: 620px){
+@media (max-width: 620px) and (orientation: portrait){
   .text-block,
   .dev .text-block{
     width: 100%;
