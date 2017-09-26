@@ -4,6 +4,13 @@
   width: 100vw;
   height: 100vh;
 }
+.shell.project{
+  height: auto;
+}
+.shell.project .content{
+  position: relative;
+  top: 0;
+}
 .header{
   position: absolute;
   top: 0px;
@@ -104,6 +111,14 @@
   justify-content: center;
 }
 
+
+.main .list ul{
+  position: relative;
+  margin: auto;
+  margin-top: calc(50% - 128px);
+  width: 100px;
+}
+
 @media (max-width: 991px){
 .hidden-md{
   display: none;
@@ -161,5 +176,11 @@
   .zen-box{
     top: 80px;
     bottom: 80px;
+  }
+  .main .list ul{
+    position: relative;
+    margin: auto;
+    margin-top: calc(50% - 108px);
+    width: 100px;
   }
 }

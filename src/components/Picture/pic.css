@@ -2,7 +2,8 @@
   display: flex;
 }
 .pic{
-  display: flex;
+  display: block;
+  position: relative;
   margin-left: 50%;
   width: 37.5%;
   overflow: hidden;
@@ -11,8 +12,21 @@
   margin-left: 12.5%;
 }
 .pic .cover{
+  position: absolute;
   width: 25%;
   height: 100%;
+}
+.pic .cover:nth-child(1){
+  left: 0;
+}
+.pic .cover:nth-child(2){
+  left: 25%;
+}
+.pic .cover:nth-child(3){
+  left: 50%;
+}
+.pic .cover:nth-child(4){
+  left: 75%;
 }
 .pic .jalousie{
   display: inline-block;

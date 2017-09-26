@@ -242,9 +242,9 @@
   animation: leave-disappear .7s ease-in-out;
 }
 @keyframes enter-disappear-image{
-  0% { opacity: 0; transform: translateY(50%);   }
-  30% { opacity: 0; transform: translateY(10%);   }
-  100% { opacity: 1; transform: translateY(0%);  }
+  0% {  transform: translateY(50%);   }
+  30% {  transform: translateY(10%);   }
+  100% {   transform: translateY(0%);  }
 }
 .enter.project .image{
   transform: translateX(0%);

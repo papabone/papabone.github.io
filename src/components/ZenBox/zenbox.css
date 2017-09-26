@@ -43,11 +43,9 @@ hr{
   .box{
     font-size: 12rem;
   }
-  .zen{
-    padding-top: 20%;
-  }
-  .box{
-    padding-bottom: 20%;
+  .zen-box{
+    padding-top: 10%;
+    padding-bottom: 10%;
   }
 }
 @media (max-width: 620px){

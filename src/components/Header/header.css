@@ -48,7 +48,7 @@
   display: none;
 }
 .des .header  .menu-btn,
-.des .header  .menu-btn,
+.dev .header  .menu-btn,
 .menu .header .menu-btn{
   display: flex;
 }
@@ -82,6 +82,11 @@
   }
   .name-dev{
     display: none;
+  }
+  .des .header  .name-dev,
+  .dev .header  .name-dev,
+  .menu .header .name-dev{
+    display: block;
   }
   .header  .menu-btn{
     display: flex;
