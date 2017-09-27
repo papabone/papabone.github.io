@@ -19,6 +19,7 @@
   font-weight: bold;
   color: #fff;
   max-height: 100%;
+  overflow-y: visible;
 }
 .zen span{
   padding-top: 5%;

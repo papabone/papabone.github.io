@@ -8,7 +8,8 @@ switch (browser && browser.name) {
   case 'ie' :
   case 'edge':
   case 'ios':
-  case 'safari': 
+  case 'safari':
+   case 'chrome':
     require('./style/grid-fb.css')
     console.log('grid - unsupported')
     break
