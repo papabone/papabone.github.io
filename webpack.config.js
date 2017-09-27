@@ -3,6 +3,8 @@ var webpack = require('webpack')
 var autoprefixer = require('autoprefixer')
 var precss = require('precss')
 var CleanWebpackPlugin = require('clean-webpack-plugin')
+var ImageminPlugin = require('imagemin-webpack-plugin')
+var ImageminPlugin = require('imagemin-webpack-plugin').default
 
 var NODE_ENV = process.env.NODE_ENV || 'production';
 console.log('run as '+NODE_ENV);
@@ -29,6 +31,7 @@ module.exports = {
         drop_console: true
       }
     }),
+    new ImageminPlugin(),
     // new webpack.DefinePlugin({
     //   NODE_ENV: JSON.stringify(NODE_ENV)
     // })
@@ -36,6 +39,7 @@ module.exports = {
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
+
     // new webpack.DefinePlugin({
     //   NODE_ENV: JSON.stringify(NODE_ENV)
     // })
