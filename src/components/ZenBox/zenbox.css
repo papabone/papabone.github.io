@@ -7,7 +7,7 @@
 .zen-box{
   font-family: HelvenicaHeavy, sans-serif;
   font-weight: 700;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .zen,
 .box{
@@ -19,7 +19,6 @@
   font-weight: bold;
   color: #fff;
   max-height: 100%;
-  overflow-y: visible;
 }
 .zen span{
   padding-top: 5%;
@@ -45,8 +44,8 @@ hr{
     font-size: 12rem;
   }
   .zen-box{
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 7%;
+    padding-bottom: 7%;
   }
 }
 @media (max-width: 620px){
@@ -58,6 +57,12 @@ hr{
 @media (max-width: 420px){
   .zen,
   .box{
-    font-size: 6.7rem;
+    font-size: 6.4rem;
+  }
+  .box{
+    padding-top: 5%;
+  }
+  .zen{
+    padding-bottom: 5%;
   }
 }
