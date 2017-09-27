@@ -42,11 +42,7 @@ hr{
   .zen,
   .box{
     font-size: 12rem;
-  }
-  .zen-box{
-    padding-top: 7%;
-    padding-bottom: 7%;
-  }
+  } 
 }
 @media (max-width: 620px){
   .zen,
@@ -59,10 +55,5 @@ hr{
   .box{
     font-size: 6.4rem;
   }
-  .box{
-    padding-top: 5%;
-  }
-  .zen{
-    padding-bottom: 5%;
-  }
+
 }

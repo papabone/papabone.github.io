@@ -160,4 +160,10 @@
   .shell{
     grid-template-rows:	80px 1fr 80px;
   }
+  .zen-box{
+    grid-template-rows: 1fr 80px 1fr;
+  }
+  .zen-box .description{
+    padding-top: 0;
+  }
 }

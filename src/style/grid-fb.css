@@ -187,4 +187,10 @@
     margin-top: calc(50% - 108px);
     width: 100px;
   }
+  .zen-box .description{
+    height: 80px;
+  }
+  .zen-box .description{
+    padding-top: 0;
+  }
 }
