@@ -192,7 +192,42 @@ a.more-info:active{
   padding-right: 27px;
 }
 }
-
+@media (max-width: 900px) and (orientation: landscape){
+  .edu{
+    visibility: hidden;
+    position: absolute;
+  }
+}
+@media (max-width: 850px) and (orientation: landscape){
+.title{
+  padding-top: 17px;
+  padding-bottom: 21px;
+  font-size: 2.7rem;
+}
+.term{
+  flex-basis: 25%;
+}
+.text-block{
+  padding-left: 27px;
+}
+.text-block .desc-wrap{
+  padding-bottom: 15px;
+}
+}
+@media (max-width: 768px) and (orientation: landscape){
+.title{
+  padding-top: 12px;
+}
+.text-block .desc-wrap a img{
+  display: none;
+}
+.dev.port .term{
+  flex-basis: 35%;
+}
+.dev.port .text-block .desc span{
+  flex-basis: 50%;
+}
+}
 @media (max-width: 768px) and (orientation: portrait){
 .text-block{
   width: 75%;
@@ -218,6 +253,34 @@ a.more-info:active{
   margin-left: 0;
   padding-left: 33px;
 }
+}
+@media (max-width: 720px) and (orientation: landscape){
+  .text-block,
+  .dev .text-block{
+    width: 100%;
+    padding-left: 12px;
+    margin-left: 0;
+  }
+  .title{
+    padding-top: 10px;
+    padding-bottom: 12px;
+    font-size: 2.33rem;
+  }
+  .text-block .desc-wrap{
+    padding-bottom: 8px;
+  }
+  .term{
+    flex-basis: 15%;
+  }
+  .dev.port .term{
+    flex-basis: 15%;
+  }
+  .dev.port .text-block .desc span{
+    flex-basis: 25%;
+  }
+  .picture-link{
+    display: none;
+  }
 }
 @media (max-width: 620px) and (orientation: portrait){
   .text-block,

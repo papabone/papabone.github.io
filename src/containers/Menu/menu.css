@@ -91,6 +91,39 @@
     top: 7px;
   }
 }
+@media (max-width: 850px) and (orientation: landscape){
+.menu .content ul{
+  margin-top: 0;
+}
+}
+@media (max-width: 720px) and (orientation: landscape){
+  .menu a:after{
+    right: 15px;
+    top: 8px;
+  }
+  .menu .content ul{
+    margin-top: 0;
+  }
+  .menu .content li{
+    padding-left: 18px;
+  }
+  .menu a.active:before,
+  .menu a:active:before,
+  .menu a:hover:before{
+    left: -12px;
+  }
+  .menu .content li{
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  .menu a{
+    padding-bottom: 18px;
+    font-size: 1.2rem;
+  }
+  .menu .desc{
+    font-size: .75srem;
+  }
+}
 @media (max-width: 620px) and (orientation: portrait){
   .menu a:after{
     right: 15px;

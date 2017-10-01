@@ -26,7 +26,7 @@ class AboutDes extends Component {
           }
           </div>
         </div>
-        <div className='desc-wrap'>
+        <div className='desc-wrap edu'>
           <div className='term'>{UI.education}</div>
           <div className='desc'>
           {

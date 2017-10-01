@@ -63,7 +63,12 @@
     padding-right: 27px;
   }
 }
-
+@media (max-width: 720px) and (orientation: landscape){
+  .project-btn{
+    padding-top: 12px;
+    padding-right: 6px;
+  }
+}
 @media (max-width: 620px) and (orientation: portrait){
   .project-btn{
     padding-top: 20px;

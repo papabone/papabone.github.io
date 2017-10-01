@@ -75,8 +75,10 @@
   .menu .menu-btn{
     padding-top: 27px;
   }
+  .dev .menu-btn{
+    flex-direction: row-reverse;
+  }
 }
-
 @media (max-width: 768px) and (orientation: portrait){
   .menu-btn{
     width: 16.7%;
@@ -95,6 +97,16 @@
   }
   .menu .menu-btn{
     padding-top: 27px;
+  }
+}
+@media (max-width: 720px) and (orientation: landscape){
+  .menu-btn{
+    padding-top: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .menu .menu-btn{
+    padding-top: 18px;
   }
 }
 @media (max-width: 620px) and (orientation: portrait){

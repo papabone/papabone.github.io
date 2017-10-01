@@ -32,6 +32,23 @@
     text-align: left;
   }
 }
+@media (max-width: 720px) and (orientation: landscape){
+  .name-dev{
+    text-align: left;
+  }
+  .name{
+    flex-basis: 50%;
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .name h2{
+    font-size: 1.27rem;
+  }
+  .name p{
+    font-size: .9rem;
+  }
+}
 @media (max-width: 620px) and (orientation: portrait){
   .name{
     flex-basis: 50%;

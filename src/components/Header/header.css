@@ -92,7 +92,24 @@
     display: flex;
   }
 }
-
+@media (max-width: 720px) and (orientation: landscape){
+  .des .header > div,
+  .dev .header > div {
+    justify-content: space-between;
+  }
+  .dev .header > div {
+    flex-direction:row-reverse;
+    justify-content: space-between;
+  }
+  .menu .title{
+    padding-left: 12px;
+    padding-top: 12px;
+    font-size: 2.3rem;
+  }
+  .keyword {
+    display: none;
+  }
+}
 @media (max-width: 620px) and (orientation: portrait){
   .menu .title{
     padding-left: 18px;

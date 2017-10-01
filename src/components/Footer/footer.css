@@ -84,6 +84,20 @@
     display: none;
   }
 }
+@media (max-width: 720px) and (orientation: landscape){
+  .footer .lang{
+    width: 15%;
+    padding-bottom: 12px;
+    padding-left: 12px;
+  }
+  .footer .more-info,
+  .dev .footer .more-info{
+    width: 50%;
+    margin-left: 0;
+    padding-bottom: 12px;
+    text-align: left;
+  }
+}
 @media (max-width: 620px) and (orientation: portrait){
   .footer .name{
     padding-right: 12px;

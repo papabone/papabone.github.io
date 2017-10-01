@@ -38,7 +38,16 @@ hr{
   text-transform: uppercase;
   font-weight: 800;
 }
-@media (max-width: 768px){
+@media (max-width: 850px) and (orientation: landscape){
+  .zen,
+  .box{
+    font-size: 7.2rem;
+  }
+  hr{
+    margin-bottom: 9px;
+  }
+}
+@media (max-width: 768px) and (orientation: portrait){
   .zen,
   .box{
     font-size: 12rem;
@@ -46,15 +55,32 @@ hr{
   .zen-box{
     padding-top: 7%;
     padding-bottom: 7%;
+  } 
+}
+@media (max-width: 720px) and (orientation: landscape){
+  .zen,
+  .box{
+    font-size: 4.8rem;
+  }
+  .zen span,
+  .box span{
+    padding: 0;
+  }
+  .box{
+    padding-top: 3%;
+  }
+  .description{
+    padding-left: 2.5%;
+    font-size: .75rem;
   }
 }
-@media (max-width: 620px){
+@media (max-width: 620px) and (orientation: portrait){
   .zen,
   .box{
     font-size: 9rem;
   }
 }
-@media (max-width: 420px){
+@media (max-width: 420px) and (orientation: portrait){
   .zen,
   .box{
     font-size: 6.4rem;

@@ -94,6 +94,11 @@
     margin-left: 0;
   }
 }
+@media (max-width: 720px) and (orientation: landscape){
+  .picture{
+    display: none;
+  }
+}
 @media (max-width: 620px) and (orientation: portrait){
   .picture{
     display: none;

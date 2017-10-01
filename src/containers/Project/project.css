@@ -42,3 +42,11 @@
   height: 100px;
   padding-top: 40px;
 }
+@media (max-width: 720px) and (orientation: landscape){
+  .project .text-block{
+    margin-top: -380px;
+  }
+  .project .desc{
+    padding-bottom: 30px; 
+  }
+}
