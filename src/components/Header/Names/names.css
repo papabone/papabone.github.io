@@ -33,7 +33,7 @@
   }
 }
 @media (max-width: 720px) and (orientation: landscape){
-  .name-dev{
+  .dev .name-dev{
     text-align: left;
   }
   .name{
