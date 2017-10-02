@@ -71,13 +71,13 @@
   background-image: url('./gem.jpg');
 }
 .des.port .pic.goodlook .jalousie{
-  background-image: url('./gem.jpg');
+  background-image: url('./goodlook.jpg');
 }
-.des.port .pic.goodlook1 .jalousie{
-  background-image: url('./gem.jpg');
+.des.port .pic.ubear .jalousie{
+  background-image: url('./ubear.jpg');
 }
-.des.port .pic.goodlook2 .jalousie{
-  background-image: url('./gem.jpg');
+.des.port .pic.tmarket .jalousie{
+  background-image: url('./tmarket.jpg');
 }
 
 @media (max-width: 768px) and (orientation: portrait){

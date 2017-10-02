@@ -55,12 +55,12 @@ hr{
   .zen-box{
     padding-top: 7%;
     padding-bottom: 7%;
-  } 
+  }
 }
 @media (max-width: 720px) and (orientation: landscape){
   .zen,
   .box{
-    font-size: 4.8rem;
+    font-size: 4.7rem;
   }
   .zen span,
   .box span{

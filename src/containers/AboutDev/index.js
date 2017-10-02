@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import mail from './mail.png'
-import git from './git.png'
-//import { bindActionCreators } from 'redux'
-//import { connect } from 'react-redux'
+import mail from './mail.png'  
 
 class AboutDev extends Component {
   render() {
@@ -35,10 +32,6 @@ class AboutDev extends Component {
             <a href={'mailto\:'+desc.contacts.mail}>
               <img src={mail} alt='mail'/>
               {desc.contacts.mail}
-            </a>
-            <a href={desc.contacts.git}>
-              <img src={git} alt='gitHub'/>
-              {desc.contacts.git}
             </a>
           </div>
         </div>

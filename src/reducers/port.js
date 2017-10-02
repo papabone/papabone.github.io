@@ -111,8 +111,8 @@ const initialState = {
             quantityOfImg: 0
           },
           {
-            name: 'goodlook1',
-            title: 'Goodlook',
+            name: 'ubear',
+            title: 'uBear',
             desc: 'SPA - bla-bla-bla',
             shortDesc: 'Web application for...',
             type: 'branding',
@@ -122,8 +122,8 @@ const initialState = {
             quantityOfImg: 0
           },
           {
-            name: 'goodlook2',
-            title: 'Goodlook',
+            name: 'tmarket',
+            title: 'T-Market',
             desc: '111 - bla-bla-bla',
             shortDesc: 'Web application for...',
             type: 'branding',
@@ -168,8 +168,8 @@ const initialState = {
             quantityOfImg: 0
           },
           {
-            name: 'goodlook1',
-            title: 'Goodlook',
+            name: 'ubear',
+            title: 'uBear',
             desc: 'SPA - bla-bla-bla',
             shortDesc: 'Web application for...',
             type: 'branding',
@@ -179,8 +179,8 @@ const initialState = {
             quantityOfImg: 0
           },
           {
-            name: 'goodlook2',
-            title: 'Goodlook',
+            name: 'tmarket',
+            title: 'T-Market',
             desc: '111 - bla-bla-bla',
             shortDesc: 'Web application for...',
             type: 'branding',

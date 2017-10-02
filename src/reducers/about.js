@@ -54,18 +54,18 @@ const initialState = {
     },
     description : {
       en: {
-        about: 'I\'m freelance designer with 4+ years experienced in Web UI/UX and graphic Design Area. I have build more 200+  user interface and worked on a few other startups. ',
-        skills: ['Photoshop','Illustrator','Adobe','SCSS','Gulp','JS','WebPack','Etc.'],
+        about: 'I’m a freelance Front End Developer. I specialise in creating interactive experiences and user-friendly  interfaces whilst maintaining semantic, clean markup. I have 2 years commercial experience of development.',
+        skills: ['JS','React','Redux','SCSS','HTML5','ES6','WebPack','Gulp','Git'],
         contacts: {
-          mail : 'PonomarenkoHelen3@gmai.com',
+          mail : 'papaboneq@gmail.com',
           git : 'https://github.com/papabone'
         }
       },
       ru: {
-        about: 'I\'m freelance designer with 4+ years experienced in Web UI/UX and graphic Design Area. I have build more 200+  user interface and worked on a few other startups. ',
-        skills: ['Photoshop','Illustrator','Adobe','SCSS','Gulp','JS','WebPack','Etc.'],
+        about: 'Я независимый разработчик Фронт-энд разработчик. Я специализируюсь на создании интерактивных доступных пользовательских интерфейсов, с семантической, чистой разметкой. Опыт коммерческой разработки - 2 года.',
+        skills: ['JS','React','Redux','SCSS','HTML5','ES6','WebPack','Gulp','Git'],
         contacts: {
-          mail : 'PonomarenkoHelen3@gmai.com',
+          mail : 'papaboneq@gmai@gmail.com',
           git : 'https://github.com/papabone'
         }
       },
