@@ -213,6 +213,10 @@ a.more-info:active{
 .text-block .desc-wrap{
   padding-bottom: 15px;
 }
+.text-block .project-name{
+  font-size: .95em;
+  padding-right: 12px;
+}
 }
 @media (max-width: 768px) and (orientation: landscape){
 .title{
@@ -273,7 +277,7 @@ a.more-info:active{
     flex-basis: 15%;
   }
   .dev.port .term{
-    flex-basis: 15%;
+    flex-basis: 17%;
   }
   .dev.port .text-block .desc span{
     flex-basis: 25%;
@@ -300,5 +304,9 @@ a.more-info:active{
   }
   .picture-link{
     display: none;
+  }
+  .text-block .project-name{
+    font-size: .9rem;
+    padding-right: 12px;
   }
 }

@@ -165,7 +165,7 @@
     display: none;
   }
   .shell{
-    grid-template-rows:	55px 1fr 40px;
+    grid-template-rows:	55px 1fr 35px;
   }
   .zen-box{
     grid-template-rows: 1.1fr 55px .9fr;

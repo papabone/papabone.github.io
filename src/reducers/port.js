@@ -16,48 +16,48 @@ const initialState = {
       projects : {
         en: [
           {
-            name: 'landings',
-            title: 'Lands',
-            desc: 'I’m a freelance Front End Developer based in London.I specialise in creating interactive   experiences and user-friendly interfaces whilst maintaining semantic, clean markup and SEO  friendly code.',
-            technologies: [ 'Adobe', 'Photoshop', 'Adobe', 'Illustrator', 'Photoshop', 'Adobe', 'Photoshop',  'Adobe', 'Photoshop' ],
-            customer: 'KMA'
+            name: 'spa',
+            title: 'SPA',
+            desc: 'Single Page Application is the most flexible tool in the modern world. It allows you to develop bold solutions for business and entertainment. They give users experience likewise native software.',
+            technologies: [ 'React','Redux','Webpack','SVG','ES6' ],
+            customer: 'Freelanse'
           },
           {
             name: 'oldport',
             title: 'Promo',
-            desc: 'I’m a freelance ning semantic, clean markup and SEO friendly code.',
-            technologies: [ 'Adobe', 'Photoshop', 'Adobe', 'Adobe', 'Photoshop', 'Adobe', 'Photoshop' ],
-            customer: 'Self'
+            desc: 'I especially appreciate the opportunity to work on promotional-projects, where a high proportion of creativity and experimentation',
+            technologies: [ 'HTML5','CSS','JS','Canvas','SVG','Animations','GSAP' ],
+            customer: 'Freelanse'
           },
           {
-            name: 'spa',
-            title: 'SPA',
-            desc: 'SPA - bla-bla-bla',
-            technologies: [ 'React', 'Redux', 'Adobe', 'Adobe', 'Photoshop', 'Adobe', 'Photoshop' ],
-            customer: 'Self'
+            name: 'landings',
+            title: 'landing pages',
+            desc: 'I developed a lot of landing pages. All projects were developed on the basis of responsive layout, semantic, cross-browser code, as well as modern tools for optimizing code, multimedia objects.',
+            technologies: [ 'HTML5','SCSS','JS','jQuery','Bootstrap','SVG','Gulp','Photoshop','Illustrator' ],
+            customer: 'KMA.biz'
           },
         ],
         ru: [
           {
-            name: 'landings',
-            title: 'Лэндинги',
-            desc: 'по-русски I’m a freelance Front End Developer based in London.I specialise in creating interactive   experiences and user-friendly interfaces whilst maintaining semantic, clean markup and SEO  friendly code.',
-            technologies: [ 'Adobe', 'Photoshop', 'Adobe', 'Illustrator', 'Photoshop', 'Adobe', 'Photoshop',  'Adobe', 'Photoshop' ],
-            customer: 'KMA'
+            name: 'spa',
+            title: 'SPA',
+            desc: 'Single Page Application - это наиболее гибкий инструмент в современном мире. Он позволяет разрабатывать смелые продуктовые и промо решения, давая конечному пользователю опыт работы близкий к софтверным инструментам.',
+            technologies: [ 'React','Redux','Webpack','SVG','ES6' ],
+            customer: 'Фриланс'
           },
           {
             name: 'oldport',
             title: 'Визитки',
-            desc: 'По-русски I’m a freelance ning semantic, clean markup and SEO friendly code.',
-            technologies: [ 'Adobe', 'Photoshop', 'Adobe', 'Adobe', 'Photoshop', 'Adobe', 'Photoshop' ],
-            customer: 'Self'
+            desc: 'В особенности я ценю возможность работы над промо-проектами. Они позволяют сполна раскрыть свой творческий потенциал и поэксперементировать.',
+            technologies: [ 'HTML5','CSS','JS','Canvas','SVG','Animations','GSAP' ],
+            customer: 'Фриланс'
           },
           {
-            name: 'spa',
-            title: 'SPA',
-            desc: 'SPA - bla-bla-bla по-русски',
-            technologies: [ 'React', 'Redux', 'Adobe', 'Adobe', 'Photoshop', 'Adobe', 'Photoshop' ],
-            customer: 'Self'
+            name: 'landings',
+            title: 'Лэндинги',
+            desc: 'Обладаю большим опытом создания посадочных страниц. Все проекты разрабатывались на основе адаптивной верстки, семантического, кросбраузерного кода, а также современных инструментов оптимизации кода и объектов мультимедиа.',
+            technologies: [ 'HTML5','SCSS','JS','jQuery','Bootstrap','SVG','Gulp','Photoshop','Illustrator' ],
+            customer: 'KMA.biz'
           },
         ],
       },
@@ -115,6 +115,17 @@ const initialState = {
             title: 'uBear',
             desc: 'SPA - bla-bla-bla',
             shortDesc: 'Web application for...',
+            type: 'web',
+            infoTipe: 'scrin',
+            linkURL: '/',
+            bgColor: '#dbdbdb',
+            quantityOfImg: 0
+          },
+          {
+            name: 'ubear1',
+            title: 'uBear1',
+            desc: 'SPA - bla-bla-bla',
+            shortDesc: 'Web application for...',
             type: 'branding',
             infoTipe: 'scrin',
             linkURL: '/',
@@ -122,8 +133,8 @@ const initialState = {
             quantityOfImg: 0
           },
           {
-            name: 'tmarket',
-            title: 'T-Market',
+            name: 'tmarket1',
+            title: 'T-Market1',
             desc: '111 - bla-bla-bla',
             shortDesc: 'Web application for...',
             type: 'branding',
@@ -172,6 +183,17 @@ const initialState = {
             title: 'uBear',
             desc: 'SPA - bla-bla-bla',
             shortDesc: 'Web application for...',
+            type: 'web',
+            infoTipe: 'scrin',
+            linkURL: '/',
+            bgColor: '#dbdbdb',
+            quantityOfImg: 0
+          },
+          {
+            name: 'ubear1',
+            title: 'uBear1',
+            desc: 'SPA - bla-bla-bla',
+            shortDesc: 'Web application for...',
             type: 'branding',
             infoTipe: 'scrin',
             linkURL: '/',
@@ -179,8 +201,8 @@ const initialState = {
             quantityOfImg: 0
           },
           {
-            name: 'tmarket',
-            title: 'T-Market',
+            name: 'tmarket1',
+            title: 'T-Market1',
             desc: '111 - bla-bla-bla',
             shortDesc: 'Web application for...',
             type: 'branding',

@@ -55,7 +55,7 @@ const initialState = {
     description : {
       en: {
         about: 'I’m a freelance Front End Developer. I specialise in creating interactive and user-friendly  interfaces whilst maintaining semantic, clean markup. I have 2 years commercial experience of development.',
-        skills: ['JS','React','Redux','SCSS','HTML5','ES6','WebPack','Gulp','Git'],
+        skills: ['JS','React','Redux','SCSS','SVG','ES6','WebPack','Gulp','Git'],
         contacts: {
           mail : 'papaboneq@gmail.com',
           git : 'https://github.com/papabone'
@@ -63,7 +63,7 @@ const initialState = {
       },
       ru: {
         about: 'Я независимый разработчик Фронт-энд разработчик. Я специализируюсь на создании интерактивных доступных пользовательских интерфейсов, с семантической, чистой разметкой. Опыт коммерческой разработки - 2 года.',
-        skills: ['JS','React','Redux','SCSS','HTML5','ES6','WebPack','Gulp','Git'],
+        skills: ['JS','React','Redux','SCSS','SVG','ES6','WebPack','Gulp','Git'],
         contacts: {
           mail : 'papaboneq@gmai@gmail.com',
           git : 'https://github.com/papabone'
