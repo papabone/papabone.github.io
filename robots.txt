@@ -1,2 +1,2 @@
 User-Agent: *
-Sitemap: httр://mysite.com/sitemap.xml
+Sitemap: httр://zen-b.com/sitemap.xml
