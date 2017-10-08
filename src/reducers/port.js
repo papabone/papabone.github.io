@@ -96,8 +96,8 @@ const initialState = {
             type: 'web',
             infoTipe: 'scrin',
             linkURL: '/',
-            bgColor: '#000',
-            quantityOfImg: 1
+            bgColor: '#dbdbdb',
+            quantityOfImg: 14
           },
           {
             name: 'goodlook',
