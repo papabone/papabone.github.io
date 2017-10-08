@@ -42,7 +42,7 @@ class Project extends Component {
     if ( project.quantityOfImg > 0 ){
       for (var j = 1; j <= project.quantityOfImg; j++) {
         try {
-          let img = require( './kurortguru/'+ j +'.jpg' )
+          let img = require( './' + project.name + '/' + j +'.jpg' )
           image.push(img)
         } catch(e) {
           console.log('requireError img №'+j)
