@@ -89,7 +89,7 @@ a.more-info:active{
 .hidden{
   display: none !important;
 }
-.active.project-name{
+.des .active.project-name{
   color: #fff;
   position: relative;
 }

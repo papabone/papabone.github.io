@@ -28,7 +28,7 @@ class PortfolioDev extends Component {
             projects.map((item, index) =>
               <div
                 key={index}
-                className='project-filter'
+                className='project-filter project-name'
                 data-numer={'' + index}
                 data-name={'' + item.name}>
                 {item.title}
