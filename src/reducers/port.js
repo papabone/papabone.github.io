@@ -101,14 +101,14 @@ const initialState = {
           },
           {
             name: 'goodlook',
-            title: 'Goodlook',
+            title: 'GoodLook',
             desc: 'SPA - bla-bla-bla',
             shortDesc: 'Web application for...',
             type: 'web',
-            infoTipe: 'link',
+            infoTipe: 'scrin',
             linkURL: 'http://google.com',
             bgColor: '#dbdbdb',
-            quantityOfImg: 0
+            quantityOfImg: 14
           },
           {
             name: 'ubear',
@@ -116,7 +116,7 @@ const initialState = {
             desc: 'SPA - bla-bla-bla',
             shortDesc: 'Web application for...',
             type: 'web',
-            infoTipe: 'scrin',
+            infoTipe: 'link',
             linkURL: '/',
             bgColor: '#dbdbdb',
             quantityOfImg: 0
@@ -168,15 +168,15 @@ const initialState = {
             quantityOfImg: 0
           },
           {
-            name: 'goodlook',
+            name: 'goodLook',
             title: 'Goodlook',
             desc: 'SPA - bla-bla-bla',
             shortDesc: 'Web application for...',
             type: 'web',
-            infoTipe: 'link',
+            infoTipe: 'scrin',
             linkURL: 'http://google.com',
             bgColor: '#dbdbdb',
-            quantityOfImg: 0
+            quantityOfImg: 14
           },
           {
             name: 'ubear',
@@ -184,7 +184,7 @@ const initialState = {
             desc: 'SPA - bla-bla-bla',
             shortDesc: 'Web application for...',
             type: 'web',
-            infoTipe: 'scrin',
+            infoTipe: 'link',
             linkURL: '/',
             bgColor: '#dbdbdb',
             quantityOfImg: 0
