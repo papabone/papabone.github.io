@@ -80,7 +80,7 @@ const initialState = {
           {
             name: 'kurortguru',
             title: 'Kurort Guru',
-            desc: '0I’m a freelance Front End Developer based in London.I specialise in creating interactive experiences and user-friendly interfaces whilst maintaining semantic, clean markup and SEO friendly code.',
+            desc: 'KurortGuru is a web application for search resorts. Here you can choose the necessary treatment, сonditions of rest and residence.',
             shortDesc: 'Web application for search resorts',
             type: 'web',
             infoTipe: 'scrin',
@@ -91,7 +91,7 @@ const initialState = {
           {
             name: 'gem',
             title: 'The Gem',
-            desc: 'I’m a freelance ning semantic, clean markup and SEO friendly code.',
+            desc: 'This is a clean design dnn theme.This skin will give your site the look and feel you are looking for.',
             shortDesc: 'Web application for...',
             type: 'web',
             infoTipe: 'scrin',
@@ -102,7 +102,7 @@ const initialState = {
           {
             name: 'goodlook',
             title: 'GoodLook',
-            desc: 'SPA - bla-bla-bla',
+            desc: 'GoodLook is a bulletin board for the seller. It is able to become a permanent assistant for the development of your online store or website.',
             shortDesc: 'Web application for...',
             type: 'web',
             infoTipe: 'scrin',
@@ -113,7 +113,7 @@ const initialState = {
           {
             name: 'ubear',
             title: 'uBear',
-            desc: 'SPA - bla-bla-bla',
+            desc: 'Now it is easy to find what you need in the mobile accessories world. uBear is a mixture of unique technologies, materials and designs.',
             shortDesc: 'Web application for...',
             type: 'web',
             infoTipe: 'link',
@@ -148,7 +148,7 @@ const initialState = {
           {
             name: 'kurortguru',
             title: 'Kurort Guru',
-            desc: 'Бла бла',
+            desc: 'KurortGuru - это веб-приложение для поисковых курортов. Здесь вы можете выбрать необходимое лечение, условия отдыха и проживания.',
             shortDesc: 'Web application for...',
             type: 'web',
             infoTipe: 'scrin',
@@ -159,7 +159,7 @@ const initialState = {
           {
             name: 'gem',
             title: 'The Gem',
-            desc: 'По русски I’m a freelance ning semantic, clean markup and SEO friendly code.',
+            desc: 'The gem - это DNN тема, которая придаст вашему сайту вид, который вы ищете.',
             shortDesc: 'Web application for...',
             type: 'web',
             infoTipe: 'scrin',
@@ -170,7 +170,7 @@ const initialState = {
           {
             name: 'goodLook',
             title: 'Goodlook',
-            desc: 'SPA - bla-bla-bla',
+            desc: 'GoodLook - доска объявлений для продавца. Он может стать постоянным помощником для развития вашего интернет-магазина или веб-сайта.',
             shortDesc: 'Web application for...',
             type: 'web',
             infoTipe: 'scrin',
@@ -181,7 +181,7 @@ const initialState = {
           {
             name: 'ubear',
             title: 'uBear',
-            desc: 'SPA - bla-bla-bla',
+            desc: 'Теперь легко найти, то что вам нужно в мире мобильных аксессуаров. uBear - это смесь уникальных технологий, материалов и конструкций.',
             shortDesc: 'Web application for...',
             type: 'web',
             infoTipe: 'link',
