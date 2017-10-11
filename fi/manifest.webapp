@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "name": "Zen box",
+  "description": "Zen box studio",
+  "icons": {
+    "60": "img/fi/firefox_app_60x60.png",
+    "128": "img/fi/firefox_app_128x128.png",
+    "512": "img/fi/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": "Konstantin Filon",
+    "url": "http://zen-b.com"
+  }
+}
