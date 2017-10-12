@@ -26,6 +26,9 @@
 .e404 a{
   font-weight: bold;
 }
+.e404 a:focus{
+  color: #cfdc3c;
+}
 .isE404 .footer {
   visibility: collapse;
 }

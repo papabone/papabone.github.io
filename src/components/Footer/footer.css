@@ -19,6 +19,10 @@
   color: #cfdc3c;
   font-weight: 800;
 }
+.footer li:focus{
+  outline: none;
+  opacity: .5;
+}
 .footer .more-info{
   display: none;
   width: 25%;

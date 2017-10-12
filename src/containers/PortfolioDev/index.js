@@ -30,7 +30,8 @@ class PortfolioDev extends Component {
                 key={index}
                 className='project-filter project-name'
                 data-numer={'' + index}
-                data-name={'' + item.name}>
+                data-name={'' + item.name}
+                tabIndex='0'>
                 {item.title}
               </div>
             )

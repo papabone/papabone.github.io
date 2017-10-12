@@ -9,8 +9,11 @@ import ZenBox from '../../components/ZenBox'
 import Lines from '../../components/Lines'
 import BackGround from '../../components/BackGround'
 import * as langActions from '../../actions/langActions'
+import {
+  ENTER
+} from '../../constants/key'
 
-class Shell extends Component {
+class Shell extends Component { 
   render() {
 
     const lang = this.props.lang
@@ -32,7 +35,9 @@ class Shell extends Component {
     let MidGround = isPort || isAbout  ? <Picture/> : <ZenBox UI={middle}/>
 
     return (
-      <div className={'shell enter '+
+      <div
+        onKeyDown={this.handleKeydown}
+        className={'shell enter '+
                       ( isDes ? 'des' : isDev ? 'dev' : '' ) +
                       ( isPort ? ' port' : '' ) +
                       ( isE404 ? ' isE404' : '' ) +
@@ -59,6 +64,28 @@ class Shell extends Component {
       </div>
     )
   }
+
+  handleKeydown = (event) => {
+    if (  event.target.classList.contains('menu-btn')
+          || event.shiftKey
+          || event.ctrlKey
+          || event.altKey
+          || event.metaKey ) {
+        return
+    }  else {
+      switch (event.keyCode) {
+
+        case ENTER:
+          event.target.click();
+          console.log('s')
+          break
+
+        default:
+          break
+      }
+    }
+  }
+
 }
 
 function mapStateToProps (state, ownProps) {

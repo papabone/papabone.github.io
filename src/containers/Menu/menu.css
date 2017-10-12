@@ -45,15 +45,10 @@
 }
 .menu  li:nth-child(5) a::after{
   content: '05'
-}
-.menu a.active,
-.menu a:active,
-.menu a:hover{
-  /*color: #cfdc3c;*/
-}
+}     
 .menu a.active:before,
-.menu a:active:before,
-.menu a:hover:before{
+.menu a:hover:before,
+.menu a:focus:before{
   content: '';
   display: inline-block;
   position: absolute;

@@ -165,7 +165,7 @@ const initialState = {
             infoTipe: 'scrin',
             linkURL: '/',
             bgColor: '#dbdbdb',
-            quantityOfImg: 0
+            quantityOfImg: 14
           },
           {
             name: 'goodLook',

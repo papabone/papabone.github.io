@@ -51,12 +51,14 @@ class PortfolioDes extends Component {
         <div className='desc-wrap'>
           <div
             className='project-filter'
-            data-name='web'>
+            data-name='web'
+            tabIndex='0'>
             {UI.web}
           </div>
           <div
             className='project-filter'
-            data-name='branding'>
+            data-name='branding'
+            tabIndex='0'>
             {UI.branding}
           </div>
         </div>
@@ -67,7 +69,8 @@ class PortfolioDes extends Component {
                 key={index}
                 className='project-name'
                 data-numer={'' + index}
-                data-name={'' + item.name}>
+                data-name={'' + item.name}
+                tabIndex='0'>
                 {item.title}
               </div>
             )

@@ -13,12 +13,14 @@ export default class Footer extends Component {
         <ul className='lang' onClick={::this.clicLangHandler}>
           <li
             className='ru'
-            data-lang='ru'>
+            data-lang='ru'
+            tabIndex='0'>
             {UI.ru}
           </li>
           <li
             className='en active'
-            data-lang='en'>
+            data-lang='en'
+            tabIndex='0'>
             {UI.en}
           </li>
         </ul>

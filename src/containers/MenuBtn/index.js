@@ -8,7 +8,7 @@ import { routerActions } from 'react-router-redux'
 import { Link } from 'react-router'
 
 import {
-  ESC
+  ENTER
 } from '../../constants/key'
 
 class MenuBtn extends Component {
@@ -18,16 +18,18 @@ class MenuBtn extends Component {
           lang = this.props.lang,
           UI = this.props.shell.UI.header[lang]
 
-    const custlink = menu.menuIsOpen ? null : <Link to='/menu' title={''+UI.menu}/>
+    const custlink = menu.menuIsOpen ? null : <Link to='/menu' title={''+UI.menu} onFocus={this.handleFocus} onBlur={this.handleBlur}/>
 
     return (
       <div
         className={ 'menu-btn ' + (this.props.menu.menuIsOpen ? 'isOpend' : 'isClosed') }
-        onClick={this.handleToggleMenu} >
+        onClick={this.handleToggleMenu}
+        tabIndex={ this.props.menu.menuIsOpen ? '0' : '-1' }
+        onKeyDown={this.handleKeydown} >
         <div
           className='arrow-for-button'>
           {custlink}
-          <button></button>
+          <button tabIndex='-1'></button>
         </div>
       </div>
     )
@@ -47,17 +49,25 @@ class MenuBtn extends Component {
   }
 
   handleKeydown = (event) => {
-    const { closeMenu } = this.props.menuActions
-
-    if ( event.shiftKey || event.ctrlKey || event.altKey  || event.metaKey ) {
+    const { menu } = this.props,
+          { go } = this.props.routerActions,
+          shell = document.body.querySelector('.shell')
+    if (   event.target.tagName == 'BUTTON'
+          || event.target.classList.contains('arrow-for-button')
+          || event.shiftKey
+          || event.ctrlKey
+          || event.altKey
+          || event.metaKey ) {
         return
-    }
-
-    else {
+    }  else {
       switch (event.keyCode) {
 
-        case ESC:
-          closeMenu()
+        case ENTER:
+          if(!menu.menuIsOpen)return;
+          go(-1)
+          shell.classList.add('leave')
+
+          console.log('m')
           break
 
           default:
@@ -66,6 +76,16 @@ class MenuBtn extends Component {
     }
   }
 
+  handleFocus = (event) => {
+    if ( event.target.nextElementSibling.tagName == 'BUTTON' ){
+      event.target.nextElementSibling.classList.add('focus')
+    }
+  }
+  handleBlur = (event) => {
+    if ( event.target.nextElementSibling.tagName == 'BUTTON' ){
+      event.target.nextElementSibling.classList.remove('focus')
+    }
+  }
 }
 
 

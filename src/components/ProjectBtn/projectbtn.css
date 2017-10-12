@@ -57,6 +57,10 @@
   top: -5px;
   transition: ease-in-out 0.3s;
 }
+.project-btn.isOpend button.focus:before,
+.project-btn.isOpend button.focus:after{
+  opacity: .5;
+}
 @media (max-width: 991px){
   .project-btn{
     padding-top: 27px;
