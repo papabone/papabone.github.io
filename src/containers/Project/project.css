@@ -24,6 +24,8 @@
   justify-content: center;
   padding-bottom: 80px;
   font-size: 1rem;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .project .image{
   padding-bottom: 50px;
@@ -44,7 +46,7 @@
 }
 @media (min-width: 1371px){
   .project .image div{
-    width: 75%; 
+    width: 75%;
   }
 }
 @media (max-width: 720px) and (orientation: landscape){
