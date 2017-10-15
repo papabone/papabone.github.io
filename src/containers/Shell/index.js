@@ -13,7 +13,7 @@ import {
   ENTER
 } from '../../constants/key'
 
-class Shell extends Component { 
+class Shell extends Component {
   render() {
 
     const lang = this.props.lang
@@ -66,7 +66,7 @@ class Shell extends Component {
   }
 
   handleKeydown = (event) => {
-    if (  event.target.classList.contains('menu-btn')
+    if (  event.target.tagName =='A'
           || event.shiftKey
           || event.ctrlKey
           || event.altKey
@@ -76,8 +76,7 @@ class Shell extends Component {
       switch (event.keyCode) {
 
         case ENTER:
-          event.target.click();
-          console.log('s')
+          event.target.click()
           break
 
         default:

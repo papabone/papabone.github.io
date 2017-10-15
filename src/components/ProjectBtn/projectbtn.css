@@ -42,8 +42,8 @@
   transition: ease-in-out 0.3s;
   border-bottom: 1px solid #fff;
 }
-.project-btn.isOpend a.focus:before,
-.project-btn.isOpend a.focus:after{
+.project-btn.isOpend a:focus:before,
+.project-btn.isOpend a:focus:after{
   opacity: .5;
 }
 @media (max-width: 991px){

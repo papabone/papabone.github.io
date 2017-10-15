@@ -187,7 +187,7 @@ a.more-info:focus{
 .picture-link a:hover,
 .picture-link a:active{
   border: 0px solid #cfdc3c;
-  background-color: rgba(255, 0, 0, 0);
+  background-color: rgba(255, 0, 0, 0); 
 }
 
 @media (max-width: 1370px){
