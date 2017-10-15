@@ -117,7 +117,7 @@ const initialState = {
             shortDesc: 'Web application for...',
             type: 'web',
             infoTipe: 'link',
-            linkURL: '/',
+            linkURL: 'http://ubear-world.com/',
             bgColor: '#dbdbdb',
             quantityOfImg: 0
           },
@@ -185,7 +185,7 @@ const initialState = {
             shortDesc: 'Web application for...',
             type: 'web',
             infoTipe: 'link',
-            linkURL: '/',
+            linkURL: 'http://ubear-world.com/',
             bgColor: '#dbdbdb',
             quantityOfImg: 0
           },
