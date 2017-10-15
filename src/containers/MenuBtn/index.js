@@ -18,19 +18,16 @@ class MenuBtn extends Component {
           lang = this.props.lang,
           UI = this.props.shell.UI.header[lang]
 
-    const custlink = menu.menuIsOpen ? null : <Link to='/menu' title={''+UI.menu} onFocus={this.handleFocus} onBlur={this.handleBlur}/>
+    const custlink = menu.menuIsOpen
+      ? <span className='close-btn' tabIndex='0'/>
+      : <Link to='/menu' title={''+UI.menu} />
 
     return (
       <div
         className={ 'menu-btn ' + (this.props.menu.menuIsOpen ? 'isOpend' : 'isClosed') }
         onClick={this.handleToggleMenu}
-        tabIndex={ this.props.menu.menuIsOpen ? '0' : '-1' }
         onKeyDown={this.handleKeydown} >
-        <div
-          className='arrow-for-button'>
           {custlink}
-          <button tabIndex='-1'></button>
-        </div>
       </div>
     )
   }
@@ -39,8 +36,7 @@ class MenuBtn extends Component {
         const { menu } = this.props,
         { go } = this.props.routerActions,
         shell = document.body.querySelector('.shell')
-    if ( event.target.tagName == 'BUTTON'
-    || event.target.classList.contains('arrow-for-button') ) {
+    if ( event.target.classList.contains('close-btn') ) {
       if(!menu.menuIsOpen)return;
       go(-1)
       shell.classList.add('leave')
@@ -52,8 +48,7 @@ class MenuBtn extends Component {
     const { menu } = this.props,
           { go } = this.props.routerActions,
           shell = document.body.querySelector('.shell')
-    if (   event.target.tagName == 'BUTTON'
-          || event.target.classList.contains('arrow-for-button')
+    if ( event.target.classList.contains('close-btn')
           || event.shiftKey
           || event.ctrlKey
           || event.altKey
@@ -76,18 +71,7 @@ class MenuBtn extends Component {
     }
   }
 
-  handleFocus = (event) => {
-    if ( event.target.nextElementSibling.tagName == 'BUTTON' ){
-      event.target.nextElementSibling.classList.add('focus')
-    }
-  }
-  handleBlur = (event) => {
-    if ( event.target.nextElementSibling.tagName == 'BUTTON' ){
-      event.target.nextElementSibling.classList.remove('focus')
-    }
-  }
 }
-
 
 function mapStateToProps (state) {
   return {
