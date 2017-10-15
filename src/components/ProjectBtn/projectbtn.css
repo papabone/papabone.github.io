@@ -31,13 +31,13 @@
   border-bottom: 1px solid #fff;
   transform: rotate(45deg);
   left: auto;
-  right:0px;
+  right: -5px;
   transition: ease-in-out 0.3s;
 }
 .project-btn a::after{
   transform: rotate(-45deg);
   left: auto;
-  right: 5px;
+  right: 0px;
   top: 9px;
   transition: ease-in-out 0.3s;
   border-bottom: 1px solid #fff;
@@ -61,6 +61,6 @@
 @media (max-width: 620px) and (orientation: portrait){
   .project-btn{
     padding-top: 20px;
-    padding-right: 7px;
+    padding-right: 12px;
   }
 }

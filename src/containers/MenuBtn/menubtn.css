@@ -55,13 +55,13 @@
   border-bottom: 1px solid #fff;
   transform: rotate(45deg);
   left: auto;
-  right:0px;
+  right:-5px;
   transition: ease-in-out 0.3s;
 }
 .menu-btn.isOpend .close-btn::after{
   transform: rotate(-45deg);
   left: auto;
-  right: 5px;
+  right: 0px;
   top: 9px;
   transition: ease-in-out 0.3s;
   border-bottom: 1px solid #fff;
@@ -76,7 +76,7 @@
     width: 16.7%;
     padding-top: 23px;
     padding-left: 27px;
-    padding-right: 23px;
+    padding-right: 27px;
   }
   .menu .menu-btn{
     padding-top: 27px;
@@ -90,7 +90,7 @@
     width: 16.7%;
     padding-top: 23px;
     padding-left: 27px;
-    padding-right: 23px;
+    padding-right: 27px;
     flex-direction: row-reverse;
   }
   .des .menu-btn,
@@ -103,6 +103,11 @@
   }
   .menu .menu-btn{
     padding-top: 27px;
+  }
+  .menu-btn a,
+  .menu-btn.isOpend .close-btn{
+    height: 60px;
+    z-index: 101;
   }
 }
 @media (max-width: 720px) and (orientation: landscape){
