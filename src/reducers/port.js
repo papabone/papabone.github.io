@@ -122,27 +122,16 @@ const initialState = {
             quantityOfImg: 0
           },
           {
-            name: 'ubear1',
-            title: 'uBear1',
-            desc: 'SPA - bla-bla-bla',
-            shortDesc: 'Web application for...',
+            name: 'ambientalny',
+            title: 'Ambientalny',
+            desc: 'Advertising booklet for music festival Ambientalny, that demonstrates the main idea of the event, the program and description of headliners.',
+            shortDesc: 'Festival Ambientalny is an extremely cohesive conception',
             type: 'branding',
             infoTipe: 'scrin',
             linkURL: '/',
             bgColor: '#dbdbdb',
-            quantityOfImg: 0
-          },
-          {
-            name: 'tmarket1',
-            title: 'T-Market1',
-            desc: '111 - bla-bla-bla',
-            shortDesc: 'Web application for...',
-            type: 'branding',
-            infoTipe: 'link',
-            linkURL: 'http://google.com',
-            bgColor: '#dbdbdb',
-            quantityOfImg: 0
-          },
+            quantityOfImg: 4
+          }
         ],
         ru : [
           {
@@ -190,27 +179,16 @@ const initialState = {
             quantityOfImg: 0
           },
           {
-            name: 'ubear1',
-            title: 'uBear1',
-            desc: 'SPA - bla-bla-bla',
-            shortDesc: 'Web application for...',
+            name: 'ambientalny',
+            title: 'Ambientalny',
+            desc: 'Рекламный буклет для музыкального фестиваля Ambientalny, который демонстрирует главную идею мероприятия, программу и описание хедлайнеров.',
+            shortDesc: 'Festival Ambientalny is an extremely cohesive conception',
             type: 'branding',
             infoTipe: 'scrin',
             linkURL: '/',
             bgColor: '#dbdbdb',
-            quantityOfImg: 0
-          },
-          {
-            name: 'tmarket1',
-            title: 'T-Market1',
-            desc: '111 - bla-bla-bla',
-            shortDesc: 'Web application for...',
-            type: 'branding',
-            infoTipe: 'link',
-            linkURL: 'http://google.com',
-            bgColor: '#dbdbdb',
-            quantityOfImg: 0
-          },
+            quantityOfImg: 4
+          }
         ],
       },
       UI : {

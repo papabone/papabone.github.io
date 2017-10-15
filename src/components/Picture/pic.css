@@ -76,6 +76,9 @@
 .des.port .pic.ubear .jalousie{
   background-image: url('./ubear.jpg');
 }
+.des.port .pic.ambientalny .jalousie{
+  background-image: url('./ambientalny.jpg');
+}
 .des.port .pic.tmarket .jalousie{
   background-image: url('./tmarket.jpg');
 }

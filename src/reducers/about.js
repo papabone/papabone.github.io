@@ -27,11 +27,11 @@ const initialState = {
         contacts: 'PonomarenkoHelen3@gmai.com',
       },
       ru: {
-        about: 'I\'m freelance designer with 4+ years experienced in Web UI/UX and graphic Design Area. I have build more 200+  user interface and worked on a few other startups. ',
+        about: 'Я фрилансер с опытом работы более 4 лет в UI, UX и графическом дизайне. За всю практику работы создала более 200 сайтов, веб-приложений и графических проектов ',
         skills: ['Adobe Photoshop','Adobe Illustrator'],
         education: [
-          'European Humanities University. Media and visual design.',
-          'Belarusian Trade and Economics University. Marketing.'
+          'Евромейский гуманитарный университет. Визуальный дизайн и медиа.',
+          'Белорусский торгово-экономический университет. Маркетинг.'
         ],
         contacts: 'PonomarenkoHelen3@gmai.com',
       },
