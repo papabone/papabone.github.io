@@ -20,14 +20,14 @@ const initialState = {
             title: 'SPA',
             desc: 'Single Page Application is the most flexible tool in the modern world. It allows you to develop bold solutions for business and entertainment. They give users experience likewise native software.',
             technologies: [ 'React','Redux','Webpack','SVG','ES6' ],
-            customer: 'Freelanse'
+            customer: 'Freelance'
           },
           {
             name: 'oldport',
             title: 'Promo',
             desc: 'I especially appreciate the opportunity to work on promotional-projects, where a high proportion of creativity and experimentation',
             technologies: [ 'HTML5','CSS','JS','Canvas','SVG','Animations','GSAP' ],
-            customer: 'Freelanse'
+            customer: 'Freelance'
           },
           {
             name: 'landings',
