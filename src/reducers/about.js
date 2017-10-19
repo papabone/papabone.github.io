@@ -54,7 +54,7 @@ const initialState = {
     },
     description : {
       en: {
-        about: 'I’m a freelance Front End Developer. I specialise in creating interactive and user-friendly  interfaces whilst maintaining semantic, clean markup. I have 2 years commercial experience of development.',
+        about: 'I’m a freelance Front End Developer. I specialise in creating interactive and user-friendly  interfaces whilst maintaining semantic, clean markup. I have 2 years of commercial experience in development.',
         skills: ['JS','React','Redux','SCSS','SVG','ES6','WebPack','Gulp','Git'],
         contacts: {
           mail : 'papaboneq@gmail.com',
