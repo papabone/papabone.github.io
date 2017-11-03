@@ -42,7 +42,7 @@ const initialState = {
         desc: 'Елена Пономареноко'
       },
       devAbout: {
-        title: 'О разраьотчике ',
+        title: 'О разработчике ',
         desc: 'Константин Филон'
       },
       devPort: {
