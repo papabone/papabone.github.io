@@ -25,6 +25,7 @@ html{
   color: #fff;
   min-width: 320px;
   box-sizing: border-box;
+  cursor: default;
 }
 .shell{
   min-width: 320px;
